@@ -9,11 +9,11 @@ function AboutHero() {
         <div className="paraGraph">
           <h3>
             Welcome to KWCO Law, a distinguished legal firm established in July
-            2021. We are located in the heart of Nashik, Maharashtra, at the
-            strategic 1st Floor, The Business Park, D’souza Colony, College
-            Road. As a Partnership Firm, we specialize in a range of legal and
-            accounting services, dedicated to delivering expert solutions
-            tailored to our clients.
+            2021. We are located in the heart of Nairobi, NINE PLANETS
+            APARTMENTS, SUITE PLUTO P4, KABARNET GARDENS, OPP. THE SUDAN
+            EMBASSY, NAIROBI . As a Partnership Firm, we specialize in a range
+            of legal and accounting services, dedicated to delivering expert
+            solutions tailored to our clients.
           </h3>
         </div>
         <button

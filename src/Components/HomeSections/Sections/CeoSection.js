@@ -12,15 +12,15 @@ const CeoSection = () => {
           <div className=" flex flex-col m-auto items-center">
             <div className="rounded-full overflow-hidden items-center -mb-11 z-30">
               <img
-                src="images/pulkeet.png "
+                src="images/sk.jpg"
                 alt="pic"
                 className="w-24 self-center "
               />
             </div>
             <div className="bg-white max-w-2xl pt-14 pb-4">
-              <h2 className="text-center text-2xl"> Sammy</h2>
+              <h2 className="text-center text-2xl"> Sammy Waweru</h2>
               <p className="text-center text-sm font-semibold -mt-2 opacity-45 text-black">
-                Founder Of KWCO
+                Managing Partner
               </p>
               <p className="text-center  -mt-2  text-black opacity-50 font-sans">
                 Pulkeet Singh, founder of KWCO Law, is renowned for his

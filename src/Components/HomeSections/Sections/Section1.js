@@ -26,7 +26,8 @@ const Section1 = () => {
             Prime Location
           </h5>
           <p class="font-normal text-gray-700 dark:text-gray-400">
-            Strategically located at Kilimani, Opposite Sudan Embassy.
+            Strategically located at Nine Planets Apartments, Suite Pluto (P4)
+            Opp. Sudan Embassy, Kabarnet Gardens P.O. Box 199-00515, Nairobi. .
           </p>
         </a>
       </div>

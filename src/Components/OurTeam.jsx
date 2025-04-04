@@ -1,5 +1,12 @@
 import React from "react";
 import Pulkeet from "../Team Members Images/Pulkeet.png";
+import sk from "../Team Members Images/sk.jpg";
+import Boniface from "../Team Members Images/Boniface.jpg";
+import seif from "../Team Members Images/seif.jpg";
+import jackline from "../Team Members Images/Jackline.jpg";
+import Eddie from "../Team Members Images/Eddie.jpg";
+import Alexander from "../Team Members Images/alexander Mtua.jpg";
+import agwine from "../Team Members Images/angwine.jpg";
 
 function OurTeam() {
   return (
@@ -17,45 +24,38 @@ function OurTeam() {
           </h3>
         </div>
         <div className="ot-team-member-container">
+          <TeamMember name="Sammy Waweru" title="Managing Partner" image={sk} />
+        </div>
+        <div className="ot-team-member-container">
           <TeamMember
-            name="Pulkeet Singh"
-            title="Founder of KWCO Law Firm"
-            image={Pulkeet}
+            name="Agwine OTieno"
+            title="Head of Knowledge Management"
+            image={agwine}
           />
           <TeamMember
-            name="Pulkeet Singh"
-            title="Founder of KWCO Law Firm"
-            image={Pulkeet}
+            name="Boniface Wambua Munuve"
+            title="Head of Credit Management"
+            image={Boniface}
           />
           <TeamMember
-            name="Pulkeet Singh"
-            title="Founder of KWCO Law firm"
-            image={Pulkeet}
+            name="Seif Mohammed "
+            title="Credit Managemen"
+            image={seif}
           />
           <TeamMember
-            name="Pulkeet Singh"
-            title="Founder of KWCO Law firm"
-            image={Pulkeet}
+            name="Jackline Jowi"
+            title="Credit Management"
+            image={jackline}
           />
           <TeamMember
-            name="Pulkeet Singh"
-            title="Founder of KWCO Law firm"
-            image={Pulkeet}
+            name="Eddie Mwiti"
+            title="Associate Lawyer"
+            image={Eddie}
           />
           <TeamMember
-            name="Pulkeet Singh"
-            title="Founder of KWCO Law firm"
-            image={Pulkeet}
-          />
-          <TeamMember
-            name="Pulkeet Singh"
-            title="Founder of KWCO Law firm"
-            image={Pulkeet}
-          />
-          <TeamMember
-            name="Pulkeet Singh"
-            title="Founder of KWCO Law firm"
-            image={Pulkeet}
+            name="Alexander Mutua"
+            title="Trainee Lawyer"
+            image={Alexander}
           />
         </div>
       </div>
