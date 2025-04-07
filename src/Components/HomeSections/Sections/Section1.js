@@ -10,10 +10,10 @@ const Section1 = () => {
           class="block max-w-sm p-6 bg-white border no-underline border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
         >
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Established in 2021
+            Established in 10th June 2015
           </h5>
           <p class="font-normal text-gray-700 dark:text-gray-400">
-            Expert legal and accounting services since 2021.
+            Expert legal and accounting services since 2015.
           </p>
         </a>
       </div>

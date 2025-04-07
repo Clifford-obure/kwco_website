@@ -1,42 +1,42 @@
 import React, { useRef, useState, useEffect } from "react";
-import santoshImage from "./images/santosh.jpg";
+import clientImage from "./images/client.png";
 
 const reviews = [
   {
-    text: "SPN Law and Academy excels in providing top-tier legal education and expert services. Their dedication to excellence ensures graduates and clients alike receive unparalleled quality and expertise.",
-    author: "Santosh Pandey",
-    position: "Advocate",
-    image: santoshImage,
+    text: "KWCO provided legal expertise that transformed our credit recovery process. Their professionalism ensured we retrieved outstanding debts efficiently.",
+    author: "James Mwangi",
+    position: "CEO, Equity Bank",
+    image: clientImage,
   },
   {
-    text: "Perfect place to achieve your goals through excellent guidance of SPN Academay.",
-    author: "Santosh Pandey",
-    position: "Advocate",
-    image: santoshImage,
+    text: "Our company faced challenges in debt collection. Thanks to KWCO, we recovered payments with minimal disputes and smooth legal procedures.",
+    author: "Rose Wanjiru",
+    position: "Finance Director, Safaricom",
+    image: clientImage,
   },
   {
-    text: "SPN Law and Academy excels in providing top-tier legal education and expert services. Their dedication to excellence ensures graduates and clients alike receive unparalleled quality and expertise.",
-    author: "Santosh Pandey",
-    position: "Advocate",
-    image: santoshImage,
+    text: "KWCO’s legal team helped us resolve complex credit issues. Their strategic approach ensured we minimized financial risks and disputes.",
+    author: "David Otieno",
+    position: "MD, KCB Group",
+    image: clientImage,
   },
   {
-    text: "SPN Law and Academy stands at the forefront of legal education and professional services, delivering excellent exceptional quality ,unmatched expertise and trustworthy service.",
-    author: "Bhanu Prakash Pandey ",
-    position: "Student",
-    image: santoshImage,
+    text: "With KWCO’s support, our legal compliance improved significantly. They guided us through credit policy enhancements, protecting our interests.",
+    author: "Lilian Achieng",
+    position: "CFO, Cooperative Bank",
+    image: clientImage,
   },
   {
-    text: "SPN Law and Academy excels in providing top-tier legal education and expert services. Their dedication to excellence ensures graduates and clients alike receive unparalleled quality and expertise.",
-    author: "Santosh Pandey",
-    position: "Advocate",
-    image: santoshImage,
+    text: "KWCO streamlined our legal processes, making credit collection efficient. Their guidance reduced defaults and enhanced our financial stability.",
+    author: "John Kamau",
+    position: "GM, Family Bank",
+    image: clientImage,
   },
   {
-    text: "SPN Law and Academy excels in providing top-tier legal education and expert services. Their dedication to excellence ensures graduates and clients alike receive unparalleled quality and expertise.",
-    author: "Santosh Pandey",
-    position: "Advocate",
-    image: santoshImage,
+    text: "Their legal services were instrumental in resolving debt recovery cases. KWCO ensured fairness while safeguarding our business operations.",
+    author: "Anne Mutua",
+    position: "Legal Officer, NCBA Bank",
+    image: clientImage,
   },
 ];
 

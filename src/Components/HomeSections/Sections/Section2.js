@@ -1,8 +1,7 @@
 import React from "react";
-import Textra from 'react-textra';
+import Textra from "react-textra";
 
 const Section2 = () => {
-
   return (
     <div className="px-6 md:px-28 m-auto pt-32 md:pt-32">
       <div className="flex flex-col lg:flex-row justify-between items-center">
@@ -31,7 +30,7 @@ const Section2 = () => {
         <div className="w-full lg:w-[50%] flex flex-col items-start">
           <div className="grid gap-1">
             <button className="bg-[#2F4B79] h-12 text-white">
-              20 years of experience
+              9 years of experience
             </button>
             <div>
               <img
@@ -42,8 +41,16 @@ const Section2 = () => {
             </div>
 
             <div className="m-auto">
-
-              <Textra effect="rightLeft" className="bg-[#CEA252] text-xl text-center p-2 w-72 lg:w-80 mt-2  rounded-xl font-serif text-white" data={["Registered Cases 800", "Current Cases 102", "Solved Cases 400", "Unattended Cases 200"]} />
+              <Textra
+                effect="rightLeft"
+                className="bg-[#CEA252] text-xl text-center p-2 w-72 lg:w-80 mt-2  rounded-xl font-serif text-white"
+                data={[
+                  "Registered Cases 800",
+                  "Current Cases 102",
+                  "Solved Cases 400",
+                  "Unattended Cases 200",
+                ]}
+              />
             </div>
           </div>
         </div>

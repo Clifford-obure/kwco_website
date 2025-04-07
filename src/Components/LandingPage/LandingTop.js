@@ -20,16 +20,27 @@ const LandingPage = () => {
               </div>
               <div className="text-4xl md:text-7xl text-white font-bold mb-6">
                 Our Dedication to <span className="text-[#CEA252]">Legal</span>{" "}
-                Mastery
+                & <span className="text-[#CEA252]">Credit</span> Excellence
               </div>{" "}
               {/* Adjusted text size for responsiveness */}
-              <div className="text-white">
+              <div className="text-white mb-6">
                 At KWCO, the law is more than a profession—it's our passion. We
                 are dedicated to justice, integrity, and expert advocacy. Trust
                 our team to protect your rights and navigate legal complexities
                 with care.
               </div>
+              <div className="text-white">
+                Beyond legal services, our{" "}
+                <span className="text-[#CEA252] font-bold">
+                  Credit Management
+                </span>{" "}
+                team provides structured solutions to help you recover
+                outstanding debts efficiently. We ensure businesses and
+                individuals regain financial stability through strategic credit
+                solutions.
+              </div>
             </div>
+
             <div className="flex justify-center items-center relative pb-10 md:pb-[20%] px-5 md:px-[8%] lg:px-0">
               <div className="m-auto w-full md:w-[70%] lg:w-[90%] py-10 md:py-[10%]">
                 <img

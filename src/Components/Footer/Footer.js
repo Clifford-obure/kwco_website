@@ -29,7 +29,7 @@ const Footer = () => {
   ];
   const usefull_links = [
     {
-      text: "",
+      text: "+254713362848",
       link: "",
     },
     {
