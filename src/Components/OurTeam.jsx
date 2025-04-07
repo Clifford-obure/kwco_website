@@ -1,12 +1,12 @@
 import React from "react";
 import Pulkeet from "../Team Members Images/Pulkeet.png";
-import sk from "../Team Members Images/sk.jpg";
-import Boniface from "../Team Members Images/Boniface.jpg";
-import seif from "../Team Members Images/seif.jpg";
+import sk from "../Team Members Images/sk2.jpg";
+import Boniface from "../Team Members Images/Boniface2.jpg";
+import seif from "../Team Members Images/seif2.jpg";
 import jackline from "../Team Members Images/Jackline.jpg";
-import Eddie from "../Team Members Images/Eddie.jpg";
-import Alexander from "../Team Members Images/alexander Mtua.jpg";
-import agwine from "../Team Members Images/angwine.jpg";
+import Eddie from "../Team Members Images/eddie2.jpg";
+import Alexander from "../Team Members Images/Alexander2.jpg";
+import agwine from "../Team Members Images/Melvin.jpg";
 
 function OurTeam() {
   return (
@@ -28,14 +28,14 @@ function OurTeam() {
         </div>
         <div className="ot-team-member-container">
           <TeamMember
-            name="Agwine OTieno"
-            title="Head of Knowledge Management"
-            image={agwine}
-          />
-          <TeamMember
             name="Boniface Wambua Munuve"
             title="Head of Credit Management"
             image={Boniface}
+          />
+          <TeamMember
+            name="Eddie Mwiti"
+            title="Associate Lawyer"
+            image={Eddie}
           />
           <TeamMember
             name="Seif Mohammed "
@@ -43,15 +43,16 @@ function OurTeam() {
             image={seif}
           />
           <TeamMember
+            name="MELVIN ARGWIN"
+            title="Head of Knowledge Management"
+            image={agwine}
+          />
+          <TeamMember
             name="Jackline Jowi"
             title="Credit Management"
             image={jackline}
           />
-          <TeamMember
-            name="Eddie Mwiti"
-            title="Associate Lawyer"
-            image={Eddie}
-          />
+
           <TeamMember
             name="Alexander Mutua"
             title="Trainee Lawyer"

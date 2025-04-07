@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const LandingBottom = () => {
   const cases = [
     {
-      img: "/Images/oooo.jpg",
+      img: "/Images/Kenya police.jpeg",
       date: "17 February, 2021",
       incident: "The Case of  Kenyan Police Brutality",
       title: "Landmark ruling on police use of force in arrests",
@@ -20,7 +20,7 @@ const LandingBottom = () => {
       link: "/",
     },
     {
-      img: "/Images/carCrash.jpg",
+      img: "/Images/National bank of kenya.jpeg",
       date: "5 July, 2019",
       incident: "National Bank of Kenya v. Gitau",
       title: "Supreme Court ruling on bank loan defaults and collateral",

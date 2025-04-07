@@ -12,7 +12,7 @@ const CeoSection = () => {
           <div className=" flex flex-col m-auto items-center">
             <div className="rounded-full overflow-hidden items-center -mb-11 z-30">
               <img
-                src="images/sk.jpg"
+                src="images/sk2.jpg"
                 alt="pic"
                 className="w-24 self-center "
               />
@@ -23,7 +23,7 @@ const CeoSection = () => {
                 Managing Partner
               </p>
               <p className="text-center  -mt-2  text-black opacity-50 font-sans">
-                Pulkeet Singh, founder of KWCO Law, is renowned for his
+                Sammy Waweru, founder of KWCO Law, is renowned for his
                 pioneering legal strategies, commitment to excellence, and
                 dedication to client satisfaction, shaping the firm's reputation
                 with integrity and innovation.
