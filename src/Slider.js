@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { BsPersonCircle } from "react-icons/bs"; // Importing Bootstrap person-circle icon
+import { MdAccountCircle } from "react-icons/md";
 
 const reviews = [
   {
@@ -89,7 +90,10 @@ const TestimonialCarousel = () => {
                 <div className="card-body">
                   <p className="card-text">"{review.text}"</p>
                   <div className="d-flex align-items-center pt-2">
-                    <BsPersonCircle size={50} className="text-secondary me-3" />
+                    <MdAccountCircle
+                      size={50}
+                      className="text-secondary me-3"
+                    />
                     <div>
                       <h5 className="card-title fw-bold">{review.author}</h5>
                       <span className="text-secondary">{review.position}</span>
