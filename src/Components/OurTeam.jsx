@@ -32,18 +32,14 @@ function OurTeam() {
             title="Head of Debt Recoveries"
             image={Boniface}
           />
-          <TeamMember
-            name="Eddie Mwiti"
-            title="Associate Lawyer"
-            image={Eddie}
-          />
+          <TeamMember name="Eddie Mwiti" title="Associate" image={Eddie} />
           <TeamMember
             name="Seif Mohammed "
             title="Debt Recovery Officer"
             image={seif}
           />
           <TeamMember
-            name="MELVIN ARGWIN"
+            name="Melvin Argwine"
             title="Head of Knowledge Management"
             image={agwine}
           />
