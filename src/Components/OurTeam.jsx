@@ -29,7 +29,7 @@ function OurTeam() {
         <div className="ot-team-member-container">
           <TeamMember
             name="Boniface Wambua Munuve"
-            title="Head of Credit Management"
+            title="Head of Debt Recoveries"
             image={Boniface}
           />
           <TeamMember
@@ -39,7 +39,7 @@ function OurTeam() {
           />
           <TeamMember
             name="Seif Mohammed "
-            title="Credit Managemen"
+            title="Debt Recovery Officer"
             image={seif}
           />
           <TeamMember
@@ -49,13 +49,13 @@ function OurTeam() {
           />
           <TeamMember
             name="Jackline Jowi"
-            title="Credit Management"
+            title="Debt Recovery Officer"
             image={jackline}
           />
 
           <TeamMember
             name="Alexander Mutua"
-            title="Trainee Lawyer"
+            title="Advocate Trainee"
             image={Alexander}
           />
         </div>

@@ -8,8 +8,8 @@ function AboutHero() {
         <h1>We Are Right Firm</h1>
         <div className="paraGraph">
           <h3>
-            Welcome to KWCO Law, a distinguished legal firm established in July
-            2021. We are located in the heart of Nairobi, NINE PLANETS
+            Welcome to KWCO Law, a distinguished legal firm established in 10th
+            June 2015. We are located in the heart of Nairobi, NINE PLANETS
             APARTMENTS, SUITE PLUTO P4, KABARNET GARDENS, OPP. THE SUDAN
             EMBASSY, NAIROBI . As a Partnership Firm, we specialize in a range
             of legal and accounting services, dedicated to delivering expert

@@ -21,11 +21,11 @@ const Section2 = () => {
             className="w-full"
             alt="Pic1"
           />
-          <img
+          {/* <img
             src="/Images/SectionsPic/secPic2.jpg"
             className="w-full"
             alt="Pic2"
-          />
+          /> */}
         </div>
         <div className="w-full lg:w-[50%] flex flex-col items-start">
           <div className="grid gap-1">

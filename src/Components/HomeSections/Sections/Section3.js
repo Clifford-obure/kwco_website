@@ -20,7 +20,7 @@ const Section3 = () => {
             />
             <div className="flex items-center bg-white shadow-lg rounded-lg p-2 absolute top-[-40px] md:top-[-80px] lg:top-[-100px] left-[80%] transform -translate-x-1/2 w-36 md:w-52 ">
               <img
-                src="/Images/SectionsPic/secPic6.png"
+                src="/Images/carCrash.jpg"
                 alt="Pic6"
                 className="w-6 h-6 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full"
               />
