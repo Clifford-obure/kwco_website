@@ -34,7 +34,7 @@ function OurTeam() {
           />
           <TeamMember name="Eddie Mwiti" title="Associate" image={Eddie} />
           <TeamMember
-            name="Seif Mohammed "
+            name="Seif Mohammed"
             title="Debt Recovery Officer"
             image={seif}
           />
@@ -48,7 +48,6 @@ function OurTeam() {
             title="Debt Recovery Officer"
             image={jackline}
           />
-
           <TeamMember
             name="Alexander Mutua"
             title="Advocate Trainee"
@@ -64,7 +63,7 @@ const TeamMember = ({ name, title, image }) => {
   return (
     <div className="ot-team-member-name-box">
       <div className="ot-team-member-details">
-        <img src={image} alt={name} />
+        <img src={image} alt={name} className="team-member-img" />
         <h3>{name}</h3>
         <p>{title}</p>
       </div>
