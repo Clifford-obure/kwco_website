@@ -12,7 +12,7 @@ const CeoSection = () => {
           <div className=" flex flex-col m-auto items-center">
             <div className="rounded-full overflow-hidden items-center -mb-11 z-30">
               <img
-                src="images/sk2.jpg"
+                src="images/sk.jpg"
                 alt="pic"
                 className="w-24 self-center "
               />

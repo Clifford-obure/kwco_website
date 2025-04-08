@@ -28,7 +28,7 @@ const LandingBottom = () => {
       link: "/",
     },
     {
-      img: "/images/OIP.png",
+      img: "/images/law2.png",
       date: "30 March, 2020",
       incident: "Matiang’i v. Independent Electoral and Boundaries Commission",
       title: "Case against electoral body over credibility of elections",
