@@ -8,9 +8,13 @@ function OurMission() {
   return (
     <div className="om-container">
       <div className="om-header">
-        <h2>Our Mission and Values</h2>
-        <h1>Crafting Excellence in KWCO Law Academy</h1>
-        <h3>
+        <h2 className="text-2xl font-semibold font-serif">
+          Our Mission and Values
+        </h2>
+        <h1 className="text-3xl md:text-4xl font-bold font-serif">
+          Crafting Excellence in KWCO Law Firm
+        </h1>
+        <h3 className="text-lg font-light font-serif">
           Crafting excellence at KWCO Law Academy involves a relentless pursuit
           of legal mastery, fostering a culture of academic rigor, and nurturing
           future legal professionals. Our commitment to excellence is reflected

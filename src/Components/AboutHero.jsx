@@ -5,9 +5,11 @@ function AboutHero() {
   return (
     <div className="container">
       <div className="leftContainer">
-        <h1>We Are Right Firm</h1>
+        <h1 className="text-3xl md:text-4xl font-semibold font-serif">
+          We Are Right Firm
+        </h1>
         <div className="paraGraph">
-          <h3>
+          <h3 className="custom-font">
             Welcome to KWCO Law, a distinguished legal firm established in 10th
             June 2015. We are located in the heart of Nairobi, NINE PLANETS
             APARTMENTS, SUITE PLUTO P4, KABARNET GARDENS, OPP. THE SUDAN
