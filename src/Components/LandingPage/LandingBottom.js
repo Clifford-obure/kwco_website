@@ -41,7 +41,7 @@ const LandingBottom = () => {
     <div className="p-4 pt-14 md:px-28 md:pt-20 bg-[#2F4B79] pb-20">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold text-white mb-8">
-          Recent Case Uncovered
+          Recent Trending Cases
         </h1>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
