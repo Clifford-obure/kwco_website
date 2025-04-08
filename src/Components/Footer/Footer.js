@@ -85,7 +85,9 @@ const Footer = () => {
               alt="Company Logo"
               className="h-12 w-auto bg-white rounded-full"
             />
-            <div className="text-center pt-3 ps-3 font-semibold">KWCO LAW.</div>
+            <div className="text-center pt-3 ps-3 font-semibold">
+              KWCO LAW FIRM.
+            </div>
           </div>
 
           <div className="footer-social mb-4 lg:mb-0 lg:pt-8 text-center lg:text-left">
@@ -137,7 +139,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-info mb-4 lg:mb-0 text-center lg:text-left ">
-          <p className="text-lg font-medium ">Founder Of KWCO law.</p>
+          <p className="text-lg font-medium ">Founder Of KWCO lAW FIRM.</p>
           <p className="text-sm opacity-60 hover:text-[#CEA252] cursor-pointer">
             Sammy
           </p>
