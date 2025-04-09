@@ -13,12 +13,12 @@ const Section3 = () => {
               alt="Pic4"
               className="w-full shadow-lg rounded-lg"
             />
-            <img
+            {/* <img
               src="/Images/SectionsPic/secPic5.png"
               alt="Pic5"
               className="absolute w-40 md:w-32 lg:w-40 top-[-30px] md:top-[-60px] lg:top-[-80px] left-[50%] transform -translate-x-1/2 shadow-lg rounded-lg"
-            />
-            <div className="flex items-center bg-white shadow-lg rounded-lg p-2 absolute top-[-40px] md:top-[-80px] lg:top-[-100px] left-[80%] transform -translate-x-1/2 w-36 md:w-52 ">
+            /> */}
+            {/* <div className="flex items-center bg-white shadow-lg rounded-lg p-2 absolute top-[-40px] md:top-[-80px] lg:top-[-100px] left-[80%] transform -translate-x-1/2 w-36 md:w-52 ">
               <img
                 src="/Images/carCrash.jpg"
                 alt="Pic6"
@@ -32,7 +32,7 @@ const Section3 = () => {
                   Satisfied Clients
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -40,33 +40,33 @@ const Section3 = () => {
         <div className="flex flex-col items-center md:items-start mx-2 md:mx-4 lg:mx-16">
           <div className="lg:px-28 lg:pt-10 lg:space-y-3 text-center md:text-left">
             <h1 className="text-base md:text-3xl lg:text-4xl text-[#2F4B79] font-semibold">
-              Our Elite Attorneys & Credit Experts:
+              Our Elite Lawyers & Credit Experts:
               <br />
               Your Strongest Legal & Financial Support
             </h1>
             <p className="text-sm lg:w-full text-[#2F4B79]">
-              At <span className="font-bold">KWCO</span>, we pride ourselves on
-              having a team of top-tier attorneys and credit management
-              specialists dedicated to providing you with exceptional support.
-              Our experienced legal team ensures justice and protection for our
-              clients, while our credit experts help recover outstanding debts
-              efficiently.
+              At <span className="font-bold">KWCO advocates</span>, we pride
+              ourselves on having a team of top-tier lawyers and credit
+              management specialists dedicated to providing you with exceptional
+              support. Our experienced legal team ensures justice and protection
+              for our clients, while our credit management experts help recover
+              outstanding debts efficiently.
               <br />
               <br />
               Whether you need assistance with family law, criminal defense,
-              corporate matters, or personal injury cases, our attorneys are
+              corporate matters, or personal injury cases, our legal team is
               here to guide you every step of the way with expertise,
               compassion, and unwavering dedication. On the financial side, our
               credit management team specializes in debt recovery, financial
-              dispute resolution, and strategic credit solutions to protect your
-              business and personal finances.
+              dispute resolution, and of strategic credit solutions to protect
+              your business and personal finances.
             </p>
           </div>
           <div className="lg:ms-28 mt-10">
-            <button className="bg-[#CEA252] hover:bg-[#b38b3f] flex items-center gap-1 md:gap-2 text-[10px] md:text-base h-10 text-white rounded-full px-4 py-2 transition-all duration-300">
+            {/* <button className="bg-[#CEA252] hover:bg-[#b38b3f] flex items-center gap-1 md:gap-2 text-[10px] md:text-base h-10 text-white rounded-full px-4 py-2 transition-all duration-300">
               Learn More
               <MdArrowOutward className="m-auto" />
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

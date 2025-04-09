@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import sk2 from "../../../Team Members Images/sk2.jpg";
-import eddie from "../../../Team Members Images/eddie2.jpg";
-import alexender from "../../../Team Members Images/Alexander2.jpg";
+import eddie from "../../../Team Members Images/Alexender3.png";
+import alexender from "../../../Team Members Images/eddiel.png";
 
 const teamMembers = [
   {
@@ -12,15 +12,15 @@ const teamMembers = [
     title: "Managing Partner",
     imgSrc: sk2,
     review:
-      "As the visionary leader of KWCO, SAM has been instrumental in driving excellence across our legal and credit management services. Through strategic leadership, he ensures that clients receive top-tier legal representation and effective financial solutions, reinforcing KWCO's reputation for reliability and success.",
+      "As the visionary leader of KWCO advocates, Sammy k. Wawereu has been instrumental in driving excellence across our legal and credit management services. Through strategic leadership, he ensures that clients receive top-tier legal representation and effective financial solutions, reinforcing KWCO's reputation for reliability and success.",
     rating: 5,
   },
   {
     name: "EDDIE MWITI",
-    title: "Associate",
+    title: "Senior Associate",
     imgSrc: eddie,
     review:
-      "With a keen eye for legal detail and a passion for justice, EDDIE plays a crucial role in handling complex legal matters at KWCO. His commitment to thorough case analysis and strategic advocacy ensures that clients receive the best representation and solutions tailored to their needs.",
+      "With a keen eye for legal detail and a passion for justice, Eddie plays a crucial role in handling complex legal matters at KWCO advocates. His commitment to thorough case analysis and strategic advocacy ensures that clients receive the best representation and solutions tailored to their needs.",
     rating: 4.5,
   },
   {
@@ -28,7 +28,7 @@ const teamMembers = [
     title: "Advocate Traineer",
     imgSrc: alexender,
     review:
-      "As an emerging legal professional, ALEXANDER brings fresh energy and dedication to KWCO. Under the mentorship of seasoned experts, he actively contributes to case research, legal documentation, and client support, ensuring high standards of service and continuous firm growth.",
+      "As an emerging legal professional, Alexander brings fresh energy and dedication to KWCO advocates. Under the mentorship of seasoned experts, he actively contributes to case research, legal documentation, and client support, ensuring high standards of service and continuous firm growth.",
     rating: 4,
   },
 ];
