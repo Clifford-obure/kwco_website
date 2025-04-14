@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import sk2 from "../../../Team Members Images/sk2.jpg";
 import eddie from "../../../Team Members Images/Alexender3.png";
-import alexender from "../../../Team Members Images/eddiel.png";
+import alexender from "../../../Team Members Images/Alexender77.jpeg";
 
 const teamMembers = [
   {
@@ -109,7 +109,7 @@ const Section5 = () => {
                     <img
                       src={member.imgSrc}
                       alt={member.name}
-                      className="w-48 h-48 rounded-full border-4 border-white object-cover shadow-md"
+                      className="w-48 h-48 rounded-full  border-4 border-white object-cover shadow-md"
                     />
                   </div>
                 </div>

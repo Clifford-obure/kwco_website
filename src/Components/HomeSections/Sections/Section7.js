@@ -2,28 +2,28 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Boniface from "../../../Team Members Images/Boniface2.jpg";
-import seif from "../../../Team Members Images/seif2.jpg";
-import jackline from "../../../Team Members Images/Jackline.jpg";
+import Boniface from "../../../Team Members Images/bonny.png";
+import seif from "../../../Team Members Images/seif44.png";
+import jackline from "../../../Team Members Images/jackline55.jpg";
 
 const teamMembers = [
   {
-    name: "BONIFACE MUNUVEU",
-    title: "Head of Debt Recoveries",
+    name: "BONIFACE WAMBUA",
+    title: "Head of Recoveries",
     imgSrc: Boniface,
     review:
       "With extensive experience in financial dispute resolution, BONIFACE leads the credit collection team with unmatched expertise. His strategic approach to debt recovery ensures that clients receive swift and effective solutions, maintaining positive relationships and trust with every interaction.",
   },
   {
     name: "SEIF MOHAMMED",
-    title: "Debt Recovery Officer",
+    title: "Business Development Manager",
     imgSrc: seif,
     review:
       "Dedicated and results-driven, SEIF has consistently demonstrated an ability to navigate complex credit issues with professionalism and care. His ability to manage client expectations and resolve outstanding debts efficiently has been key in driving client satisfaction.",
   },
   {
-    name: "JACKLINE .A. JOWI",
-    title: "Debt Recovery Officer",
+    name: "JACKLINE JOWI",
+    title: "Debt Collection",
     imgSrc: jackline,
     review:
       "As a proactive member of the credit collection team, JACKLINE is committed to maintaining a high level of client service. With a focus on effective communication and problem-solving, he ensures clients feel heard and supported throughout the debt recovery process.",
@@ -101,11 +101,11 @@ const Section7 = () => {
             <div key={index} className="px-4 py-2 outline-none">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-full">
                 {/* Image section - now takes up more space with no text overlay */}
-                <div className="h-80 overflow-hidden">
+                <div className="h-80  overflow-hidden">
                   <img
                     src={member.imgSrc}
                     alt={member.name}
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full rounded-lg object-contain object-top"
                   />
                 </div>
 
