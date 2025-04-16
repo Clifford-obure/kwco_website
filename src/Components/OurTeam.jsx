@@ -15,7 +15,7 @@ function OurTeam() {
   const teamMembers = [
     {
       id: 2,
-      name: "SK",
+      name: "Sammy Waweru",
       title: "Managing Partner & Head of Dispute Resolution",
       bio: "Specializing in complex litigation and alternative dispute resolution.",
       featured: true,
@@ -23,35 +23,35 @@ function OurTeam() {
     },
     {
       id: 3,
-      name: "Boniface",
+      name: "Boniface Wambua",
       title: "Head of Recoveries",
       bio: "Expert in debt recovery and asset tracing with a proven track record of successful cases.",
       image: Boniface,
     },
     {
       id: 4,
-      name: "Eddie",
+      name: "Eddie Mwiti",
       title: "Senior Associate",
       bio: "Focuses on commercial litigation and corporate advisory.",
       image: Eddie,
     },
     {
       id: 5,
-      name: "Seif",
+      name: "Seif Mohammed",
       title: "Business Development Manager",
       bio: "Drives the firm's growth strategy and client relationships.",
       image: seif,
     },
     {
       id: 6,
-      name: "Melvin Agwine",
-      title: "Associate",
+      name: "Melvin Onyango",
+      title: "Seif Mohammed ",
       bio: "Handles diverse cases with particular strength in legal research and documentation.",
       image: agwine,
     },
     {
       id: 7,
-      name: "Jackline",
+      name: "Jackline Jowi",
       title: "Debt Collection",
       bio: "Specializes in commercial debt recovery and negotiation strategies.",
       image: jackline,
@@ -59,7 +59,7 @@ function OurTeam() {
 
     {
       id: 8,
-      name: "Alexander",
+      name: "Alexander Mutua",
       title: "Pupil",
       bio: "Developing expertise across multiple practice areas with a focus on corporate law.",
       image: Alexander,
@@ -78,10 +78,10 @@ function OurTeam() {
             Our Team
           </h2>
           <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Meet Our Dedicated Team Of KWCO Law Firm
+            Meet Our Dedicated Team Of KWCO Advocates
           </h3>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
-            Crafting excellence at KWCO Law Firm involves a relentless pursuit
+            Crafting excellence at KWCO Advocates involves a relentless pursuit
             of legal mastery, fostering a culture of academic rigor, and
             nurturing future legal professionals. Our commitment to excellence
             is reflected in our dedication to shaping skilled, ethical, and
@@ -154,7 +154,7 @@ function OurTeam() {
         )}
 
         {/* Management Team - Second Row */}
-        <div className="mb-16">
+        <div className="mb-3">
           {/* <h4 className="text-center text-xl font-semibold text-gray-800 mb-8">
             Management Team
           </h4> */}
@@ -195,9 +195,9 @@ function OurTeam() {
 
 const TeamMember = ({ name, title, bio, image }) => {
   return (
-    <div className="bg-white overflow-hidden shadow-lg rounded-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
+    <div className="bg-white overflow-hidden shadow-lg rounded-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 ">
       <div className="h-50 overflow-hidden">
-        <img src={image} alt={name} className="w-full h-full object-contain " />
+        <img src={image} alt={name} className="w-full h-full object-cover " />
       </div>
       <div className="p-6">
         <h3 className="text-lg font-medium text-gray-900">{name}</h3>
@@ -209,7 +209,7 @@ const TeamMember = ({ name, title, bio, image }) => {
             className="text-gray-400 hover:text-indigo-600 transition-colors"
           >
             <span className="sr-only">LinkedIn</span>
-            <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+            <svg className=" w-5" fill="currentColor" viewBox="0 0 20 20">
               <path
                 fillRule="evenodd"
                 d="M16.338 16.338H13.67V12.16c0-1.005-.02-2.3-1.39-2.3-1.39 0-1.6 1.097-1.6 2.23v4.248h-2.667V8h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.092v4.463zM5.5 6.833a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm1.334 9.505H4.166V8h2.668v8.338z"

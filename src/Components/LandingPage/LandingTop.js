@@ -44,9 +44,13 @@ const LandingPage = () => {
                 We bring you
               </div> */}
               <div className="text-4xl md:text-7xl text-blue-900 font-bold mb-6">
-                Our Dedication to <span className="text-yellow-600">Legal</span>{" "}
-                & <span className="text-yellow-600">Credit Management</span>{" "}
-                Excellence
+                Our Dedication to{" "}
+                <span className="text-yellow-600">Bespoke</span> &{" "}
+                <span className="text-yellow-600">
+                  {" "}
+                  Legal Services and Dispute Resolution
+                </span>{" "}
+                Dispute Resolution
               </div>
               <div className="text-blue-900 mb-6">
                 {/* At KWCO advocates, the law is more than a profession, it's our

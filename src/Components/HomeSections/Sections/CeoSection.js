@@ -23,7 +23,7 @@ const CeoSection = () => {
                 Managing Partner
               </p>
               <p className="text-center  -mt-2  text-black opacity-50 font-sans">
-                Sammy Waweru, founder of KWCO Law, is renowned for his
+                Sammy Waweru, founder of KWCO Advocates, is renowned for his
                 pioneering legal strategies, commitment to excellence, and
                 dedication to client satisfaction, shaping the firm's reputation
                 with integrity and innovation.

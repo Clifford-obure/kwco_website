@@ -139,7 +139,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-info mb-4 lg:mb-0 text-center lg:text-left ">
-          <p className="text-lg font-medium ">Founder Of KWCO lAW FIRM.</p>
+          <p className="text-lg font-medium ">Founder Of KWCO Advocates.</p>
           <p className="text-sm opacity-60 hover:text-[#CEA252] cursor-pointer">
             Sammy
           </p>
