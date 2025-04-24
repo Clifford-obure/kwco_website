@@ -45,7 +45,7 @@ function OurTeam() {
     {
       id: 6,
       name: "Melvin Onyango",
-      title: "Seif Mohammed ",
+      title: " Associate, Head of Knowledge ",
       bio: "Handles diverse cases with particular strength in legal research and documentation.",
       image: agwine,
     },
@@ -95,13 +95,13 @@ function OurTeam() {
             <h4 className="text-center text-xl font-semibold text-gray-800 mb-8">
               Leadership
             </h4>
-            <div className="max-w-4xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden pt-10 pb-5">
+            <div className="max-w-4xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden pt-6 pb-4">
               <div className="md:flex">
-                <div className="md:w-1/3 h-66 overflow-hidden">
+                <div className="md:w-1/3 h-68 overflow-hidden flex items-center justify-center">
                   <img
                     src={ceo.image}
                     alt={ceo.name}
-                    className="w-full h-full  object-cover "
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="md:w-2/3 p-8">
@@ -154,11 +154,8 @@ function OurTeam() {
         )}
 
         {/* Management Team - Second Row */}
-        <div className="mb-3">
-          {/* <h4 className="text-center text-xl font-semibold text-gray-800 mb-8">
-            Management Team
-          </h4> */}
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mb-16">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
             {otherMembers.slice(0, 3).map((member) => (
               <TeamMember
                 key={member.id}
@@ -172,11 +169,8 @@ function OurTeam() {
         </div>
 
         {/* Associates - Third Row */}
-        <div>
-          {/* <h4 className="text-center text-xl font-semibold text-gray-800 mb-8">
-            Associates & Support Staff
-          </h4> */}
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mb-16">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
             {otherMembers.slice(3).map((member) => (
               <TeamMember
                 key={member.id}
@@ -195,21 +189,21 @@ function OurTeam() {
 
 const TeamMember = ({ name, title, bio, image }) => {
   return (
-    <div className="bg-white overflow-hidden shadow-lg rounded-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 ">
-      <div className="h-50 overflow-hidden">
-        <img src={image} alt={name} className="w-full h-full object-cover " />
+    <div className="bg-white overflow-hidden shadow-lg rounded-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
+      <div className="h-68 overflow-hidden flex items-center justify-center bg-gray-50">
+        <img src={image} alt={name} className="w-full h-68 object-cover" />
       </div>
-      <div className="p-6">
+      <div className="p-4">
         <h3 className="text-lg font-medium text-gray-900">{name}</h3>
         <p className="mt-1 text-sm text-indigo-600 font-medium">{title}</p>
-        {bio && <p className="mt-3 text-sm text-gray-500">{bio}</p>}
-        <div className="mt-4 flex space-x-3">
+        {bio && <p className="mt-2 text-xs text-gray-500">{bio}</p>}
+        <div className="mt-3 flex space-x-3">
           <a
             href="#"
             className="text-gray-400 hover:text-indigo-600 transition-colors"
           >
             <span className="sr-only">LinkedIn</span>
-            <svg className=" w-5" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
               <path
                 fillRule="evenodd"
                 d="M16.338 16.338H13.67V12.16c0-1.005-.02-2.3-1.39-2.3-1.39 0-1.6 1.097-1.6 2.23v4.248h-2.667V8h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.092v4.463zM5.5 6.833a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm1.334 9.505H4.166V8h2.668v8.338z"

@@ -45,11 +45,8 @@ const LandingPage = () => {
               </div> */}
               <div className="text-4xl md:text-7xl text-blue-900 font-bold mb-6">
                 Our Dedication to{" "}
-                <span className="text-yellow-600">Bespoke</span> &{" "}
-                <span className="text-yellow-600">
-                  {" "}
-                  Legal Services and Dispute Resolution
-                </span>{" "}
+                <span className="text-yellow-600">Bespoke</span>
+                <span className="text-yellow-600"> Legal Services & </span>{" "}
                 Dispute Resolution
               </div>
               <div className="text-blue-900 mb-6">
