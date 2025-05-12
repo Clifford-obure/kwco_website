@@ -1,14 +1,21 @@
 // src/pages/OurPeople.js
 import React from "react";
-import teamicon from "./../assets/headers/ourteam.png"
+import teamicon from "./../assets/headers/ourteam.png";
 import { Mail, Phone, Linkedin, Award } from "lucide-react";
+import sammy from "./../assets/skk.png";
+import Jackline from "./../assets/team/jackline55.jpg";
+import seif from "./../assets/team/seif44.png";
+import melvin from "./../assets/team/Melvin.jpg";
+import alexender from "./../assets/team/Alexander2.jpg";
+import eddie from "./../assets/eddie2.jpg";
+import bonny from "./../assets/team/Boniface2.jpg";
 
 const OurPeople = () => {
-  const  partners = [
+  const partners = [
     {
       name: "Kamuti Waweru",
       position: "Managing Partner",
-      image: "src/assets/skk.png",
+      image: sammy,
       expertise: ["Commercial Litigation", "Corporate Law", "Real Estate"],
       education: [
         "LLB (Hons), University of Nairobi",
@@ -22,43 +29,39 @@ const OurPeople = () => {
       phone: "+254 722 123 456",
       linkedin: "#",
     },
-   
   ];
 
   const associates = [
     {
       name: "Jackline Jowi",
       position: "Debt Collection",
-      image: "src/assets/team/jackline55.jpg",
+      image: Jackline,
     },
     {
       name: "Seif Mohammed",
       position: " Debt Collection  ",
-      image: "src/assets/team/seif44.png",
-
+      image: seif,
     },
 
     {
       name: "Melvin Onyango",
       position: "Head of Knowledge ",
-      image: "src/assets/team/Melvin.jpg",
-     
+      image: melvin,
     },
     {
       name: "Alexender Mtua",
       position: "pupil ",
-      image: "src/assets/team/Alexander2.jpg",
-     
+      image: alexender,
     },
     {
       name: "Eddie Mwiti",
       position: "Senior Associate",
-      image: "src/assets/eddie2.jpg",
+      image: eddie,
     },
     {
       name: "Bonniface Wambua",
       position: "Debt collection",
-      image: "src/assets/team/Boniface2.jpg",
+      image: bonny,
     },
   ];
 
@@ -95,89 +98,114 @@ const OurPeople = () => {
 
       {/* Partners Section */}
       <section className="py-20 bg-gray-50">
-  <div className="max-w-7xl mx-auto px-4">
-    <h2 className="text-4xl font-bold text-center mb-16">Managing Partner</h2>
-    <div className="space-y-20">
-      {partners.map((partner, index) => (
-        <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <div className="flex items-center space-x-8 p-8">
-            <div className="flex-shrink-0 w-1/3">
-              <img
-                src={partner.image}
-                alt={partner.name}
-                className="w-full rounded-lg object-cover"
-              />
-            </div>
-            <div className="flex-1">
-              <h3 className="text-3xl font-bold mb-2">{partner.name}</h3>
-              <p className="text-xl text-amber-600 font-semibold mb-4">{partner.position}</p>
-              <p className="text-gray-600 mb-6">{partner.bio}</p>
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Managing Partner
+          </h2>
+          <div className="space-y-20">
+            {partners.map((partner, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-lg overflow-hidden"
+              >
+                <div className="flex items-center space-x-8 p-8">
+                  <div className="flex-shrink-0 w-1/3">
+                    <img
+                      src={partner.image}
+                      alt={partner.name}
+                      className="w-full rounded-lg object-contain"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-3xl font-bold mb-2">{partner.name}</h3>
+                    <p className="text-xl text-amber-600 font-semibold mb-4">
+                      {partner.position}
+                    </p>
+                    <p className="text-gray-600 mb-6">{partner.bio}</p>
 
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="font-semibold text-gray-700 mb-3">Areas of Expertise</h4>
-                  <ul className="space-y-2">
-                    {partner.expertise.map((area, idx) => (
-                      <li key={idx} className="flex items-center text-gray-600">
-                        <Award className="w-4 h-4 text-amber-600 mr-2" />
-                        {area}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-700 mb-3">Education & Qualifications</h4>
-                  <ul className="space-y-2">
-                    {partner.education.map((edu, idx) => (
-                      <li key={idx} className="text-gray-600">• {edu}</li>
-                    ))}
-                  </ul>
+                    <div className="grid md:grid-cols-2 gap-8">
+                      <div>
+                        <h4 className="font-semibold text-gray-700 mb-3">
+                          Areas of Expertise
+                        </h4>
+                        <ul className="space-y-2">
+                          {partner.expertise.map((area, idx) => (
+                            <li
+                              key={idx}
+                              className="flex items-center text-gray-600"
+                            >
+                              <Award className="w-4 h-4 text-amber-600 mr-2" />
+                              {area}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-700 mb-3">
+                          Education & Qualifications
+                        </h4>
+                        <ul className="space-y-2">
+                          {partner.education.map((edu, idx) => (
+                            <li key={idx} className="text-gray-600">
+                              • {edu}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="mt-6">
+                      <span className="inline-block bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold">
+                        {partner.experience} Experience
+                      </span>
+                    </div>
+
+                    <div className="mt-6">
+                      <h4 className="font-semibold text-gray-700 mb-3">
+                        Contact
+                      </h4>
+                      <div className="flex items-center text-gray-600 mb-2">
+                        <Mail className="w-4 h-4 mr-2" />
+                        <a
+                          href={`mailto:${partner.email}`}
+                          className="hover:text-amber-600"
+                        >
+                          {partner.email}
+                        </a>
+                      </div>
+                      <div className="flex items-center text-gray-600 mb-2">
+                        <Phone className="w-4 h-4 mr-2" />
+                        <a
+                          href={`tel:${partner.phone}`}
+                          className="hover:text-amber-600"
+                        >
+                          {partner.phone}
+                        </a>
+                      </div>
+                      <div className="flex items-center text-gray-600">
+                        <Linkedin className="w-4 h-4 mr-2" />
+                        <a
+                          href={partner.linkedin}
+                          className="hover:text-amber-600"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          LinkedIn Profile
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <div className="mt-6">
-                <span className="inline-block bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold">
-                  {partner.experience} Experience
-                </span>
-              </div>
-
-              <div className="mt-6">
-                <h4 className="font-semibold text-gray-700 mb-3">Contact</h4>
-                <div className="flex items-center text-gray-600 mb-2">
-                  <Mail className="w-4 h-4 mr-2" />
-                  <a href={`mailto:${partner.email}`} className="hover:text-amber-600">
-                    {partner.email}
-                  </a>
-                </div>
-                <div className="flex items-center text-gray-600 mb-2">
-                  <Phone className="w-4 h-4 mr-2" />
-                  <a href={`tel:${partner.phone}`} className="hover:text-amber-600">
-                    {partner.phone}
-                  </a>
-                </div>
-                <div className="flex items-center text-gray-600">
-                  <Linkedin className="w-4 h-4 mr-2" />
-                  <a href={partner.linkedin} className="hover:text-amber-600" target="_blank" rel="noopener noreferrer">
-                    LinkedIn Profile
-                  </a>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-
+      </section>
 
       {/* Associates Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Our Team
-          </h2>
+          <h2 className="text-4xl font-bold text-center mb-16">Our Team</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {associates.map((associate, index) => (
               <div
@@ -194,8 +222,6 @@ const OurPeople = () => {
                   <p className="text-amber-600 font-semibold mb-3">
                     {associate.position}
                   </p>
-                 
-                  
                 </div>
               </div>
             ))}
