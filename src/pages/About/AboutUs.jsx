@@ -29,10 +29,9 @@ const AboutUs = () => {
   ];
 
   const stats = [
-    { number: "50+", label: "Years of Experience" },
+    { number: "10+", label: "Years of Experience" },
     { number: "1000+", label: "Cases Won" },
     { number: "500+", label: "Happy Clients" },
-    { number: "15+", label: "Legal Experts" },
   ];
 
   return (
@@ -47,10 +46,9 @@ const AboutUs = () => {
         }}
       />
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl font-bold mb-4">About KWCO</h1>
+        <h1 className="text-5xl font-bold mb-4">About KWCO Advocates</h1>
         <p className="text-xl">
-          Kamuti Waweru & Co. Advocates - Your Trusted Legal Partner in Kenya
-        </p>
+        Kamuti Waweru & Co. Advocates - Your Trusted Legal Partner in Kenya.        </p>
       </div>
     </section>
   
@@ -63,11 +61,7 @@ const AboutUs = () => {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">Who We Are</h2>
             <p className="text-xl text-gray-600">
-              KWCO is a premier law firm in Nairobi, Kenya, with over 50 years
-              of cumulative experience in the Kenyan legal system. We pride
-              ourselves on being a top-notch litigation and commercial law firm
-              serving both local and international clients.
-            </p>
+            KWCO Advocates is a premier law firm in Nairobi, Kenya. Established on 10th June 2015, we pride ourselves on being a top-notch lawfirm specializing in litigation, conveyancing, debt collection and dispute resolution, delivering strategic, client-centered solutions tailored to individuals, businesses, and institutions nationwide. We combine modern legal expertise with a commitment to excellence, KWCO Advocates ensures efficient, results driven representation across all sectors</p>
           </div>
 
           {/* About Sections Grid */}
@@ -107,7 +101,7 @@ const AboutUs = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16">
-            Why Choose KWCO?
+            Why Choose KWCO Advocates?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">

@@ -1,7 +1,7 @@
 // src/pages/About/CoreValues.js
 import React from "react";
 import { Shield, Scale, Heart, Award, Users, Lightbulb } from "lucide-react";
-import law from "./../../assets/law.png";
+import law from "./../../assets/client/img2.jpg";
 
 const CoreValues = () => {
   const values = [
@@ -84,13 +84,13 @@ const CoreValues = () => {
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center">
         <div
-          className="absolute inset-0 bg-contain bg-no-repeat bg-center"
-          style={{
+                 className="absolute inset-0 bg-cover bg-no-repeat bg-center w-full h-full"
+                 style={{
             backgroundImage: `url(${law})`,
-            filter: "brightness(0.4)",
+            filter: "brightness(0.2)",
           }}
         />
-        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl font-bold mb-4">Our Core Values</h1>
           <p className="text-xl">The Principles That Guide Everything We Do</p>
         </div>
@@ -100,7 +100,7 @@ const CoreValues = () => {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-xl text-gray-600 mb-8">
-            At KWCO, our core values are more than just words – they are the
+            At KWCO Advocates, our core values are more than just words – they are the
             foundation of our practice and the principles that guide every
             decision we make. These values shape our culture, define our
             approach to law, and ensure we deliver the highest quality service
@@ -164,7 +164,7 @@ const CoreValues = () => {
               </p>
               <p className="text-gray-600 mb-6">
                 Every member of our team is committed to upholding these values,
-                ensuring that KWCO remains a firm you can trust with your most
+                ensuring that KWCO  Advocates remains a firm you can trust with your most
                 important legal matters.
               </p>
               <a

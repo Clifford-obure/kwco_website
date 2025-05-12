@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // src/pages/OurPeople.js
 import React from "react";
 import teamicon from "./../assets/headers/ourteam.png";
@@ -15,7 +16,7 @@ const OurPeople = () => {
     {
       name: "Kamuti Waweru",
       position: "Managing Partner",
-      image: sammy,
+      image: "src/assets/skk.png",
       expertise: ["Commercial Litigation", "Corporate Law", "Real Estate"],
       education: [
         "LLB (Hons), University of Nairobi",
@@ -25,9 +26,9 @@ const OurPeople = () => {
 
       experience: "20+ years",
       bio: "Kamuti Waweru is the founding and managing partner of KWCO. With over 20 years of experience in legal practice, he has established himself as one of Kenya's leading advocates in commercial litigation and corporate law.",
-      email: "kwaweru@kwco.co.ke",
-      phone: "+254 722 123 456",
-      linkedin: "#",
+      email: "skwaweru@kwco.legal",
+      phone: "+254725766457",
+      linkedin: "www.linkedin.com/in/sk-waweru-52895528",
     },
   ];
 
@@ -35,12 +36,12 @@ const OurPeople = () => {
     {
       name: "Jackline Jowi",
       position: "Debt Collection",
-      image: Jackline,
+      image: "src/assets/team/jackline55.jpg",
     },
     {
       name: "Seif Mohammed",
       position: " Debt Collection  ",
-      image: seif,
+      image: "src/assets/team/seif44.png",
     },
 
     {
@@ -58,10 +59,11 @@ const OurPeople = () => {
       position: "Senior Associate",
       image: eddie,
     },
+
     {
       name: "Bonniface Wambua",
       position: "Debt collection",
-      image: bonny,
+      image: "src/assets/team/Boniface2.jpg",
     },
   ];
 
@@ -76,22 +78,28 @@ const OurPeople = () => {
             filter: "brightness(0.4)",
           }}
         />
-        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4">Our People</h1>
-          <p className="text-xl">
-            Meet the Legal Experts Behind KWCO's Success
-          </p>
-        </div>
       </section>
 
       {/* Introduction */}
       <section className="py-20">
+        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
+          <h1 className="text-5xl font-bold mb-4">Our People</h1>
+          <p className="text-xl  font-bold ">
+            Meet the Legal Experts Behind KWCO's Success
+          </p>
+        </div>
+        <br />
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-xl text-gray-600">
-            Our team of experienced lawyers and legal professionals brings
-            together expertise across various practice areas. With a commitment
-            to excellence and client satisfaction, our people are the foundation
-            of KWCO advocate 's reputation as one of Kenya's leading law firms.
+            KWCO Advocates is powered by a team of seasoned lawyers and legal
+            professionals whose collective expertise spans diverse practice
+            areas, including litigation, debt collection, conveyancing, and
+            dispute resolution. Our unwavering dedication to excellence,
+            innovation, and client-centered service has solidified our
+            reputation as one of Kenya’s premier legal authorities. Our people,
+            driven by integrity, precision, and a passion for justice, are the
+            cornerstone of KWCO Advocates’ standing as a trusted leader in the
+            legallandscape.
           </p>
         </div>
       </section>
