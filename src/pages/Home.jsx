@@ -21,6 +21,9 @@ import {
 } from "lucide-react";
 import law from "./../assets/law.mp4";
 import bank from "./../assets/client/kingdom bank.png";
+import Melvin from "./../assets/team/Melvin.jpg";
+import Jackline from "./../assets/team/jackline55.jpg";
+import Seif from "./../assets/team/seif33.png";
 
 const Home = () => {
   const practiceAreas = [
@@ -88,7 +91,7 @@ const Home = () => {
       expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
       description:
         "Handles diverse cases with particular strength in legal research and documentation.",
-      image: "src/assets/team/Melvin.jpg",
+      image: { Melvin },
     },
     {
       name: "Jackline Jowi",
@@ -96,7 +99,7 @@ const Home = () => {
       expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
       description:
         "Drives the firm's growth strategy and client relationships.",
-      image: "src/assets/team/jackline55.jpg",
+      image: { Jackline },
     },
     {
       name: "Seif Mohamed",
@@ -104,7 +107,7 @@ const Home = () => {
       expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
       description:
         "Drives the firm's growth strategy and client relationships.",
-      image: "src/assets/team/seif33.png",
+      image: { Seif },
     },
   ];
 
