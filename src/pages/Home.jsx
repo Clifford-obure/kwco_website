@@ -20,6 +20,7 @@ import {
   Eye,
 } from "lucide-react";
 import law from "./../assets/law.mp4";
+import bank from "./../assets/client/kingdom bank.png";
 
 const Home = () => {
   const practiceAreas = [
@@ -81,21 +82,20 @@ const Home = () => {
   ];
 
   const teamMembers = [
-   
     {
       name: "Melvin Onyango",
       position: "Knowledge managment",
       expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
       description:
         "Handles diverse cases with particular strength in legal research and documentation.",
-       image: "src/assets/team/Melvin.jpg",
+      image: "src/assets/team/Melvin.jpg",
     },
     {
       name: "Jackline Jowi",
       position: "Debt Collection",
       expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
       description:
-      "Drives the firm's growth strategy and client relationships.",
+        "Drives the firm's growth strategy and client relationships.",
       image: "src/assets/team/jackline55.jpg",
     },
     {
@@ -103,7 +103,7 @@ const Home = () => {
       position: "Business Development Manager",
       expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
       description:
-      "Drives the firm's growth strategy and client relationships.",
+        "Drives the firm's growth strategy and client relationships.",
       image: "src/assets/team/seif33.png",
     },
   ];
@@ -134,21 +134,19 @@ const Home = () => {
 
   const recentInsights = [
     {
-     image: "src/assets/client/kingdom bank.png",
-     title: "Kingdom Bank of Kenya",
-     category: "Financial",
+      image: bank,
+      title: "Kingdom Bank of Kenya",
+      category: "Financial",
     },
     {
       title: "Bidco Africa",
       image: "src/assets/client/bidco_logo.png",
       category: "Financial",
-
-      
     },
     {
       title: "Hashi Energy",
       image: "src/assets/headers/hashi.png",
-      category: "Technology"
+      category: "Technology",
     },
   ];
 
@@ -217,9 +215,13 @@ const Home = () => {
               About KWCO
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              At KWCO Advocates We are a distinguished legal practice committed to delivering exceptional legal practice services across a broad spectrum of practice areas. Our team of seasoned legal practitioner  offer unparalleled expertise, 
-              strategic advocacy and bespoke legal solution tailored to meet the unique needs of our esteemed clientele.
-             </p>
+              At KWCO Advocates We are a distinguished legal practice committed
+              to delivering exceptional legal practice services across a broad
+              spectrum of practice areas. Our team of seasoned legal
+              practitioner offer unparalleled expertise, strategic advocacy and
+              bespoke legal solution tailored to meet the unique needs of our
+              esteemed clientele.
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
@@ -384,13 +386,12 @@ const Home = () => {
                   src={member.image}
                   alt={member.name}
                   className="w-full h-64 object-cover object-top rounded-t-lg"
-                  />
+                />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{member.name}</h3>
                   <p className="text-amber-600 font-semibold mb-4">
                     {member.position}
                   </p>
-                  
                 </div>
               </div>
             ))}
@@ -410,54 +411,57 @@ const Home = () => {
 
       {/* Client Insights Section */}
       <section id="insights" className="py-12 bg-gray-50">
-  <div className="max-w-7xl mx-auto px-4">
-    <div className="text-center mb-10">
-      <h2 className="text-3xl font-bold text-gray-900 mb-2">
-        Our Trusted Clients In Business & Legal Practice
-      </h2>
-      <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-        "Delivering Excellence: Trusted by Leading Organizations for Legal and Credit Collection Services."
-      </p>
-    </div>
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+              Our Trusted Clients In Business & Legal Practice
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              "Delivering Excellence: Trusted by Leading Organizations for Legal
+              and Credit Collection Services."
+            </p>
+          </div>
 
-    {/* Grid Layout for Insights */}
-    <div className="grid md:grid-cols-3 gap-6">
-      {recentInsights.map((insight, index) => (
-        <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-          <div className="flex items-center p-6 space-x-8">
-            {/* Image Section */}
-            <div className="w-1/3">
-              <img
-                src={insight.image}
-                alt={`Insight ${index + 1}`}
-                className="w-full h-32 object-cover rounded-lg"
-              />
-            </div>
-            {/* Text Section */}
-            <div className="flex-1">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                {insight.title}
-              </h3>
-              <p className="text-gray-600">{insight.description}</p>
-            </div>
+          {/* Grid Layout for Insights */}
+          <div className="grid md:grid-cols-3 gap-6">
+            {recentInsights.map((insight, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <div className="flex items-center p-6 space-x-8">
+                  {/* Image Section */}
+                  <div className="w-1/3">
+                    <img
+                      src={insight.image}
+                      alt={`Insight ${index + 1}`}
+                      className="w-full h-32 object-cover rounded-lg"
+                    />
+                  </div>
+                  {/* Text Section */}
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      {insight.title}
+                    </h3>
+                    <p className="text-gray-600">{insight.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* View All Clients Button */}
+          <div className="text-center mt-10">
+            <Link
+              to="/insights"
+              className="inline-flex items-center bg-amber-600 text-white px-6 py-2.5 rounded-lg hover:bg-amber-700 transition"
+            >
+              View All Clients
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Link>
           </div>
         </div>
-      ))}
-    </div>
-
-    {/* View All Clients Button */}
-    <div className="text-center mt-10">
-      <Link
-        to="/insights"
-        className="inline-flex items-center bg-amber-600 text-white px-6 py-2.5 rounded-lg hover:bg-amber-700 transition"
-      >
-        View All Clients
-        <ArrowRight className="w-4 h-4 ml-2" />
-      </Link>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* Testimonials Section */}
       <section className="py-20 bg-amber-600 text-white">
