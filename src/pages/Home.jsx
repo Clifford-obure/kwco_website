@@ -390,7 +390,7 @@ const Home = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-64 object-cover object-top rounded-t-lg"
+                  className="w-full h-64 object-contain object-top rounded-t-lg"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{member.name}</h3>
