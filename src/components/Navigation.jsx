@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, Scale } from "lucide-react";
+import logo from "./../assets/sklogo.jpg";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -126,13 +127,17 @@ const Navigation = () => {
               }
             }}
           >
-            <Scale className="w-8 h-8 text-amber-600" />
-            <div>
+            <img
+              src={logo}
+              alt="kwco logo"
+              style={{ width: "150px", height: "auto" }}
+            />
+            {/* <div>
               <h1 className="text-2xl font-bold text-amber-600">KWCO</h1>
               <p className="text-xs text-gray-600">
                 Kamuti Waweru & Co. Advocates
               </p>
-            </div>
+            </div> */}
           </Link>
 
           {/* Desktop Navigation */}

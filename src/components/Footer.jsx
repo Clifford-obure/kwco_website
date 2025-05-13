@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Scale } from "lucide-react";
+import logo from "./../assets/sklogo.jpg";
 
 const Footer = () => {
   return (
@@ -10,13 +11,18 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Scale className="w-8 h-8 text-amber-500" />
+              <img
+                src={logo}
+                alt="kwco logo"
+                style={{ width: "150px", height: "auto" }}
+              />
+              {/* <Scale className="w-8 h-8 text-amber-500" />
               <div>
                 <h3 className="text-xl font-bold">KWCO</h3>
                 <p className="text-sm text-gray-400">
                   Kamuti Waweru & Co. Advocates
                 </p>
-              </div>
+              </div> */}
             </div>
             <p className="text-gray-400 text-sm">
               A leading law firm in Nairobi, Kenya, committed to excellence in
