@@ -24,6 +24,8 @@ import bank from "./../assets/client/kingdom bank.png";
 import Melvin from "./../assets/team/Melvin.jpg";
 import Jackline from "./../assets/team/jackline55.jpg";
 import Seif from "./../assets/team/seif33.png";
+import bidico from "./../assets/client/bidco_logo.png";
+import hashi from "./../assets/headers/hashi.png";
 
 const Home = () => {
   const practiceAreas = [
@@ -143,12 +145,12 @@ const Home = () => {
     },
     {
       title: "Bidco Africa",
-      image: "src/assets/client/bidco_logo.png",
+      image: bidico,
       category: "Financial",
     },
     {
       title: "Hashi Energy",
-      image: "src/assets/headers/hashi.png",
+      image: hashi,
       category: "Technology",
     },
   ];
