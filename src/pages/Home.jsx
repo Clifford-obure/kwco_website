@@ -91,7 +91,7 @@ const Home = () => {
       expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
       description:
         "Handles diverse cases with particular strength in legal research and documentation.",
-      image: { Melvin },
+      image: Melvin,
     },
     {
       name: "Jackline Jowi",
@@ -99,7 +99,7 @@ const Home = () => {
       expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
       description:
         "Drives the firm's growth strategy and client relationships.",
-      image: { Jackline },
+      image: Jackline,
     },
     {
       name: "Seif Mohamed",
@@ -107,7 +107,7 @@ const Home = () => {
       expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
       description:
         "Drives the firm's growth strategy and client relationships.",
-      image: { Seif },
+      image: Seif,
     },
   ];
 
