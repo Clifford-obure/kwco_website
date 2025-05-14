@@ -94,6 +94,7 @@ const Conveyancing = () => {
       step: "6",
       title: "Registration",
       //hello
+      //my
       description: "Completing property registration with authorities",
     },
   ];
