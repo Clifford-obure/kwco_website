@@ -144,7 +144,7 @@ const PracticeAreas = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16">
-            Why Choose KWCO for Your Legal Needs?
+            Why Choose KWCO Advocates for Your Legal Needs?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">

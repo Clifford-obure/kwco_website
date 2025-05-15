@@ -110,30 +110,27 @@ const Conveyancing = () => {
             filter: "brightness(0.4)",
           }}
         />
-        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
-          <FileText className="w-16 h-16 mx-auto mb-4" />
-          <h1 className="text-5xl font-bold mb-4">Conveyancing Services</h1>
-          <p className="text-xl">
-            Expert Property Law Services for Smooth Real Estate Transactions
-          </p>
-        </div>
+        
       </section>
 
       {/* Overview Section */}
       <section className="py-20">
+        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
+          <h1 className="text-5xl font-bold mb-4">Conveyancing Services</h1>
+          <p className="text-xl font-bold">
+            Expert Property Law Services for Smooth Real Estate Transactions
+          </p>
+        </div>
+        <br/>
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-xl text-gray-600 mb-8">
-            KWCO's Conveyancing practice provides comprehensive legal services
-            for all aspects of property transactions in Kenya. Our experienced
-            conveyancing team ensures that your property dealings are handled
-            efficiently, professionally, and in full compliance with Kenyan
-            property laws.
+          Conveyancing Practice at KWCO Advocates
+KWCO Advocates’ Conveyancing Practice delivers end-to-end legal services for residential, commercial, and industrial property transactions across Kenya. Our seasoned team ensures seamless, legally compliant dealings; from due diligence and title transfers to lease agreements and dispute mitigation so you can transact with confidence.
+
           </p>
           <p className="text-gray-600 mb-8">
-            Whether you're buying your first home, selling commercial property,
-            or managing a complex real estate portfolio, we provide the
-            expertise and attention to detail necessary to protect your
-            interests and ensure smooth transactions.
+          Whether you’re a first-time homebuyer, a commercial real estate investor, or managing a complex portfolio, we combine strategic legal expertise with meticulous attention to regulatory detail. Our client-centered approach prioritizes clarity, efficiency, and proactive risk management, ensuring your property transactions proceed smoothly and your investments remain secure.
+Backed by Kenya’s evolving property laws and modern legal frameworks, KWCO Advocates transforms complexity into opportunity, safeguarding your interests at every stage.
           </p>
         </div>
       </section>
@@ -206,7 +203,7 @@ const Conveyancing = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16">
-            Why Choose KWCO for Conveyancing?
+            Why Choose KWCO Advocates for Conveyancing?
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>

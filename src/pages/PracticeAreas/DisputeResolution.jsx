@@ -135,19 +135,14 @@ const DisputeResolution = () => {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-xl text-gray-600 mb-8">
-            KWCO's Dispute Resolution practice offers comprehensive alternative
+            KWCO Advocates' Dispute Resolution practice offers comprehensive alternative
             dispute resolution (ADR) services designed to resolve conflicts
-            efficiently and cost-effectively outside the courtroom. Our
-            experienced team of mediators and arbitrators helps parties reach
-            amicable solutions while preserving relationships and minimizing
-            costs.
+            efficiently and cost-effectively outside the courtroom. Our seasoned team of mediators and arbitrators facilitates amicable settlements tailored to preserve relationships, reduce costs, and deliver outcomes aligned with your commercial or personal objectives.
+
           </p>
           <p className="text-gray-600 mb-8">
-            We understand that litigation isn't always the best path to
-            resolution. Our ADR services provide flexible, confidential, and
-            timely solutions to various disputes, from commercial conflicts to
-            family matters, ensuring outcomes that work for all parties
-            involved.
+          Recognizing that litigation is not always the optimal route, we prioritize flexible, confidential, and client-centered solutions for disputes ranging from complex commercial disagreements to sensitive family matters. Our approach balances legal rigor with practical empathy, ensuring resolutions that respect all parties’ interests while adhering to Kenya’s evolving legal standards.
+By combining modern ADR frameworks with deep local expertise, KWCO Advocates empowers clients to navigate disputes with clarity, confidence, and minimal disruption.
           </p>
         </div>
       </section>
@@ -237,7 +232,7 @@ const DisputeResolution = () => {
       <section className="py-20 bg-amber-600 text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-16">
-            Why Choose KWCO for Dispute Resolution?
+            Why Choose KWCO Advocates for Dispute Resolution?
           </h2>
           <div className="grid md:grid-cols-2 gap-12 text-left">
             <div>

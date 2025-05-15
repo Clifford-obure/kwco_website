@@ -9,31 +9,27 @@ const OurPeople = () => {
       name: "Kamuti Waweru",
       position: "Managing Partner",
       image: "src/assets/skk.png",
-      expertise: ["Commercial Litigation", "Corporate Law", "Real Estate"],
-      education: [
-        "LLB (Hons), University of Nairobi",
-        "Kenya School of Law - Advocate",
-        "Member, Law Society of Kenya",
-      ],
+      expertise: ["Managing Partner "," Head of Dispute Resolution  "," KWCO Advocates ", "Corporate Law", "Real Estate"],
+      
 
       experience: "20+ years",
       bio: "Kamuti Waweru is the founding and managing partner of KWCO. With over 20 years of experience in legal practice, he has established himself as one of Kenya's leading advocates in commercial litigation and corporate law.",
-      email: "kwaweru@kwco.co.ke",
-      phone: "+254 722 123 456",
-      linkedin: "#",
+      email: "skwaweru@kwco.legal",
+      phone: "+254725766457",
+      linkedin: "www.linkedin.com/in/sk-waweru-52895528",
     },
    
   ];
 
   const associates = [
     {
-      name: "Jackline Jowi",
-      position: "Debt Collection",
-      image: "src/assets/team/jackline55.jpg",
+      name: "Bonniface Wambua",
+      position: "Head of Recoveries",
+      image: "src/assets/team/Boniface2.jpg",
     },
     {
       name: "Seif Mohammed",
-      position: " Debt Collection  ",
+      position: " Business Development Manager  ",
       image: "src/assets/team/seif44.png",
 
     },
@@ -55,10 +51,11 @@ const OurPeople = () => {
       position: "Senior Associate",
       image: "src/assets/eddie2.jpg",
     },
+   
     {
-      name: "Bonniface Wambua",
-      position: "Debt collection",
-      image: "src/assets/team/Boniface2.jpg",
+      name: "Jackline Jowi",
+      position: "Debt Collection",
+      image: "src/assets/team/jackline55.jpg",
     },
   ];
 
@@ -73,22 +70,21 @@ const OurPeople = () => {
             filter: "brightness(0.4)",
           }}
         />
-        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4">Our People</h1>
-          <p className="text-xl">
-            Meet the Legal Experts Behind KWCO's Success
-          </p>
-        </div>
+        
       </section>
 
       {/* Introduction */}
       <section className="py-20">
+      <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
+          <h1 className="text-5xl font-bold mb-4">Our People</h1>
+          <p className="text-xl  font-bold ">
+            Meet the Legal Experts Behind KWCO's Success
+          </p>
+        </div>
+        <br/>
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-xl text-gray-600">
-            Our team of experienced lawyers and legal professionals brings
-            together expertise across various practice areas. With a commitment
-            to excellence and client satisfaction, our people are the foundation
-            of KWCO advocate 's reputation as one of Kenya's leading law firms.
+          KWCO Advocates is powered by a team of seasoned lawyers and legal professionals whose collective expertise spans diverse practice areas, including litigation, debt collection, conveyancing, and dispute resolution. Our unwavering dedication to excellence, innovation, and client-centered service has solidified our reputation as one of Kenya’s premier legal authorities. Our people, driven by integrity, precision, and a passion for justice, are the cornerstone of KWCO Advocates’ standing as a trusted leader in the legal landscape.
           </p>
         </div>
       </section>
@@ -125,14 +121,7 @@ const OurPeople = () => {
                     ))}
                   </ul>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-gray-700 mb-3">Education & Qualifications</h4>
-                  <ul className="space-y-2">
-                    {partner.education.map((edu, idx) => (
-                      <li key={idx} className="text-gray-600">• {edu}</li>
-                    ))}
-                  </ul>
-                </div>
+               
               </div>
 
               <div className="mt-6">

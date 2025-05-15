@@ -36,14 +36,16 @@ const Contact = () => {
             filter: "brightness(0.4)",
           }}
         />
-        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl">Get in Touch with Our Legal Team</p>
-        </div>
+      
       </section>
 
       {/* Contact Information */}
       <section className="py-20">
+      <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
+          <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
+          <p className="text-xl">Get in Touch with Our Legal Team</p>
+        </div>
+        <br/>
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
@@ -52,9 +54,14 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Visit Us</h3>
               <p className="text-gray-600">
-                123 Legal Street, Westlands
+               Nineth Planet Apartments 
+
                 <br />
-                Nairobi, Kenya
+                suit P4 Karbarnet Gardens,
+                <br />
+
+                Gong Rd
+
               </p>
             </div>
             <div className="text-center">
@@ -63,9 +70,10 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Call Us</h3>
               <p className="text-gray-600">
-                +254 20 123 4567
+              0792 280 484
                 <br />
-                +254 700 123 456
+                +254 725 766457
+
               </p>
             </div>
             <div className="text-center">
@@ -74,9 +82,10 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Email Us</h3>
               <p className="text-gray-600">
-                info@kwco.co.ke
+                info@kwco.legal
                 <br />
-                legal@kwco.co.ke
+                www.kwco.legal
+
               </p>
             </div>
             <div className="text-center">
@@ -223,7 +232,7 @@ const Contact = () => {
                       For urgent legal matters outside office hours:
                     </p>
                     <p className="text-amber-600 font-bold text-xl mt-2">
-                      +254 799 999 999
+                    +254 725 766457
                     </p>
                   </div>
                 </div>
@@ -238,14 +247,16 @@ const Contact = () => {
                     className="flex items-center text-gray-700 hover:text-amber-600 transition"
                   >
                     <Phone className="w-5 h-5 mr-3" />
-                    +254 700 123 456
+                    +254 725 766457
+
+
                   </a>
                   <a
                     href="mailto:info@kwco.co.ke"
                     className="flex items-center text-gray-700 hover:text-amber-600 transition"
                   >
                     <Mail className="w-5 h-5 mr-3" />
-                    info@kwco.co.ke
+                    info@kwco.legal
                   </a>
                 </div>
               </div>

@@ -65,7 +65,7 @@ const ClientInsights = () => {
                  }}
                />
         <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4">Our Client</h1>
+          <h1 className="text-5xl font-bold mb-4">Our Clients</h1>
           <p className="text-xl">
           Our Trusted Clients In Business & Legal Practice          </p>
         </div>

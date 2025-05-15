@@ -67,12 +67,12 @@ const Home = () => {
     {
       client: "Sarah Kimani",
       company: "Tech Innovations Ltd",
-      text: "KWCO's expertise in commercial litigation helped us resolve a complex dispute efficiently.",
+      text: "KWCO Advocates' expertise in commercial litigation helped us resolve a complex dispute efficiently.",
     },
     {
       client: "John Omondi",
       company: "Real Estate Ventures",
-      text: "The conveyancing team at KWCO made our property acquisition seamless.",
+      text: "The conveyancing team at KWCO Advocates made our property acquisition seamless.",
     },
     {
       client: "Mary Wanjiku",
@@ -82,7 +82,7 @@ const Home = () => {
     {
       client: "Peter Mwangi",
       company: "Manufacturing Co. Ltd",
-      text: "KWCO's mediation services helped us resolve our partnership dispute without going to court.",
+      text: "KWCO Advocates' mediation services helped us resolve our partnership dispute without going to court.",
     },
   ];
 
@@ -190,10 +190,7 @@ const Home = () => {
             Excellence in Legal Practice
           </h1>
           <p className="text-xl lg:text-2xl mb-8">
-            KWCO is a premier law firm in Nairobi, Kenya, specializing in
-            litigation, credit collection, conveyancing, and dispute resolution.
-            With 50+ years of cumulative experience, we deliver trusted legal
-            solutions.
+          KWCO Advocates is a premier law firm headquartered in Nairobi, Kenya, specializing in litigation, debt collection, conveyancing, and dispute resolution. Established on 10th June 2015, our firm combines modern legal innovation with strategic insight to deliver client-focused solutions. KWCO Advocates is dedicated to providing results-driven representation for individuals, businesses, and institutions across diverse sectors, ensuring clarity, efficiency, and excellence in every case.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -225,7 +222,7 @@ const Home = () => {
               spectrum of practice areas. Our team of seasoned legal
               practitioner offer unparalleled expertise, strategic advocacy and
               bespoke legal solution tailored to meet the unique needs of our
-              esteemed clientele.
+              esteemed clients.
             </p>
           </div>
 
@@ -257,8 +254,7 @@ const Home = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Experience</h3>
               <p className="text-gray-600">
-                With 50+ years of cumulative experience in Kenya's legal system.
-              </p>
+              With 10+ years of cumulative experience in Kenya's legal system.              </p>
             </div>
           </div>
 
@@ -377,7 +373,7 @@ const Home = () => {
               Our People
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Meet the experienced legal professionals behind KWCO's success
+              Meet the experienced legal professionals behind KWCO Advocate's success
             </p>
           </div>
 
@@ -474,7 +470,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Client Testimonials</h2>
             <p className="text-xl max-w-3xl mx-auto">
-              Hear what our clients say about their experiences with KWCO
+              Hear what our clients say about their experiences with KWCO Advocates
             </p>
           </div>
 
@@ -516,9 +512,14 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Visit Us</h3>
               <p className="text-gray-600">
-                123 Legal Street, Westlands
+               Nineth Planet Apartments 
+
                 <br />
-                Nairobi, Kenya
+                suit P4 Karbarnet Gardens,
+                <br />
+
+                Gong Rd
+
               </p>
             </div>
             <div className="text-center">
@@ -527,9 +528,9 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Call Us</h3>
               <p className="text-gray-600">
-                +254 20 123 4567
+                020 20202 8640
                 <br />
-                +254 700 123 456
+                0792 280 484
               </p>
             </div>
             <div className="text-center">
@@ -538,10 +539,10 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Email Us</h3>
               <p className="text-gray-600">
-                info@kwco.co.ke
+                info@kwco.legal
                 <br />
-                legal@kwco.co.ke
-              </p>
+             www.kwco.legal
+                           </p>
             </div>
           </div>
 
@@ -561,7 +562,8 @@ const Home = () => {
               For urgent legal matters outside office hours
             </p>
             <p className="text-2xl font-bold text-amber-600">
-              +254 799 999 999
+            +254 725 766457
+
             </p>
           </div>
         </div>

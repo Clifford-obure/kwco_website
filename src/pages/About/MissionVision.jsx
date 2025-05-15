@@ -155,7 +155,7 @@ const MissionVision = () => {
             "Excellence is not a skill, it's an attitude."
           </blockquote>
           <p className="text-xl">
-            This philosophy drives everything we do at KWCO
+          LAWYERS OF LEGENDS, LEADERS IN DISPUTE RESOLUTION & MANAGEMENT
           </p>
         </div>
       </section>

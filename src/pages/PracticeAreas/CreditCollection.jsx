@@ -124,18 +124,13 @@ const CreditCollection = () => {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-xl text-gray-600 mb-8">
-            KWCO's Credit Collection practice provides comprehensive debt
-            recovery services to businesses, financial institutions, and other
-            creditors. With extensive experience in credit management and debt
-            recovery, we help clients maximize their recovery rates while
-            maintaining professional relationships.
+          KWCO Advocates’ Debt Collection practice delivers end-to-end debt recovery solutions for businesses, financial institutions, and creditors nationwide. Leveraging our deep understanding of Kenya’s legal and commercial landscape, we prioritize maximizing recovery rates while preserving client relationships and reputations.
+
           </p>
           <p className="text-gray-600 mb-8">
-            Our approach combines legal expertise with commercial awareness,
-            ensuring efficient recovery processes that protect your business
-            interests. We understand that each debt recovery situation is
-            unique, and we tailor our strategies to achieve the best possible
-            outcomes for our clients.
+          Our team combines strategic legal expertise with pragmatic business insight to design recovery processes that align with your operational goals. Recognizing the unique complexities of each case, we craft tailored, results-driven strategies—from pre-litigation negotiations to enforcement of court judgments—to secure optimal outcomes efficiently and ethically.
+          KWCO Advocates has built a reputation for blending modern legal innovation with client-centered service, ensuring your financial interests are safeguarded at every stage.
+
           </p>
         </div>
       </section>
@@ -144,7 +139,7 @@ const CreditCollection = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16">
-            Our Credit Collection Services
+            Our Debt Collection Services
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -235,7 +230,7 @@ const CreditCollection = () => {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16">
-            Why Choose KWCO for Debt Recovery?
+            Why Choose KWCO Advocates for Debt Recovery?
           </h2>
           <div className="space-y-6">
             <div className="flex items-start">
