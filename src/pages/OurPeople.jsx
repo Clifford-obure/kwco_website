@@ -1,15 +1,9 @@
-/* eslint-disable no-unused-vars */
 // src/pages/OurPeople.js
 import React from "react";
 import teamicon from "./../assets/headers/ourteam.png";
 import { Mail, Phone, Linkedin, Award } from "lucide-react";
 import sammy from "./../assets/skk.png";
-import Jackline from "./../assets/team/jackline55.jpg";
-import seif from "./../assets/team/seif44.png";
-import melvin from "./../assets/team/Melvin.jpg";
-import alexender from "./../assets/team/Alexander2.jpg";
-import eddie from "./../assets/eddie2.jpg";
-import bonny from "./../assets/team/Boniface2.jpg";
+// import sammy from "./..assets/skk.png";
 
 const OurPeople = () => {
   const partners = [
@@ -17,11 +11,12 @@ const OurPeople = () => {
       name: "Kamuti Waweru",
       position: "Managing Partner",
       image: sammy,
-      expertise: ["Commercial Litigation", "Corporate Law", "Real Estate"],
-      education: [
-        "LLB (Hons), University of Nairobi",
-        "Kenya School of Law - Advocate",
-        "Member, Law Society of Kenya",
+      expertise: [
+        "Managing Partner ",
+        " Head of Dispute Resolution  ",
+        " KWCO Advocates ",
+        "Corporate Law",
+        "Real Estate",
       ],
 
       experience: "20+ years",
@@ -34,36 +29,36 @@ const OurPeople = () => {
 
   const associates = [
     {
-      name: "Jackline Jowi",
-      position: "Debt Collection",
-      image: Jackline,
+      name: "Bonniface Wambua",
+      position: "Head of Recoveries",
+      image: "src/assets/team/Boniface2.jpg",
     },
     {
       name: "Seif Mohammed",
-      position: " Debt Collection  ",
-      image: seif,
+      position: " Business Development Manager  ",
+      image: "src/assets/team/seif44.png",
     },
 
     {
       name: "Melvin Onyango",
       position: "Head of Knowledge ",
-      image: melvin,
+      image: "src/assets/team/Melvin.jpg",
     },
     {
       name: "Alexender Mtua",
       position: "pupil ",
-      image: alexender,
+      image: "src/assets/team/Alexander2.jpg",
     },
     {
       name: "Eddie Mwiti",
       position: "Senior Associate",
-      image: eddie,
+      image: "src/assets/eddie2.jpg",
     },
 
     {
-      name: "Bonniface Wambua",
-      position: "Debt collection",
-      image: bonny,
+      name: "Jackline Jowi",
+      position: "Debt Collection",
+      image: "src/assets/team/jackline55.jpg",
     },
   ];
 
@@ -99,7 +94,7 @@ const OurPeople = () => {
             reputation as one of Kenya’s premier legal authorities. Our people,
             driven by integrity, precision, and a passion for justice, are the
             cornerstone of KWCO Advocates’ standing as a trusted leader in the
-            legallandscape.
+            legal landscape.
           </p>
         </div>
       </section>
@@ -121,7 +116,7 @@ const OurPeople = () => {
                     <img
                       src={partner.image}
                       alt={partner.name}
-                      className="w-full rounded-lg object-contain"
+                      className="w-full rounded-lg object-cover"
                     />
                   </div>
                   <div className="flex-1">
@@ -144,18 +139,6 @@ const OurPeople = () => {
                             >
                               <Award className="w-4 h-4 text-amber-600 mr-2" />
                               {area}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-700 mb-3">
-                          Education & Qualifications
-                        </h4>
-                        <ul className="space-y-2">
-                          {partner.education.map((edu, idx) => (
-                            <li key={idx} className="text-gray-600">
-                              • {edu}
                             </li>
                           ))}
                         </ul>
