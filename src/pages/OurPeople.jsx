@@ -4,6 +4,12 @@ import teamicon from "./../assets/headers/ourteam.png";
 import { Mail, Phone, Linkedin, Award } from "lucide-react";
 import sammy from "./../assets/skk.png";
 // import sammy from "./..assets/skk.png";
+import bonny from "./../assets/team/Boniface2.jpg";
+import seif from "./../assets/team/seif44.png";
+import melvin from "./../assets/team/Melvin.jpg";
+import alexender from "./../assets/team/Alexander2.jpg";
+import eddie from "./../assets/eddie2.jpg";
+import jackline from "./../assets/team/jackline55.jpg";
 
 const OurPeople = () => {
   const partners = [
@@ -31,34 +37,34 @@ const OurPeople = () => {
     {
       name: "Bonniface Wambua",
       position: "Head of Recoveries",
-      image: "src/assets/team/Boniface2.jpg",
+      image: bonny,
     },
     {
       name: "Seif Mohammed",
       position: " Business Development Manager  ",
-      image: "src/assets/team/seif44.png",
+      image: seif,
     },
 
     {
       name: "Melvin Onyango",
       position: "Head of Knowledge ",
-      image: "src/assets/team/Melvin.jpg",
+      image: melvin,
     },
     {
       name: "Alexender Mtua",
       position: "pupil ",
-      image: "src/assets/team/Alexander2.jpg",
+      image: alexender,
     },
     {
       name: "Eddie Mwiti",
       position: "Senior Associate",
-      image: "src/assets/eddie2.jpg",
+      image: eddie,
     },
 
     {
       name: "Jackline Jowi",
       position: "Debt Collection",
-      image: "src/assets/team/jackline55.jpg",
+      image: jackline,
     },
   ];
 

@@ -22,6 +22,7 @@ import {
 import law from "./../assets/law.mp4";
 import bank from "./../assets/client/kingdom bank.png";
 import Melvin from "./../assets/team/Melvin.jpg";
+import sammy from "./../assets/team/skss.png";
 import Jackline from "./../assets/team/jackline55.jpg";
 import Seif from "./../assets/team/seif33.png";
 import bidico from "./../assets/client/bidco_logo.png";
@@ -93,7 +94,7 @@ const Home = () => {
       expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
       description:
         "Handles diverse cases with particular strength in legal research and documentation.",
-      image: Melvin,
+      image: sammy,
     },
     {
       name: "Jackline Jowi",
