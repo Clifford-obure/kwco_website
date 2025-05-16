@@ -190,7 +190,14 @@ const Home = () => {
             Excellence in Legal Practice
           </h1>
           <p className="text-xl lg:text-2xl mb-8">
-          KWCO Advocates is a premier law firm headquartered in Nairobi, Kenya, specializing in litigation, debt collection, conveyancing, and dispute resolution. Established on 10th June 2015, our firm combines modern legal innovation with strategic insight to deliver client-focused solutions. KWCO Advocates is dedicated to providing results-driven representation for individuals, businesses, and institutions across diverse sectors, ensuring clarity, efficiency, and excellence in every case.
+            KWCO Advocates is a premier law firm headquartered in Nairobi,
+            Kenya, specializing in litigation, debt collection, conveyancing,
+            and dispute resolution. Established on 10th June 2015, our firm
+            combines modern legal innovation with strategic insight to deliver
+            client-focused solutions. KWCO Advocates is dedicated to providing
+            results-driven representation for individuals, businesses, and
+            institutions across diverse sectors, ensuring clarity, efficiency,
+            and excellence in every case.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -254,7 +261,8 @@ const Home = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Experience</h3>
               <p className="text-gray-600">
-              With 10+ years of cumulative experience in Kenya's legal system.              </p>
+                With 10+ years of cumulative experience in Kenya's legal system.{" "}
+              </p>
             </div>
           </div>
 
@@ -373,7 +381,8 @@ const Home = () => {
               Our People
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Meet the experienced legal professionals behind KWCO Advocate's success
+              Meet the experienced legal professionals behind KWCO Advocate's
+              success
             </p>
           </div>
 
@@ -470,7 +479,8 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Client Testimonials</h2>
             <p className="text-xl max-w-3xl mx-auto">
-              Hear what our clients say about their experiences with KWCO Advocates
+              Hear what our clients say about their experiences with KWCO
+              Advocates
             </p>
           </div>
 
@@ -512,14 +522,11 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Visit Us</h3>
               <p className="text-gray-600">
-               Nineth Planet Apartments 
-
+                Nineth Planet Apartments
                 <br />
                 suit P4 Karbarnet Gardens,
                 <br />
-
                 Gong Rd
-
               </p>
             </div>
             <div className="text-center">
@@ -541,8 +548,8 @@ const Home = () => {
               <p className="text-gray-600">
                 info@kwco.legal
                 <br />
-             www.kwco.legal
-                           </p>
+                www.kwco.legal
+              </p>
             </div>
           </div>
 
@@ -561,10 +568,7 @@ const Home = () => {
             <p className="text-gray-600 mb-4">
               For urgent legal matters outside office hours
             </p>
-            <p className="text-2xl font-bold text-amber-600">
-            +254 725 766457
-
-            </p>
+            <p className="text-2xl font-bold text-amber-600">+254 725 766457</p>
           </div>
         </div>
       </section>

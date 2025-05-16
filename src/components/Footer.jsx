@@ -1,7 +1,7 @@
 // src/components/Footer.js
 import React from "react";
 import { Link } from "react-router-dom";
-import { Scale } from "lucide-react";
+import { Scale, Facebook, Linkedin, Youtube } from "lucide-react";
 import logo from "./../assets/sklogo.jpg";
 
 const Footer = () => {
@@ -126,7 +126,31 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
             <p className="text-gray-400 mb-4">Follow us on social media</p>
             <div className="flex space-x-4">
-              {/* Social media icons would go here */}
+              {/* Social media icons */}
+              <a
+                href="https://facebook.com/kwcoadvocates"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 p-2 rounded-full hover:bg-amber-600 transition duration-300"
+              >
+                <Facebook className="w-5 h-5 text-white" />
+              </a>
+              <a
+                href="https://linkedin.com/company/kamuti-waweru-company-advocates"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 p-2 rounded-full hover:bg-amber-600 transition duration-300"
+              >
+                <Linkedin className="w-5 h-5 text-white" />
+              </a>
+              <a
+                href="https://youtube.com/@kwco-advocates?si=vD6JqIsuMEBnVBAA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 p-2 rounded-full hover:bg-amber-600 transition duration-300"
+              >
+                <Youtube className="w-5 h-5 text-white" />
+              </a>
             </div>
           </div>
         </div>
