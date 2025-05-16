@@ -36,16 +36,14 @@ const Contact = () => {
             filter: "brightness(0.4)",
           }}
         />
-      
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+          <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
+          <p className="text-xl">Get in Touch with Our Legal Team</p>
+        </div>
       </section>
 
       {/* Contact Information */}
       <section className="py-20">
-      <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl">Get in Touch with Our Legal Team</p>
-        </div>
-        <br/>
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
@@ -54,14 +52,11 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Visit Us</h3>
               <p className="text-gray-600">
-               Nineth Planet Apartments 
-
+                Nineth Planet Apartments
                 <br />
                 suit P4 Karbarnet Gardens,
                 <br />
-
-                Gong Rd
-
+                Ngong Rd
               </p>
             </div>
             <div className="text-center">
@@ -70,10 +65,9 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Call Us</h3>
               <p className="text-gray-600">
-              0792 280 484
+                0792 280 484
                 <br />
                 +254 725 766457
-
               </p>
             </div>
             <div className="text-center">
@@ -85,7 +79,6 @@ const Contact = () => {
                 info@kwco.legal
                 <br />
                 www.kwco.legal
-
               </p>
             </div>
             <div className="text-center">
@@ -204,9 +197,9 @@ const Contact = () => {
               <h2 className="text-3xl font-bold mb-8">Find Us</h2>
               <div className="bg-white p-8 rounded-lg shadow-lg mb-8">
                 <div className="h-96 bg-gray-300 rounded-lg mb-6">
-                  {/* Google Map would go here */}
+                  {/* Google Map */}
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.819415936552!2d36.81079731475391!3d-1.2820973990648396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d6f2a9de6b%3A0x9c2c3431391db84e!2sWestlands%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1639564913374!5m2!1sen!2ske"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7858675349!2d36.75982797378771!3d-1.2940128356236482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a66ffffffff%3A0xb493f525fce77c9f!2sNgong%20Rd%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1715811600000!5m2!1sen!2ske"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -219,9 +212,9 @@ const Contact = () => {
                   <div>
                     <h3 className="font-bold text-lg mb-2">Directions</h3>
                     <p className="text-gray-600">
-                      Located in the heart of Westlands, our office is easily
-                      accessible by public transport and has ample parking
-                      facilities.
+                      Located at Nineth Planet Apartments, suit P4 Karbarnet
+                      Gardens, Ngong Road. Our office is easily accessible by
+                      public transport.
                     </p>
                   </div>
                   <div>
@@ -232,7 +225,7 @@ const Contact = () => {
                       For urgent legal matters outside office hours:
                     </p>
                     <p className="text-amber-600 font-bold text-xl mt-2">
-                    +254 725 766457
+                      +254 725 766457
                     </p>
                   </div>
                 </div>
@@ -243,16 +236,14 @@ const Contact = () => {
                 <h3 className="font-bold text-lg mb-4">Quick Contact</h3>
                 <div className="space-y-3">
                   <a
-                    href="tel:+254700123456"
+                    href="tel:+254725766457"
                     className="flex items-center text-gray-700 hover:text-amber-600 transition"
                   >
                     <Phone className="w-5 h-5 mr-3" />
                     +254 725 766457
-
-
                   </a>
                   <a
-                    href="mailto:info@kwco.co.ke"
+                    href="mailto:info@kwco.legal"
                     className="flex items-center text-gray-700 hover:text-amber-600 transition"
                   >
                     <Mail className="w-5 h-5 mr-3" />
