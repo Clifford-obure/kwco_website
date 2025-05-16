@@ -16,7 +16,7 @@ const OurPeople = () => {
     {
       name: "Kamuti Waweru",
       position: "Managing Partner",
-      image: "src/assets/skk.png",
+      image: sammy,
       expertise: ["Commercial Litigation", "Corporate Law", "Real Estate"],
       education: [
         "LLB (Hons), University of Nairobi",
@@ -36,12 +36,12 @@ const OurPeople = () => {
     {
       name: "Jackline Jowi",
       position: "Debt Collection",
-      image: "src/assets/team/jackline55.jpg",
+      image: Jackline,
     },
     {
       name: "Seif Mohammed",
       position: " Debt Collection  ",
-      image: "src/assets/team/seif44.png",
+      image: seif,
     },
 
     {
@@ -63,7 +63,7 @@ const OurPeople = () => {
     {
       name: "Bonniface Wambua",
       position: "Debt collection",
-      image: "src/assets/team/Boniface2.jpg",
+      image: bonny,
     },
   ];
 
