@@ -36,7 +36,7 @@ const Contact = () => {
             filter: "brightness(0.4)",
           }}
         />
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
           <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
           <p className="text-xl">Get in Touch with Our Legal Team</p>
         </div>
