@@ -71,7 +71,7 @@ const Navigation = () => {
       dropdown: [
         { label: "Litigation", href: "/practice-areas/litigation" },
         {
-          label: "Credit Collection",
+          label: "Debt Collection",
           href: "/practice-areas/credit-collection",
         },
         { label: "Conveyancing", href: "/practice-areas/conveyancing" },

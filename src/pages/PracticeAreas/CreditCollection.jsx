@@ -10,7 +10,7 @@ import {
   Check,
   ArrowRight,
 } from "lucide-react";
-import law from "./../../assets/law.png";
+import law from "./../../assets/headers/law2.png";
 
 const CreditCollection = () => {
   const services = [
@@ -108,29 +108,32 @@ const CreditCollection = () => {
             filter: "brightness(0.4)",
           }}
         />
-        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
-          <Briefcase className="w-16 h-16 mx-auto mb-4" />
-          <h1 className="text-5xl font-bold mb-4">
-            Debt Managment
-          </h1>
-          <p className="text-xl">
-            Strategic Debt Recovery Solutions for Businesses and Financial
-            Institutions
-          </p>
-        </div>
       </section>
 
       {/* Overview Section */}
       <section className="py-20">
+        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
+          {/* <Briefcase className="w-16 h-16 mx-auto mb-4" /> */}
+          <h1 className="text-5xl font-bold mb-4">Debt Collection</h1>
+        </div>
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-xl text-gray-600 mb-8">
-          KWCO Advocates’ Debt Collection practice delivers end-to-end debt recovery solutions for businesses, financial institutions, and creditors nationwide. Leveraging our deep understanding of Kenya’s legal and commercial landscape, we prioritize maximizing recovery rates while preserving client relationships and reputations.
-
+            KWCO Advocates’ Debt Collection practice delivers end-to-end debt
+            recovery solutions for businesses, financial institutions, and
+            creditors nationwide. Leveraging our deep understanding of Kenya’s
+            legal and commercial landscape, we prioritize maximizing recovery
+            rates while preserving client relationships and reputations.
           </p>
           <p className="text-gray-600 mb-8">
-          Our team combines strategic legal expertise with pragmatic business insight to design recovery processes that align with your operational goals. Recognizing the unique complexities of each case, we craft tailored, results-driven strategies—from pre-litigation negotiations to enforcement of court judgments—to secure optimal outcomes efficiently and ethically.
-          KWCO Advocates has built a reputation for blending modern legal innovation with client-centered service, ensuring your financial interests are safeguarded at every stage.
-
+            Our team combines strategic legal expertise with pragmatic business
+            insight to design recovery processes that align with your
+            operational goals. Recognizing the unique complexities of each case,
+            we craft tailored, results-driven strategies—from pre-litigation
+            negotiations to enforcement of court judgments—to secure optimal
+            outcomes efficiently and ethically. KWCO Advocates has built a
+            reputation for blending modern legal innovation with client-centered
+            service, ensuring your financial interests are safeguarded at every
+            stage.
           </p>
         </div>
       </section>

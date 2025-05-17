@@ -2,6 +2,8 @@
 import React from "react";
 import { Shield, Scale, Heart, Award, Users, Lightbulb } from "lucide-react";
 import law from "./../../assets/client/img2.jpg";
+import { FcCollaboration } from "react-icons/fc";
+import Collaboration from "./../../assets/headers/pngwing.com (8).png";
 
 const CoreValues = () => {
   const values = [
@@ -84,8 +86,8 @@ const CoreValues = () => {
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center">
         <div
-                 className="absolute inset-0 bg-cover bg-no-repeat bg-center w-full h-full"
-                 style={{
+          className="absolute inset-0 bg-cover bg-no-repeat bg-center w-full h-full"
+          style={{
             backgroundImage: `url(${law})`,
             filter: "brightness(0.2)",
           }}
@@ -100,9 +102,9 @@ const CoreValues = () => {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-xl text-gray-600 mb-8">
-            At KWCO Advocates, our core values are more than just words – they are the
-            foundation of our practice and the principles that guide every
-            decision we make. These values shape our culture, define our
+            At KWCO Advocates, our core values are more than just words – they
+            are the foundation of our practice and the principles that guide
+            every decision we make. These values shape our culture, define our
             approach to law, and ensure we deliver the highest quality service
             to our clients.
           </p>
@@ -146,7 +148,7 @@ const CoreValues = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/api/placeholder/600/400"
+                src={Collaboration}
                 alt="Team collaboration"
                 className="rounded-lg shadow-lg w-full"
               />
@@ -164,8 +166,8 @@ const CoreValues = () => {
               </p>
               <p className="text-gray-600 mb-6">
                 Every member of our team is committed to upholding these values,
-                ensuring that KWCO  Advocates remains a firm you can trust with your most
-                important legal matters.
+                ensuring that KWCO Advocates remains a firm you can trust with
+                your most important legal matters.
               </p>
               <a
                 href="/our-people"

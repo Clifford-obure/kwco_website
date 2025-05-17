@@ -10,7 +10,7 @@ import {
   Check,
   Briefcase,
 } from "lucide-react";
-import law from "./../../assets/law.png";
+import law from "./../../assets/headers/law.png";
 
 const Litigation = () => {
   const services = [
@@ -84,17 +84,14 @@ const Litigation = () => {
             filter: "brightness(0.4)",
           }}
         />
-        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
-          <Scale className="w-16 h-16 mx-auto mb-4" />
-          <h1 className="text-5xl font-bold mb-4">Litigation Services</h1>
-          <p className="text-xl">
-            Experienced Advocates Fighting for Your Rights in Court
-          </p>
-        </div>
       </section>
 
       {/* Overview Section */}
       <section className="py-20">
+        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
+          {/* <Scale className="w-16 h-16 mx-auto mb-4" /> */}
+          <h1 className="text-5xl font-bold mb-4">Litigation Services</h1>
+        </div>
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-xl text-gray-600 mb-8">
             KWCO's litigation practice is built on decades of courtroom

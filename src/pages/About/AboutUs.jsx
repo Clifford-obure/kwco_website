@@ -36,24 +36,22 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen bg-white">
-    {/* Hero Section */}
-    <section className="relative h-96 flex items-center justify-center">
-      <div
-        className="absolute inset-0 bg-cover bg-no-repeat bg-center w-full h-full"
-        style={{
-          backgroundImage: `url(${law})`,
-          filter: "brightness(0.4)",  // Adjust brightness as needed
-        }}
-      />
-      <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl font-bold mb-4">About KWCO Advocates</h1>
-        <p className="text-xl">
-        Kamuti Waweru & Co. Advocates - Your Trusted Legal Partner in Kenya.        </p>
-      </div>
-    </section>
-  
-  
-
+      {/* Hero Section */}
+      <section className="relative h-96 flex items-center justify-center">
+        <div
+          className="absolute inset-0 bg-cover bg-no-repeat bg-center w-full h-full"
+          style={{
+            backgroundImage: `url(${law})`,
+            filter: "brightness(0.4)", // Adjust brightness as needed
+          }}
+        />
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+          <h1 className="text-5xl font-bold mb-4">About KWCO Advocates</h1>
+          <p className="text-xl">
+            Kamuti Waweru & Co. Advocates - Your Trusted Legal Partner in Kenya.{" "}
+          </p>
+        </div>
+      </section>
 
       {/* Introduction Section */}
       <section className="py-20">
@@ -61,7 +59,15 @@ const AboutUs = () => {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">Who We Are</h2>
             <p className="text-xl text-gray-600">
-            KWCO Advocates is a premier law firm in Nairobi, Kenya. Established on 10th June 2015, we pride ourselves on being a top-notch lawfirm specializing in litigation, conveyancing, debt collection and dispute resolution, delivering strategic, client-centered solutions tailored to individuals, businesses, and institutions nationwide. We combine modern legal expertise with a commitment to excellence, KWCO Advocates ensures efficient, results driven representation across all sectors</p>
+              KWCO Advocates is a premier law firm in Nairobi, Kenya.
+              Established on 10th June 2015, we pride ourselves on being a
+              top-notch lawfirm specializing in litigation, conveyancing, debt
+              collection and dispute resolution, delivering strategic,
+              client-centered solutions tailored to individuals, businesses, and
+              institutions nationwide. We combine modern legal expertise with a
+              commitment to excellence, KWCO Advocates ensures efficient,
+              results driven representation across all sectors
+            </p>
           </div>
 
           {/* About Sections Grid */}

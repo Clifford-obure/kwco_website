@@ -1,7 +1,7 @@
 // src/pages/Contact.js
 import React from "react";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
-import law from "./../assets/law.png";
+// import law from "./../assets/law.png";
 
 const Contact = () => {
   const [formData, setFormData] = React.useState({
@@ -28,15 +28,15 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center">
-        <div
+      <section className="relative h-96 flex items-center justify-center bg-amber-600">
+        {/* <div
           className="absolute inset-0 bg-contain bg-no-repeat bg-center"
           style={{
             backgroundImage: `url(${law})`,
             filter: "brightness(0.4)",
           }}
-        />
-        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
+        /> */}
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
           <p className="text-xl">Get in Touch with Our Legal Team</p>
         </div>

@@ -10,6 +10,7 @@ import {
   Check,
   ArrowRight,
 } from "lucide-react";
+import dispute from "./../../assets/headers/dspute_resolution.jpg";
 
 const DisputeResolution = () => {
   const services = [
@@ -111,11 +112,11 @@ const DisputeResolution = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center">
+      <section className="relative h-96 flex items-center justify-center bg-amber-600">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/api/placeholder/1920/600')`,
+            backgroundImage: `${dispute}`,
             filter: "brightness(0.4)",
           }}
         />
@@ -135,14 +136,24 @@ const DisputeResolution = () => {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-xl text-gray-600 mb-8">
-            KWCO Advocates' Dispute Resolution practice offers comprehensive alternative
-            dispute resolution (ADR) services designed to resolve conflicts
-            efficiently and cost-effectively outside the courtroom. Our seasoned team of mediators and arbitrators facilitates amicable settlements tailored to preserve relationships, reduce costs, and deliver outcomes aligned with your commercial or personal objectives.
-
+            KWCO Advocates' Dispute Resolution practice offers comprehensive
+            alternative dispute resolution (ADR) services designed to resolve
+            conflicts efficiently and cost-effectively outside the courtroom.
+            Our seasoned team of mediators and arbitrators facilitates amicable
+            settlements tailored to preserve relationships, reduce costs, and
+            deliver outcomes aligned with your commercial or personal
+            objectives.
           </p>
           <p className="text-gray-600 mb-8">
-          Recognizing that litigation is not always the optimal route, we prioritize flexible, confidential, and client-centered solutions for disputes ranging from complex commercial disagreements to sensitive family matters. Our approach balances legal rigor with practical empathy, ensuring resolutions that respect all parties’ interests while adhering to Kenya’s evolving legal standards.
-By combining modern ADR frameworks with deep local expertise, KWCO Advocates empowers clients to navigate disputes with clarity, confidence, and minimal disruption.
+            Recognizing that litigation is not always the optimal route, we
+            prioritize flexible, confidential, and client-centered solutions for
+            disputes ranging from complex commercial disagreements to sensitive
+            family matters. Our approach balances legal rigor with practical
+            empathy, ensuring resolutions that respect all parties’ interests
+            while adhering to Kenya’s evolving legal standards. By combining
+            modern ADR frameworks with deep local expertise, KWCO Advocates
+            empowers clients to navigate disputes with clarity, confidence, and
+            minimal disruption.
           </p>
         </div>
       </section>
