@@ -90,8 +90,8 @@ const Home = () => {
 
   const teamMembers = [
     {
-      name: "Melvin Onyango",
-      position: "Knowledge managment",
+      name: "Kamuti Waweru",
+      position: "Managing Partner",
       expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
       description:
         "Handles diverse cases with particular strength in legal research and documentation.",
