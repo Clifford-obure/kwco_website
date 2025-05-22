@@ -40,12 +40,12 @@ const Home = () => {
       link: "/practice-areas/litigation",
     },
     {
-      id: "credit-collection",
+      id: "debt-collection",
       icon: <Briefcase className="w-12 h-12" />,
-      title: "Credit Collection",
+      title: "debt Collection",
       description:
         "Strategic debt recovery solutions to help businesses and financial institutions.",
-      link: "/practice-areas/credit-collection",
+      link: "/practice-areas/debt-collection",
     },
     {
       id: "conveyancing",
@@ -79,7 +79,7 @@ const Home = () => {
     {
       client: "Mary Wanjiku",
       company: "Finance Solutions Kenya",
-      text: "Their credit collection services have significantly improved our debt recovery rates.",
+      text: "Their debt collection services have significantly improved our debt recovery rates.",
     },
     {
       client: "Peter Mwangi",
@@ -92,7 +92,7 @@ const Home = () => {
     {
       name: "Kamuti Waweru",
       position: "Managing Partner",
-      expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
+      expertise: ["debt Collection", "Banking Law", "Debt Recovery"],
       description:
         "Handles diverse cases with particular strength in legal research and documentation.",
       image: Skbig,
@@ -100,7 +100,7 @@ const Home = () => {
     {
       name: "Jackline Jowi",
       position: "Debt Collection",
-      expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
+      expertise: ["debt Collection", "Banking Law", "Debt Recovery"],
       description:
         "Drives the firm's growth strategy and client relationships.",
       image: Jackline,
@@ -108,7 +108,7 @@ const Home = () => {
     {
       name: "Seif Mohamed",
       position: "Business Development Manager",
-      expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
+      expertise: ["debt Collection", "Banking Law", "Debt Recovery"],
       description:
         "Drives the firm's growth strategy and client relationships.",
       image: Seif,
@@ -334,8 +334,8 @@ const Home = () => {
               Our Expertise Areas
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We offer comprehensive legal services across four core practice
-              areas
+              We offer comprehensive expert services across this four core
+              practice areas
             </p>
           </div>
 
@@ -429,7 +429,7 @@ const Home = () => {
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               "Delivering Excellence: Trusted by Leading Organizations for Legal
-              and Credit Collection Services."
+              and debt Collection Services."
             </p>
           </div>
 
