@@ -383,8 +383,7 @@ const Home = () => {
               Our People
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Meet the experienced legal professionals behind KWCO Advocate's
-              success
+              Meet the experienced professionals behind KWCO Advocate's success
             </p>
           </div>
 
