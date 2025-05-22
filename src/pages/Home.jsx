@@ -27,6 +27,7 @@ import Jackline from "./../assets/team/jackline55.jpg";
 import Seif from "./../assets/team/seif33.png";
 import bidico from "./../assets/client/bidco_logo.png";
 import hashi from "./../assets/headers/hashi.png";
+import Skbig from "./../assets/skbig.jpg";
 
 const Home = () => {
   const practiceAreas = [
@@ -94,7 +95,7 @@ const Home = () => {
       expertise: ["Credit Collection", "Banking Law", "Debt Recovery"],
       description:
         "Handles diverse cases with particular strength in legal research and documentation.",
-      image: Melvin,
+      image: Skbig,
     },
     {
       name: "Jackline Jowi",
