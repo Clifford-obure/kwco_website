@@ -79,7 +79,7 @@ const Home = () => {
     {
       id: "debt-collection",
       icon: <Briefcase className="w-12 h-12" />,
-      title: "debt Collection",
+      title: "Debt Collection",
       description:
         "Strategic debt recovery solutions to help businesses and financial institutions.",
       link: "/practice-areas/debt-collection",
@@ -145,7 +145,7 @@ const Home = () => {
     {
       name: "Seif Mohamed",
       position: "Business Development Manager",
-      expertise: ["debt Collection", "Banking Law", "Debt Recovery"],
+      expertise: ["Debt Collection", "Banking Law", "Debt Recovery"],
       description:
         "Drives the firm's growth strategy and client relationships.",
       image: Seif,
