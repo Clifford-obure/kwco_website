@@ -91,7 +91,7 @@ const OurPeople = () => {
         </div>
         <br />
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <p className="text-xl text-gray-600">
+          <p className=" text-gray-600">
             KWCO Advocates is powered by a team of seasoned lawyers and legal
             professionals whose collective expertise spans diverse practice
             areas, including litigation, debt collection, conveyancing, and
