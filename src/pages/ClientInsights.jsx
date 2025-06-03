@@ -101,7 +101,7 @@ const ClientInsights = () => {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-6 py-2 rounded-full transition ${
                   selectedCategory === category
-                    ? "bg-amber-600 text-white"
+                    ? "bg-slate-600 text-white"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
@@ -154,7 +154,7 @@ const ClientInsights = () => {
               placeholder="Enter your email address"
               className="px-6 py-3 rounded-lg border border-gray-300 flex-1 max-w-md"
             />
-            <button className="bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-700 transition">
+            <button className="bg-slate-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-slate-700 transition">
               Subscribe
             </button>
           </div>
@@ -162,7 +162,7 @@ const ClientInsights = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-amber-600 text-white">
+      <section className="py-20 bg-slate-600 text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold mb-6">Need Legal Advice?</h2>
           <p className="text-xl mb-8">
@@ -170,7 +170,7 @@ const ClientInsights = () => {
           </p>
           <a
             href="/contact"
-            className="bg-white text-amber-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block"
+            className="bg-white text-slate-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block"
           >
             Contact Us Today
           </a>

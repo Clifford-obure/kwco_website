@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center bg-amber-600">
+      <section className="relative h-96 flex items-center justify-center bg-slate-600">
         {/* <div
           className="absolute inset-0 bg-contain bg-no-repeat bg-center"
           style={{
@@ -47,8 +47,8 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-8 h-8 text-amber-600" />
+              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-8 h-8 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Visit Us</h3>
               <p className="text-gray-600">
@@ -60,8 +60,8 @@ const Contact = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Phone className="w-8 h-8 text-amber-600" />
+              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Phone className="w-8 h-8 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Call Us</h3>
               <p className="text-gray-600">
@@ -71,8 +71,8 @@ const Contact = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Mail className="w-8 h-8 text-amber-600" />
+              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Mail className="w-8 h-8 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Email Us</h3>
               <p className="text-gray-600">
@@ -82,8 +82,8 @@ const Contact = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-8 h-8 text-amber-600" />
+              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Office Hours</h3>
               <p className="text-gray-600">
@@ -114,7 +114,7 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-slate-500"
                       placeholder="Your Name"
                       required
                     />
@@ -128,7 +128,7 @@ const Contact = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-slate-500"
                       placeholder="your@email.com"
                       required
                     />
@@ -142,7 +142,7 @@ const Contact = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-slate-500"
                       placeholder="+254 700 000 000"
                     />
                   </div>
@@ -154,7 +154,7 @@ const Contact = () => {
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-slate-500"
                       required
                     >
                       <option value="">Select a subject</option>
@@ -176,14 +176,14 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       rows={5}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-slate-500"
                       placeholder="Tell us about your legal needs..."
                       required
                     />
                   </div>
                   <button
                     onClick={handleSubmit}
-                    className="w-full bg-amber-600 text-white py-3 rounded-lg font-semibold hover:bg-amber-700 transition flex items-center justify-center"
+                    className="w-full bg-slate-600 text-white py-3 rounded-lg font-semibold hover:bg-slate-700 transition flex items-center justify-center"
                   >
                     <Send className="w-5 h-5 mr-2" />
                     Send Message
@@ -224,7 +224,7 @@ const Contact = () => {
                     <p className="text-gray-600">
                       For urgent legal matters outside office hours:
                     </p>
-                    <p className="text-amber-600 font-bold text-xl mt-2">
+                    <p className="text-slate-600 font-bold text-xl mt-2">
                       +254 725 766457
                     </p>
                   </div>
@@ -232,19 +232,19 @@ const Contact = () => {
               </div>
 
               {/* Quick Contact */}
-              <div className="bg-amber-50 p-6 rounded-lg">
+              <div className="bg-slate-50 p-6 rounded-lg">
                 <h3 className="font-bold text-lg mb-4">Quick Contact</h3>
                 <div className="space-y-3">
                   <a
                     href="tel:+254725766457"
-                    className="flex items-center text-gray-700 hover:text-amber-600 transition"
+                    className="flex items-center text-gray-700 hover:text-slate-600 transition"
                   >
                     <Phone className="w-5 h-5 mr-3" />
                     +254 725 766457
                   </a>
                   <a
                     href="mailto:info@kwco.legal"
-                    className="flex items-center text-gray-700 hover:text-amber-600 transition"
+                    className="flex items-center text-gray-700 hover:text-slate-600 transition"
                   >
                     <Mail className="w-5 h-5 mr-3" />
                     info@kwco.legal

@@ -24,7 +24,7 @@ const PracticeAreas = () => {
     {
       id: "Debt-collection",
       icon: <Briefcase className="w-16 h-16" />,
-      title: "Credit Collection",
+      title: "Debt collection",
       description:
         "Strategic debt recovery solutions to help businesses and financial institutions manage their credit portfolios effectively and recover outstanding debts.",
       services: [
@@ -112,7 +112,7 @@ const PracticeAreas = () => {
                 className="bg-white rounded-lg shadow-lg overflow-hidden"
               >
                 <div className="p-8">
-                  <div className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mb-6">
+                  <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mb-6">
                     {area.icon}
                   </div>
                   <h3 className="text-2xl font-bold mb-4">{area.title}</h3>
@@ -121,14 +121,14 @@ const PracticeAreas = () => {
                   <ul className="space-y-2 mb-8">
                     {area.services.map((service, index) => (
                       <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span className="w-2 h-2 bg-slate-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                         <span className="text-gray-600">{service}</span>
                       </li>
                     ))}
                   </ul>
                   <Link
                     to={area.link}
-                    className="inline-flex items-center text-amber-600 font-semibold hover:text-amber-700 transition"
+                    className="inline-flex items-center text-slate-600 font-semibold hover:text-slate-700 transition"
                   >
                     Learn More
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -148,8 +148,8 @@ const PracticeAreas = () => {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-amber-600">50+</span>
+              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-slate-600">50+</span>
               </div>
               <h3 className="text-xl font-bold mb-2">Years of Experience</h3>
               <p className="text-gray-600">
@@ -157,8 +157,8 @@ const PracticeAreas = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-amber-600">1000+</span>
+              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-slate-600">1000+</span>
               </div>
               <h3 className="text-xl font-bold mb-2">Successful Cases</h3>
               <p className="text-gray-600">
@@ -166,8 +166,8 @@ const PracticeAreas = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-amber-600">24/7</span>
+              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-slate-600">24/7</span>
               </div>
               <h3 className="text-xl font-bold mb-2">Client Support</h3>
               <p className="text-gray-600">
@@ -175,8 +175,8 @@ const PracticeAreas = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-amber-600">100%</span>
+              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-slate-600">100%</span>
               </div>
               <h3 className="text-xl font-bold mb-2">Client Satisfaction</h3>
               <p className="text-gray-600">
@@ -188,7 +188,7 @@ const PracticeAreas = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-amber-600 text-white">
+      <section className="py-20 bg-slate-600 text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold mb-6">Need Legal Assistance?</h2>
           <p className="text-xl mb-8">
@@ -196,7 +196,7 @@ const PracticeAreas = () => {
           </p>
           <Link
             to="/contact"
-            className="bg-white text-amber-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block"
+            className="bg-white text-slate-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block"
           >
             Schedule a Consultation
           </Link>

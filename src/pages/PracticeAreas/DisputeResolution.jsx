@@ -18,37 +18,37 @@ const DisputeResolution = () => {
       title: "Mediation",
       description:
         "Facilitating dialogue between parties to reach mutually acceptable solutions without court intervention.",
-      icon: <Users className="w-8 h-8 text-amber-600" />,
+      icon: <Users className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Arbitration",
       description:
         "Private dispute resolution with binding decisions made by experienced arbitrators.",
-      icon: <Gavel className="w-8 h-8 text-amber-600" />,
+      icon: <Gavel className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Negotiation",
       description:
         "Strategic negotiation services to resolve disputes efficiently and protect your interests.",
-      icon: <HandshakeIcon className="w-8 h-8 text-amber-600" />,
+      icon: <HandshakeIcon className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Commercial ADR",
       description:
         "Specialized alternative dispute resolution for complex commercial and business disputes.",
-      icon: <MessageSquare className="w-8 h-8 text-amber-600" />,
+      icon: <MessageSquare className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Labor Disputes",
       description:
         "Resolution of employment and labor disputes through conciliation and mediation.",
-      icon: <Shield className="w-8 h-8 text-amber-600" />,
+      icon: <Shield className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Family Mediation",
       description:
         "Sensitive handling of family disputes including divorce, custody, and inheritance matters.",
-      icon: <Scale className="w-8 h-8 text-amber-600" />,
+      icon: <Scale className="w-8 h-8 text-slate-600" />,
     },
   ];
 
@@ -112,7 +112,7 @@ const DisputeResolution = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center bg-amber-600">
+      <section className="relative h-96 flex items-center justify-center bg-slate-700">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -149,8 +149,8 @@ const DisputeResolution = () => {
             prioritize flexible, confidential, and client-centered solutions for
             disputes ranging from complex commercial disagreements to sensitive
             family matters. Our approach balances legal rigor with practical
-            empathy, ensuring resolutions that respect all parties’ interests
-            while adhering to Kenya’s evolving legal standards. By combining
+            empathy, ensuring resolutions that respect all parties' interests
+            while adhering to Kenya's evolving legal standards. By combining
             modern ADR frameworks with deep local expertise, KWCO Advocates
             empowers clients to navigate disputes with clarity, confidence, and
             minimal disruption.
@@ -185,7 +185,7 @@ const DisputeResolution = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {benefits.map((benefit, index) => (
               <div key={index} className="flex items-start">
-                <Check className="w-6 h-6 text-amber-600 mr-3 flex-shrink-0 mt-1" />
+                <Check className="w-6 h-6 text-slate-600 mr-3 flex-shrink-0 mt-1" />
                 <p className="text-gray-700">{benefit}</p>
               </div>
             ))}
@@ -222,7 +222,7 @@ const DisputeResolution = () => {
             {process.map((step, index) => (
               <div key={index} className="relative">
                 <div className="bg-white p-6 rounded-lg shadow-lg">
-                  <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">
+                  <div className="w-12 h-12 bg-slate-600 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">
                     {step.step}
                   </div>
                   <h3 className="text-xl font-bold mb-2">{step.title}</h3>
@@ -230,7 +230,7 @@ const DisputeResolution = () => {
                 </div>
                 {index < process.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 right-0 transform translate-x-full -translate-y-1/2">
-                    <ArrowRight className="w-8 h-8 text-amber-600" />
+                    <ArrowRight className="w-8 h-8 text-slate-600" />
                   </div>
                 )}
               </div>
@@ -240,7 +240,7 @@ const DisputeResolution = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-amber-600 text-white">
+      <section className="py-20 bg-slate-700 text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-16">
             Why Choose KWCO Advocates for Dispute Resolution?
@@ -250,7 +250,7 @@ const DisputeResolution = () => {
               <h3 className="text-2xl font-bold mb-4">
                 Experienced Mediators & Arbitrators
               </h3>
-              <p className="text-amber-100">
+              <p className="text-slate-300">
                 Our team includes accredited mediators and arbitrators with
                 extensive experience in various fields of law, ensuring expert
                 handling of your dispute.
@@ -258,7 +258,7 @@ const DisputeResolution = () => {
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-4">High Success Rate</h3>
-              <p className="text-amber-100">
+              <p className="text-slate-300">
                 Over 90% of our mediation cases result in successful
                 settlements, saving our clients time and money compared to
                 traditional litigation.
@@ -266,7 +266,7 @@ const DisputeResolution = () => {
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-4">Tailored Approach</h3>
-              <p className="text-amber-100">
+              <p className="text-slate-300">
                 We customize our ADR approach to suit the specific needs of each
                 dispute, ensuring the most effective resolution method is
                 employed.
@@ -274,7 +274,7 @@ const DisputeResolution = () => {
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-4">Confidential Process</h3>
-              <p className="text-amber-100">
+              <p className="text-slate-300">
                 All ADR proceedings are strictly confidential, protecting your
                 business interests and personal matters from public exposure.
               </p>
@@ -347,7 +347,7 @@ const DisputeResolution = () => {
           </p>
           <a
             href="/contact"
-            className="bg-amber-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-amber-700 transition inline-block"
+            className="bg-slate-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-slate-700 transition inline-block"
           >
             Schedule Consultation
           </a>

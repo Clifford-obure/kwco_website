@@ -8,7 +8,7 @@ import Collaboration from "./../../assets/headers/pngwing.com (8).png";
 const CoreValues = () => {
   const values = [
     {
-      icon: <Shield className="w-12 h-12 text-amber-600" />,
+      icon: <Shield className="w-12 h-12 text-slate-600" />,
       title: "Integrity",
       description:
         "We uphold the highest ethical standards in all our dealings, ensuring transparency and honesty in every interaction.",
@@ -20,7 +20,7 @@ const CoreValues = () => {
       ],
     },
     {
-      icon: <Scale className="w-12 h-12 text-amber-600" />,
+      icon: <Scale className="w-12 h-12 text-slate-600" />,
       title: "Justice",
       description:
         "We are committed to the pursuit of justice and fairness, ensuring equal access to legal representation.",
@@ -32,7 +32,7 @@ const CoreValues = () => {
       ],
     },
     {
-      icon: <Award className="w-12 h-12 text-amber-600" />,
+      icon: <Award className="w-12 h-12 text-slate-600" />,
       title: "Excellence",
       description:
         "We strive for excellence in everything we do, continuously improving our skills and services.",
@@ -44,7 +44,7 @@ const CoreValues = () => {
       ],
     },
     {
-      icon: <Heart className="w-12 h-12 text-amber-600" />,
+      icon: <Heart className="w-12 h-12 text-slate-600" />,
       title: "Compassion",
       description:
         "We treat every client with empathy and understanding, recognizing the human element in legal matters.",
@@ -56,7 +56,7 @@ const CoreValues = () => {
       ],
     },
     {
-      icon: <Users className="w-12 h-12 text-amber-600" />,
+      icon: <Users className="w-12 h-12 text-slate-600" />,
       title: "Teamwork",
       description:
         "We believe in the power of collaboration, working together to achieve the best outcomes for our clients.",
@@ -68,7 +68,7 @@ const CoreValues = () => {
       ],
     },
     {
-      icon: <Lightbulb className="w-12 h-12 text-amber-600" />,
+      icon: <Lightbulb className="w-12 h-12 text-slate-600" />,
       title: "Innovation",
       description:
         "We embrace new ideas and technologies to provide better, more efficient legal services.",
@@ -127,7 +127,7 @@ const CoreValues = () => {
                   <ul className="space-y-2">
                     {value.details.map((detail, idx) => (
                       <li key={idx} className="flex items-start">
-                        <span className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span className="w-2 h-2 bg-slate-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                         <span className="text-gray-600">{detail}</span>
                       </li>
                     ))}
@@ -171,7 +171,7 @@ const CoreValues = () => {
               </p>
               <a
                 href="/our-people"
-                className="inline-flex items-center text-amber-600 font-semibold hover:text-amber-700 transition"
+                className="inline-flex items-center text-slate-600 font-semibold hover:text-slate-700 transition"
               >
                 Meet Our Team
                 <svg
@@ -194,7 +194,7 @@ const CoreValues = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-amber-600 text-white">
+      <section className="py-20 bg-slate-700 text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold mb-6">Experience Our Values</h2>
           <p className="text-xl mb-8">
@@ -203,7 +203,7 @@ const CoreValues = () => {
           </p>
           <a
             href="/contact"
-            className="bg-white text-amber-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block"
+            className="bg-white text-slate-700 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block"
           >
             Get Started Today
           </a>

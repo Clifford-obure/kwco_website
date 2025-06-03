@@ -25,8 +25,8 @@ const MissionVision = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-amber-100 rounded-full mb-6">
-              <Target className="w-10 h-10 text-amber-600" />
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-slate-100 rounded-full mb-6">
+              <Target className="w-10 h-10 text-slate-600" />
             </div>
             <h2 className="text-4xl font-bold mb-6">Our Mission</h2>
             <p className="text-2xl text-gray-700 font-medium mb-8">
@@ -66,8 +66,8 @@ const MissionVision = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-amber-100 rounded-full mb-6">
-              <Eye className="w-10 h-10 text-amber-600" />
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-slate-100 rounded-full mb-6">
+              <Eye className="w-10 h-10 text-slate-600" />
             </div>
             <h2 className="text-4xl font-bold mb-6">Our Vision</h2>
             <p className="text-2xl text-gray-700 font-medium mb-8">
@@ -78,7 +78,7 @@ const MissionVision = () => {
             </p>
             <div className="grid md:grid-cols-2 gap-8 mt-12">
               <div className="bg-white p-8 rounded-lg shadow-lg">
-                <Compass className="w-12 h-12 text-amber-600 mb-4" />
+                <Compass className="w-12 h-12 text-slate-600 mb-4" />
                 <h3 className="text-xl font-bold mb-3">Leadership</h3>
                 <p className="text-gray-600">
                   Leading the transformation of legal services in Kenya through
@@ -86,7 +86,7 @@ const MissionVision = () => {
                 </p>
               </div>
               <div className="bg-white p-8 rounded-lg shadow-lg">
-                <Star className="w-12 h-12 text-amber-600 mb-4" />
+                <Star className="w-12 h-12 text-slate-600 mb-4" />
                 <h3 className="text-xl font-bold mb-3">Recognition</h3>
                 <p className="text-gray-600">
                   Becoming the benchmark for quality legal services in East
@@ -106,8 +106,8 @@ const MissionVision = () => {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-amber-600">1</span>
+              <div className="bg-slate-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-slate-600">1</span>
               </div>
               <h3 className="text-xl font-bold mb-2">Client Satisfaction</h3>
               <p className="text-gray-600">
@@ -116,8 +116,8 @@ const MissionVision = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-amber-600">2</span>
+              <div className="bg-slate-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-slate-600">2</span>
               </div>
               <h3 className="text-xl font-bold mb-2">Market Leadership</h3>
               <p className="text-gray-600">
@@ -126,8 +126,8 @@ const MissionVision = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-amber-600">3</span>
+              <div className="bg-slate-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-slate-600">3</span>
               </div>
               <h3 className="text-xl font-bold mb-2">Team Excellence</h3>
               <p className="text-gray-600">
@@ -136,8 +136,8 @@ const MissionVision = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-amber-600">4</span>
+              <div className="bg-slate-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-slate-600">4</span>
               </div>
               <h3 className="text-xl font-bold mb-2">Social Impact</h3>
               <p className="text-gray-600">
@@ -149,13 +149,13 @@ const MissionVision = () => {
       </section>
 
       {/* Quote Section */}
-      <section className="py-20 bg-amber-600 text-white">
+      <section className="py-20 bg-slate-700 text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
           <blockquote className="text-3xl font-light italic mb-6">
             "Excellence is not a skill, it's an attitude."
           </blockquote>
           <p className="text-xl">
-          LAWYERS OF LEGENDS, LEADERS IN DISPUTE RESOLUTION & MANAGEMENT
+            LAWYERS OF LEGENDS, LEADERS IN DISPUTE RESOLUTION & MANAGEMENT
           </p>
         </div>
       </section>

@@ -26,7 +26,7 @@ const OurPeople = () => {
       ],
 
       experience: "20+ years",
-      bio: "Kamuti Waweru is the founding and managing partner of KWCO. With over 20 years of experience in legal practice, he has established himself as one of Kenya's leading advocates in commercial litigation and corporate law.",
+      bio: "Kamuti Waweru is the founding and managing partner of KWCO Advocates and has established himself as one of Kenya's leading advocates in commercial litigation and corporate law",
       email: "skwaweru@kwco.legal",
       phone: "+254725766457",
       linkedin: "www.linkedin.com/in/sk-waweru-52895528",
@@ -86,21 +86,20 @@ const OurPeople = () => {
         <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
           <h1 className="text-5xl font-bold mb-4">Our People</h1>
           <p className="text-xl  font-bold ">
-            Meet the Legal Experts Behind KWCO's Success
+            Meet the Experts Behind KWCO Advocates' Success
           </p>
         </div>
         <br />
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className=" text-gray-600">
-            KWCO Advocates is powered by a team of seasoned lawyers and legal
-            professionals whose collective expertise spans diverse practice
-            areas, including litigation, debt collection, conveyancing, and
-            dispute resolution. Our unwavering dedication to excellence,
-            innovation, and client-centered service has solidified our
-            reputation as one of Kenya’s premier legal authorities. Our people,
-            driven by integrity, precision, and a passion for justice, are the
-            cornerstone of KWCO Advocates’ standing as a trusted leader in the
-            legal landscape.
+            KWCO Advocates is powered by a team of seasoned professionals whose
+            collective expertise spans diverse areas, including litigation, debt
+            collection, conveyancing, and dispute resolution. Our unwavering
+            dedication to excellence, innovation, and client-centered service
+            has solidified our reputation as one of Kenya's premier legal
+            authorities. Our people, driven by integrity, precision, and a
+            passion for justice, are the cornerstone of KWCO Advocates' standing
+            as a trusted leader in the legal landscape
           </p>
         </div>
       </section>
@@ -127,7 +126,7 @@ const OurPeople = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-3xl font-bold mb-2">{partner.name}</h3>
-                    <p className="text-xl text-amber-600 font-semibold mb-4">
+                    <p className="text-xl text-slate-600 font-semibold mb-4">
                       {partner.position}
                     </p>
                     <p className="text-gray-600 mb-6">{partner.bio}</p>
@@ -143,7 +142,7 @@ const OurPeople = () => {
                               key={idx}
                               className="flex items-center text-gray-600"
                             >
-                              <Award className="w-4 h-4 text-amber-600 mr-2" />
+                              <Award className="w-4 h-4 text-slate-600 mr-2" />
                               {area}
                             </li>
                           ))}
@@ -151,11 +150,11 @@ const OurPeople = () => {
                       </div>
                     </div>
 
-                    <div className="mt-6">
-                      <span className="inline-block bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold">
+                    {/* <div className="mt-6">
+                      <span className="inline-block bg-slate-100 text-slate-800 px-4 py-2 rounded-full text-sm font-semibold">
                         {partner.experience} Experience
                       </span>
-                    </div>
+                    </div> */}
 
                     <div className="mt-6">
                       <h4 className="font-semibold text-gray-700 mb-3">
@@ -165,7 +164,7 @@ const OurPeople = () => {
                         <Mail className="w-4 h-4 mr-2" />
                         <a
                           href={`mailto:${partner.email}`}
-                          className="hover:text-amber-600"
+                          className="hover:text-slate-600"
                         >
                           {partner.email}
                         </a>
@@ -174,7 +173,7 @@ const OurPeople = () => {
                         <Phone className="w-4 h-4 mr-2" />
                         <a
                           href={`tel:${partner.phone}`}
-                          className="hover:text-amber-600"
+                          className="hover:text-slate-600"
                         >
                           {partner.phone}
                         </a>
@@ -183,7 +182,7 @@ const OurPeople = () => {
                         <Linkedin className="w-4 h-4 mr-2" />
                         <a
                           href={partner.linkedin}
-                          className="hover:text-amber-600"
+                          className="hover:text-slate-600"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -216,7 +215,7 @@ const OurPeople = () => {
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-1">{associate.name}</h3>
-                  <p className="text-amber-600 font-semibold mb-3">
+                  <p className="text-slate-600 font-semibold mb-3">
                     {associate.position}
                   </p>
                 </div>
@@ -227,7 +226,7 @@ const OurPeople = () => {
       </section>
 
       {/* Join Our Team Section */}
-      <section className="py-20 bg-amber-600 text-white">
+      <section className="py-20 bg-slate-600 text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold mb-6">Join Our Team</h2>
           <p className="text-xl mb-8">
@@ -236,7 +235,7 @@ const OurPeople = () => {
           </p>
           <a
             href="/contact"
-            className="bg-white text-amber-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block"
+            className="bg-white text-slate-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block"
           >
             View Career Opportunities
           </a>

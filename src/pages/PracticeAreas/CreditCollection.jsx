@@ -18,37 +18,37 @@ const CreditCollection = () => {
       title: "Debt Recovery",
       description:
         "Efficient recovery of outstanding debts through legal proceedings and enforcement mechanisms.",
-      icon: <DollarSign className="w-8 h-8 text-amber-600" />,
+      icon: <DollarSign className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Demand Letters",
       description:
         "Professional demand letters that comply with legal requirements and maximize recovery potential.",
-      icon: <FileText className="w-8 h-8 text-amber-600" />,
+      icon: <FileText className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Negotiation & Settlement",
       description:
         "Skilled negotiation to reach favorable settlements and payment arrangements.",
-      icon: <Briefcase className="w-8 h-8 text-amber-600" />,
+      icon: <Briefcase className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Asset Tracing",
       description:
         "Comprehensive asset searches to identify and locate debtor assets for recovery.",
-      icon: <Search className="w-8 h-8 text-amber-600" />,
+      icon: <Search className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Bankruptcy Proceedings",
       description:
         "Representation in bankruptcy and insolvency proceedings to maximize creditor recovery.",
-      icon: <Shield className="w-8 h-8 text-amber-600" />,
+      icon: <Shield className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Credit Portfolio Management",
       description:
         "Strategic management of credit portfolios to minimize defaults and optimize recovery.",
-      icon: <BarChart3 className="w-8 h-8 text-amber-600" />,
+      icon: <BarChart3 className="w-8 h-8 text-slate-600" />,
     },
   ];
 
@@ -118,9 +118,9 @@ const CreditCollection = () => {
         </div>
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-xl text-gray-600 mb-8">
-            KWCO Advocates’ Debt Collection practice delivers end-to-end debt
+            KWCO Advocates' Debt Collection practice delivers end-to-end debt
             recovery solutions for businesses, financial institutions, and
-            creditors nationwide. Leveraging our deep understanding of Kenya’s
+            creditors nationwide. Leveraging our deep understanding of Kenya's
             legal and commercial landscape, we prioritize maximizing recovery
             rates while preserving client relationships and reputations.
           </p>
@@ -166,7 +166,7 @@ const CreditCollection = () => {
             {recoveryProcess.map((process, index) => (
               <div key={index} className="relative">
                 <div className="bg-white p-6 rounded-lg shadow-lg">
-                  <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">
+                  <div className="w-12 h-12 bg-slate-600 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">
                     {process.step}
                   </div>
                   <h3 className="text-xl font-bold mb-2">{process.title}</h3>
@@ -174,7 +174,7 @@ const CreditCollection = () => {
                 </div>
                 {index < recoveryProcess.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 right-0 transform translate-x-full -translate-y-1/2">
-                    <ArrowRight className="w-8 h-8 text-amber-600" />
+                    <ArrowRight className="w-8 h-8 text-slate-600" />
                   </div>
                 )}
               </div>
@@ -203,7 +203,7 @@ const CreditCollection = () => {
       </section>
 
       {/* Success Metrics */}
-      <section className="py-20 bg-amber-600 text-white">
+      <section className="py-20 bg-slate-700 text-white">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16">
             Our Success Metrics
@@ -211,19 +211,19 @@ const CreditCollection = () => {
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-5xl font-bold mb-2">85%</div>
-              <p className="text-amber-100">Average Recovery Rate</p>
+              <p className="text-slate-300">Average Recovery Rate</p>
             </div>
             <div>
               <div className="text-5xl font-bold mb-2">30</div>
-              <p className="text-amber-100">Days Average Resolution</p>
+              <p className="text-slate-300">Days Average Resolution</p>
             </div>
             <div>
               <div className="text-5xl font-bold mb-2">KES 1B+</div>
-              <p className="text-amber-100">Total Amount Recovered</p>
+              <p className="text-slate-300">Total Amount Recovered</p>
             </div>
             <div>
               <div className="text-5xl font-bold mb-2">500+</div>
-              <p className="text-amber-100">Satisfied Clients</p>
+              <p className="text-slate-300">Satisfied Clients</p>
             </div>
           </div>
         </div>
@@ -237,8 +237,8 @@ const CreditCollection = () => {
           </h2>
           <div className="space-y-6">
             <div className="flex items-start">
-              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                <Check className="w-6 h-6 text-amber-600" />
+              <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                <Check className="w-6 h-6 text-slate-600" />
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">High Recovery Rates</h3>
@@ -249,8 +249,8 @@ const CreditCollection = () => {
               </div>
             </div>
             <div className="flex items-start">
-              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                <Check className="w-6 h-6 text-amber-600" />
+              <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                <Check className="w-6 h-6 text-slate-600" />
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Legal Expertise</h3>
@@ -261,8 +261,8 @@ const CreditCollection = () => {
               </div>
             </div>
             <div className="flex items-start">
-              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                <Check className="w-6 h-6 text-amber-600" />
+              <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                <Check className="w-6 h-6 text-slate-600" />
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">
@@ -275,8 +275,8 @@ const CreditCollection = () => {
               </div>
             </div>
             <div className="flex items-start">
-              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                <Check className="w-6 h-6 text-amber-600" />
+              <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                <Check className="w-6 h-6 text-slate-600" />
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">No Recovery, No Fee</h3>
@@ -300,7 +300,7 @@ const CreditCollection = () => {
           </p>
           <a
             href="/contact"
-            className="bg-amber-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-amber-700 transition inline-block"
+            className="bg-slate-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-slate-700 transition inline-block"
           >
             Get Started Now
           </a>

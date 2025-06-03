@@ -16,7 +16,7 @@ const Footer = () => {
                 alt="kwco logo"
                 style={{ width: "150px", height: "auto" }}
               />
-              {/* <Scale className="w-8 h-8 text-amber-500" />
+              {/* <Scale className="w-8 h-8 text-slate-400" />
               <div>
                 <h3 className="text-xl font-bold">KWCO</h3>
                 <p className="text-sm text-gray-400">
@@ -36,7 +36,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-gray-400 hover:text-amber-500 transition"
+                  className="text-gray-400 hover:text-slate-300 transition"
                 >
                   Home
                 </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/about"
-                  className="text-gray-400 hover:text-amber-500 transition"
+                  className="text-gray-400 hover:text-slate-300 transition"
                 >
                   About Us
                 </Link>
@@ -52,7 +52,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/practice-areas"
-                  className="text-gray-400 hover:text-amber-500 transition"
+                  className="text-gray-400 hover:text-slate-300 transition"
                 >
                   Practice Areas
                 </Link>
@@ -60,7 +60,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/our-people"
-                  className="text-gray-400 hover:text-amber-500 transition"
+                  className="text-gray-400 hover:text-slate-300 transition"
                 >
                   Our People
                 </Link>
@@ -68,7 +68,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/insights"
-                  className="text-gray-400 hover:text-amber-500 transition"
+                  className="text-gray-400 hover:text-slate-300 transition"
                 >
                   Client Insights
                 </Link>
@@ -76,7 +76,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="text-gray-400 hover:text-amber-500 transition"
+                  className="text-gray-400 hover:text-slate-300 transition"
                 >
                   Contact
                 </Link>
@@ -90,7 +90,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/practice-areas/litigation"
-                  className="text-gray-400 hover:text-amber-500 transition"
+                  className="text-gray-400 hover:text-slate-300 transition"
                 >
                   Litigation
                 </Link>
@@ -98,7 +98,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/practice-areas/credit-collection"
-                  className="text-gray-400 hover:text-amber-500 transition"
+                  className="text-gray-400 hover:text-slate-300 transition"
                 >
                   Credit Collection
                 </Link>
@@ -106,7 +106,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/practice-areas/conveyancing"
-                  className="text-gray-400 hover:text-amber-500 transition"
+                  className="text-gray-400 hover:text-slate-300 transition"
                 >
                   Conveyancing
                 </Link>
@@ -114,7 +114,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/practice-areas/dispute-resolution"
-                  className="text-gray-400 hover:text-amber-500 transition"
+                  className="text-gray-400 hover:text-slate-300 transition"
                 >
                   Dispute Resolution
                 </Link>
@@ -131,7 +131,7 @@ const Footer = () => {
                 href="https://facebook.com/kwcoadvocates"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 p-2 rounded-full hover:bg-amber-600 transition duration-300"
+                className="bg-gray-800 p-2 rounded-full hover:bg-slate-600 transition duration-300"
               >
                 <Facebook className="w-5 h-5 text-white" />
               </a>
@@ -139,7 +139,7 @@ const Footer = () => {
                 href="https://linkedin.com/company/kamuti-waweru-company-advocates"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 p-2 rounded-full hover:bg-amber-600 transition duration-300"
+                className="bg-gray-800 p-2 rounded-full hover:bg-slate-600 transition duration-300"
               >
                 <Linkedin className="w-5 h-5 text-white" />
               </a>
@@ -147,7 +147,7 @@ const Footer = () => {
                 href="https://youtube.com/@kwco-advocates?si=vD6JqIsuMEBnVBAA"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 p-2 rounded-full hover:bg-amber-600 transition duration-300"
+                className="bg-gray-800 p-2 rounded-full hover:bg-slate-600 transition duration-300"
               >
                 <Youtube className="w-5 h-5 text-white" />
               </a>

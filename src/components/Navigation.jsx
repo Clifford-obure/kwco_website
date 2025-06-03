@@ -133,7 +133,7 @@ const Navigation = () => {
               style={{ width: "150px", height: "auto" }}
             />
             {/* <div>
-              <h1 className="text-2xl font-bold text-amber-600">KWCO</h1>
+              <h1 className="text-2xl font-bold text-slate-600">KWCO</h1>
               <p className="text-xs text-gray-600">
                 Kamuti Waweru & Co. Advocates
               </p>
@@ -146,7 +146,7 @@ const Navigation = () => {
               <div key={index} className="relative">
                 {item.dropdown ? (
                   <div
-                    className="flex items-center cursor-pointer py-2 text-gray-700 hover:text-amber-600 transition"
+                    className="flex items-center cursor-pointer py-2 text-gray-700 hover:text-slate-600 transition"
                     onMouseEnter={() => setActiveDropdown(index)}
                     onMouseLeave={() => setActiveDropdown(null)}
                   >
@@ -171,7 +171,7 @@ const Navigation = () => {
                             <button
                               key={dropIndex}
                               onClick={(e) => handleNavClick(e, dropItem)}
-                              className="w-full text-left px-4 py-3 text-gray-700 hover:bg-amber-50 hover:text-amber-600 transition"
+                              className="w-full text-left px-4 py-3 text-gray-700 hover:bg-slate-50 hover:text-slate-600 transition"
                             >
                               {dropItem.label}
                             </button>
@@ -179,7 +179,7 @@ const Navigation = () => {
                             <Link
                               key={dropIndex}
                               to={dropItem.href}
-                              className="block px-4 py-3 text-gray-700 hover:bg-amber-50 hover:text-amber-600 transition"
+                              className="block px-4 py-3 text-gray-700 hover:bg-slate-50 hover:text-slate-600 transition"
                             >
                               {dropItem.label}
                             </Link>
@@ -191,14 +191,14 @@ const Navigation = () => {
                 ) : item.isScrollable && isHomePage ? (
                   <button
                     onClick={(e) => handleNavClick(e, item)}
-                    className="py-2 text-gray-700 hover:text-amber-600 transition"
+                    className="py-2 text-gray-700 hover:text-slate-600 transition"
                   >
                     {item.label}
                   </button>
                 ) : (
                   <Link
                     to={item.href}
-                    className="py-2 text-gray-700 hover:text-amber-600 transition"
+                    className="py-2 text-gray-700 hover:text-slate-600 transition"
                   >
                     {item.label}
                   </Link>
@@ -207,7 +207,7 @@ const Navigation = () => {
             ))}
             <Link
               to="/contact"
-              className="bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition"
+              className="bg-slate-600 text-white px-6 py-2 rounded-lg hover:bg-slate-700 transition"
             >
               Get Consultation
             </Link>
@@ -234,14 +234,14 @@ const Navigation = () => {
                 {item.isScrollable && isHomePage ? (
                   <button
                     onClick={(e) => handleNavClick(e, item)}
-                    className="w-full text-left px-4 py-3 text-gray-700 hover:bg-amber-50 hover:text-amber-600 transition"
+                    className="w-full text-left px-4 py-3 text-gray-700 hover:bg-slate-50 hover:text-slate-600 transition"
                   >
                     {item.label}
                   </button>
                 ) : (
                   <Link
                     to={item.href}
-                    className="block px-4 py-3 text-gray-700 hover:bg-amber-50 hover:text-amber-600 transition"
+                    className="block px-4 py-3 text-gray-700 hover:bg-slate-50 hover:text-slate-600 transition"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
@@ -253,7 +253,7 @@ const Navigation = () => {
                       <button
                         key={dropIndex}
                         onClick={(e) => handleNavClick(e, dropItem)}
-                        className="w-full text-left px-8 py-2 text-gray-600 hover:bg-amber-50 hover:text-amber-600 transition"
+                        className="w-full text-left px-8 py-2 text-gray-600 hover:bg-slate-50 hover:text-slate-600 transition"
                       >
                         {dropItem.label}
                       </button>
@@ -261,7 +261,7 @@ const Navigation = () => {
                       <Link
                         key={dropIndex}
                         to={dropItem.href}
-                        className="block px-8 py-2 text-gray-600 hover:bg-amber-50 hover:text-amber-600 transition"
+                        className="block px-8 py-2 text-gray-600 hover:bg-slate-50 hover:text-slate-600 transition"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
                         {dropItem.label}
@@ -273,7 +273,7 @@ const Navigation = () => {
             <div className="p-4">
               <Link
                 to="/contact"
-                className="block w-full bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition text-center"
+                className="block w-full bg-slate-600 text-white px-6 py-2 rounded-lg hover:bg-slate-700 transition text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Get Consultation

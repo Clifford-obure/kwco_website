@@ -18,37 +18,37 @@ const Litigation = () => {
       title: "Civil Litigation",
       description:
         "Representing clients in civil disputes including contract disputes, tort claims, and property matters.",
-      icon: <FileText className="w-8 h-8 text-amber-600" />,
+      icon: <FileText className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Commercial Disputes",
       description:
         "Handling complex business litigation including shareholder disputes, partnership conflicts, and corporate governance issues.",
-      icon: <Briefcase className="w-8 h-8 text-amber-600" />,
+      icon: <Briefcase className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Constitutional Litigation",
       description:
         "Defending constitutional rights and challenging government actions that violate the constitution.",
-      icon: <Shield className="w-8 h-8 text-amber-600" />,
+      icon: <Shield className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Employment Disputes",
       description:
         "Representing both employers and employees in workplace conflicts, wrongful termination, and discrimination cases.",
-      icon: <Users className="w-8 h-8 text-amber-600" />,
+      icon: <Users className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Judicial Review",
       description:
         "Challenging administrative decisions and ensuring government agencies act within their legal authority.",
-      icon: <Gavel className="w-8 h-8 text-amber-600" />,
+      icon: <Gavel className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Alternative Dispute Resolution",
       description:
         "Mediation and arbitration services to resolve disputes efficiently outside of court.",
-      icon: <Scale className="w-8 h-8 text-amber-600" />,
+      icon: <Scale className="w-8 h-8 text-slate-600" />,
     },
   ];
 
@@ -136,7 +136,7 @@ const Litigation = () => {
               <ul className="space-y-3">
                 {courtRepresentation.map((court, index) => (
                   <li key={index} className="flex items-center">
-                    <Check className="w-5 h-5 text-amber-600 mr-3" />
+                    <Check className="w-5 h-5 text-slate-600 mr-3" />
                     <span className="text-gray-700">{court}</span>
                   </li>
                 ))}
@@ -149,7 +149,7 @@ const Litigation = () => {
               <ul className="space-y-3">
                 {caseTypes.map((type, index) => (
                   <li key={index} className="flex items-center">
-                    <Check className="w-5 h-5 text-amber-600 mr-3" />
+                    <Check className="w-5 h-5 text-slate-600 mr-3" />
                     <span className="text-gray-700">{type}</span>
                   </li>
                 ))}
@@ -167,8 +167,8 @@ const Litigation = () => {
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-amber-600">1</span>
+              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-slate-600">1</span>
               </div>
               <h3 className="text-xl font-bold mb-2">Case Evaluation</h3>
               <p className="text-gray-600">
@@ -177,8 +177,8 @@ const Litigation = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-amber-600">2</span>
+              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-slate-600">2</span>
               </div>
               <h3 className="text-xl font-bold mb-2">Legal Strategy</h3>
               <p className="text-gray-600">
@@ -187,8 +187,8 @@ const Litigation = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-amber-600">3</span>
+              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-slate-600">3</span>
               </div>
               <h3 className="text-xl font-bold mb-2">Court Representation</h3>
               <p className="text-gray-600">
@@ -196,8 +196,8 @@ const Litigation = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-amber-600">4</span>
+              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-slate-600">4</span>
               </div>
               <h3 className="text-xl font-bold mb-2">Resolution</h3>
               <p className="text-gray-600">
@@ -216,8 +216,8 @@ const Litigation = () => {
           </h2>
           <div className="space-y-6">
             <div className="flex items-start">
-              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                <Check className="w-6 h-6 text-amber-600" />
+              <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                <Check className="w-6 h-6 text-slate-600" />
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Proven Track Record</h3>
@@ -228,8 +228,8 @@ const Litigation = () => {
               </div>
             </div>
             <div className="flex items-start">
-              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                <Check className="w-6 h-6 text-amber-600" />
+              <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                <Check className="w-6 h-6 text-slate-600" />
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Expert Advocates</h3>
@@ -240,8 +240,8 @@ const Litigation = () => {
               </div>
             </div>
             <div className="flex items-start">
-              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                <Check className="w-6 h-6 text-amber-600" />
+              <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                <Check className="w-6 h-6 text-slate-600" />
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Strategic Approach</h3>
@@ -252,8 +252,8 @@ const Litigation = () => {
               </div>
             </div>
             <div className="flex items-start">
-              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                <Check className="w-6 h-6 text-amber-600" />
+              <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                <Check className="w-6 h-6 text-slate-600" />
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Client Communication</h3>
@@ -268,7 +268,7 @@ const Litigation = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-amber-600 text-white">
+      <section className="py-20 bg-slate-600 text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold mb-6">
             Need Legal Representation?
@@ -278,7 +278,7 @@ const Litigation = () => {
           </p>
           <a
             href="/contact"
-            className="bg-white text-amber-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block"
+            className="bg-white text-slate-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block"
           >
             Schedule Consultation
           </a>

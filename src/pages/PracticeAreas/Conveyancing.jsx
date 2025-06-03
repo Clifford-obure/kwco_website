@@ -18,37 +18,37 @@ const Conveyancing = () => {
       title: "Property Sales & Purchases",
       description:
         "Complete legal support for buying and selling residential and commercial properties.",
-      icon: <Home className="w-8 h-8 text-amber-600" />,
+      icon: <Home className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Title Searches",
       description:
         "Comprehensive searches to verify property ownership and identify any encumbrances.",
-      icon: <Search className="w-8 h-8 text-amber-600" />,
+      icon: <Search className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Due Diligence",
       description:
         "Thorough investigation of property documentation and legal compliance.",
-      icon: <ClipboardCheck className="w-8 h-8 text-amber-600" />,
+      icon: <ClipboardCheck className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Lease Agreements",
       description:
         "Drafting and reviewing commercial and residential lease agreements.",
-      icon: <FileText className="w-8 h-8 text-amber-600" />,
+      icon: <FileText className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Property Registration",
       description:
         "Handling all aspects of property registration with the relevant authorities.",
-      icon: <Key className="w-8 h-8 text-amber-600" />,
+      icon: <Key className="w-8 h-8 text-slate-600" />,
     },
     {
       title: "Land Dispute Resolution",
       description:
         "Resolving boundary disputes, ownership conflicts, and other land-related issues.",
-      icon: <Shield className="w-8 h-8 text-amber-600" />,
+      icon: <Shield className="w-8 h-8 text-slate-600" />,
     },
   ];
 
@@ -120,7 +120,7 @@ const Conveyancing = () => {
         <br />
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-xl text-gray-600 mb-8">
-            Conveyancing Practice at KWCO Advocates KWCO Advocates’ Conveyancing
+            Conveyancing Practice at KWCO Advocates KWCO Advocates' Conveyancing
             Practice delivers end-to-end legal services for residential,
             commercial, and industrial property transactions across Kenya. Our
             seasoned team ensures seamless, legally compliant dealings; from due
@@ -128,13 +128,13 @@ const Conveyancing = () => {
             mitigation so you can transact with confidence.
           </p>
           <p className="text-gray-600 mb-8">
-            Whether you’re a first-time homebuyer, a commercial real estate
+            Whether you're a first-time homebuyer, a commercial real estate
             investor, or managing a complex portfolio, we combine strategic
             legal expertise with meticulous attention to regulatory detail. Our
             client-centered approach prioritizes clarity, efficiency, and
             proactive risk management, ensuring your property transactions
             proceed smoothly and your investments remain secure. Backed by
-            Kenya’s evolving property laws and modern legal frameworks, KWCO
+            Kenya's evolving property laws and modern legal frameworks, KWCO
             Advocates transforms complexity into opportunity, safeguarding your
             interests at every stage.
           </p>
@@ -169,7 +169,7 @@ const Conveyancing = () => {
             {conveyancingProcess.map((process, index) => (
               <div key={index} className="relative">
                 <div className="bg-white p-6 rounded-lg shadow-lg">
-                  <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">
+                  <div className="w-12 h-12 bg-slate-600 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">
                     {process.step}
                   </div>
                   <h3 className="text-xl font-bold mb-2">{process.title}</h3>
@@ -177,7 +177,7 @@ const Conveyancing = () => {
                 </div>
                 {index < conveyancingProcess.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 right-0 transform translate-x-full -translate-y-1/2">
-                    <ArrowRight className="w-8 h-8 text-amber-600" />
+                    <ArrowRight className="w-8 h-8 text-slate-600" />
                   </div>
                 )}
               </div>
@@ -221,8 +221,8 @@ const Conveyancing = () => {
             </div>
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                  <Check className="w-6 h-6 text-amber-600" />
+                <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                  <Check className="w-6 h-6 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Experienced Team</h3>
@@ -232,8 +232,8 @@ const Conveyancing = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                  <Check className="w-6 h-6 text-amber-600" />
+                <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                  <Check className="w-6 h-6 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">
@@ -245,8 +245,8 @@ const Conveyancing = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                  <Check className="w-6 h-6 text-amber-600" />
+                <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                  <Check className="w-6 h-6 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">
@@ -258,8 +258,8 @@ const Conveyancing = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                  <Check className="w-6 h-6 text-amber-600" />
+                <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                  <Check className="w-6 h-6 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Fast Turnaround</h3>
@@ -325,7 +325,7 @@ const Conveyancing = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-amber-600 text-white">
+      <section className="py-20 bg-slate-700 text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold mb-6">
             Ready to Start Your Property Transaction?
@@ -335,7 +335,7 @@ const Conveyancing = () => {
           </p>
           <a
             href="/contact"
-            className="bg-white text-amber-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block"
+            className="bg-white text-slate-700 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block"
           >
             Get Started Today
           </a>
