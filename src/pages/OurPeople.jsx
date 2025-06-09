@@ -17,13 +17,7 @@ const OurPeople = () => {
       name: "Kamuti Waweru",
       position: "Managing Partner",
       image: sammy,
-      expertise: [
-        "Managing Partner ",
-        " Head of Dispute Resolution  ",
-        " KWCO Advocates ",
-        "Corporate Law",
-        "Real Estate",
-      ],
+      expertise: ["Managing Partner ", " Head of Dispute Resolution  "],
 
       experience: "20+ years",
       bio: "Kamuti Waweru is the founding and managing partner of KWCO Advocates and has established himself as one of Kenya's leading advocates in commercial litigation and corporate law",
