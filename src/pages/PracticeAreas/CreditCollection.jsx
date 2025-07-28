@@ -1,5 +1,5 @@
 // src/pages/PracticeAreas/CreditCollection.js
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Briefcase,
   DollarSign,
@@ -9,46 +9,82 @@ import {
   BarChart3,
   Check,
   ArrowRight,
+  Target,
+  Award,
+  TrendingUp,
+  Star,
+  Clock,
+  CheckCircle,
+  Users,
 } from "lucide-react";
-import law from "./../../assets/headers/law2.png";
+import law from "./../../assets/newImages/kwcoteaminoffice2.jpg";
 
 const CreditCollection = () => {
+  // Intersection Observer for animations
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          // Animation will be handled by CSS classes
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    const elements = document.querySelectorAll(".animate-on-scroll");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   const services = [
     {
       title: "Debt Recovery",
       description:
         "Efficient recovery of outstanding debts through legal proceedings and enforcement mechanisms.",
-      icon: <DollarSign className="w-8 h-8 text-slate-600" />,
+      icon: <DollarSign className="w-8 h-8 text-blue-500" />,
+      stats: "85% Recovery Rate",
+      color: "from-blue-50 to-blue-100",
     },
     {
       title: "Demand Letters",
       description:
         "Professional demand letters that comply with legal requirements and maximize recovery potential.",
-      icon: <FileText className="w-8 h-8 text-slate-600" />,
+      icon: <FileText className="w-8 h-8 text-blue-500" />,
+      stats: "95% Response Rate",
+      color: "from-slate-50 to-slate-100",
     },
     {
       title: "Negotiation & Settlement",
       description:
         "Skilled negotiation to reach favorable settlements and payment arrangements.",
-      icon: <Briefcase className="w-8 h-8 text-slate-600" />,
+      icon: <Briefcase className="w-8 h-8 text-blue-500" />,
+      stats: "90% Settlement Rate",
+      color: "from-blue-50 to-blue-100",
     },
     {
       title: "Asset Tracing",
       description:
         "Comprehensive asset searches to identify and locate debtor assets for recovery.",
-      icon: <Search className="w-8 h-8 text-slate-600" />,
+      icon: <Search className="w-8 h-8 text-blue-500" />,
+      stats: "Advanced Technology",
+      color: "from-slate-50 to-slate-100",
     },
     {
       title: "Bankruptcy Proceedings",
       description:
         "Representation in bankruptcy and insolvency proceedings to maximize creditor recovery.",
-      icon: <Shield className="w-8 h-8 text-slate-600" />,
+      icon: <Shield className="w-8 h-8 text-blue-500" />,
+      stats: "Expert Advocacy",
+      color: "from-blue-50 to-blue-100",
     },
     {
       title: "Credit Portfolio Management",
       description:
         "Strategic management of credit portfolios to minimize defaults and optimize recovery.",
-      icon: <BarChart3 className="w-8 h-8 text-slate-600" />,
+      icon: <BarChart3 className="w-8 h-8 text-blue-500" />,
+      stats: "Portfolio Optimization",
+      color: "from-slate-50 to-slate-100",
     },
   ];
 
@@ -69,112 +105,264 @@ const CreditCollection = () => {
       title: "Initial Assessment",
       description:
         "Review of documentation and evaluation of recovery prospects",
+      icon: <Target className="w-8 h-8 text-blue-500" />,
     },
     {
       step: "2",
       title: "Demand & Notice",
       description: "Issue of statutory demand letters and legal notices",
+      icon: <FileText className="w-8 h-8 text-blue-500" />,
     },
     {
       step: "3",
       title: "Negotiation",
       description: "Attempted resolution through negotiation and settlement",
+      icon: <Briefcase className="w-8 h-8 text-blue-500" />,
     },
     {
       step: "4",
       title: "Legal Action",
       description: "Institution of court proceedings when necessary",
+      icon: <Shield className="w-8 h-8 text-blue-500" />,
     },
     {
       step: "5",
       title: "Enforcement",
       description: "Execution of judgments and recovery of assets",
+      icon: <Award className="w-8 h-8 text-blue-500" />,
     },
     {
       step: "6",
       title: "Recovery",
       description: "Successful collection and remittance to client",
+      icon: <CheckCircle className="w-8 h-8 text-blue-500" />,
+    },
+  ];
+
+  const successMetrics = [
+    {
+      number: "85%",
+      label: "Average Recovery Rate",
+      icon: <TrendingUp className="w-6 h-6" />,
+    },
+    {
+      number: "30",
+      label: "Days Average Resolution",
+      icon: <Clock className="w-6 h-6" />,
+    },
+    {
+      number: "KES 1B+",
+      label: "Total Amount Recovered",
+      icon: <DollarSign className="w-6 h-6" />,
+    },
+    {
+      number: "500+",
+      label: "Satisfied Clients",
+      icon: <Users className="w-6 h-6" />,
+    },
+  ];
+
+  const whyChooseUs = [
+    {
+      title: "High Recovery Rates",
+      description:
+        "Consistently achieving above-average recovery rates for our clients",
+      icon: <TrendingUp className="w-6 h-6 text-blue-500" />,
+    },
+    {
+      title: "Legal Expertise",
+      description:
+        "Deep understanding of debt collection laws and regulatory requirements",
+      icon: <Shield className="w-6 h-6 text-blue-500" />,
+    },
+    {
+      title: "Professional Approach",
+      description:
+        "Maintaining professionalism while pursuing aggressive recovery strategies",
+      icon: <Award className="w-6 h-6 text-blue-500" />,
+    },
+    {
+      title: "No Recovery, No Fee",
+      description:
+        "Flexible fee arrangements including contingency-based options",
+      icon: <DollarSign className="w-6 h-6 text-blue-500" />,
     },
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
+      {/* Enhanced Hero Section */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-contain bg-no-repeat bg-center"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${law})`,
-            filter: "brightness(0.4)",
+            filter: "brightness(0.3) contrast(1.2)",
           }}
         />
+
+        {/* Enhanced Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
+
+        {/* Enhanced Content */}
+        <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4">
+          <div className="animate-fade-in-up">
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-white leading-tight">
+              <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+                Debt Collection
+              </span>{" "}
+              Services
+            </h1>
+            <p className="text-2xl md:text-3xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
+              End-to-End Debt Recovery • Maximized Recovery Rates • Professional
+              Legal Solutions
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href="#services"
+                className="group bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold px-8 py-4 rounded-lg text-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center"
+              >
+                Explore Our Services
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* Overview Section */}
-      <section className="py-20">
-        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
-          {/* <Briefcase className="w-16 h-16 mx-auto mb-4" /> */}
-          <h1 className="text-5xl font-bold mb-4">Debt Collection</h1>
-        </div>
-        <div className="max-w-4xl mx-auto px-4">
-          <p className="text-xl text-gray-600 mb-8">
-            KWCO Advocates' Debt Collection practice delivers end-to-end debt
-            recovery solutions for businesses, financial institutions, and
-            creditors nationwide. Leveraging our deep understanding of Kenya's
-            legal and commercial landscape, we prioritize maximizing recovery
-            rates while preserving client relationships and reputations.
-          </p>
-          <p className="text-gray-600 mb-8">
-            Our team combines strategic legal expertise with pragmatic business
-            insight to design recovery processes that align with your
-            operational goals. Recognizing the unique complexities of each case,
-            we craft tailored, results-driven strategies—from pre-litigation
-            negotiations to enforcement of court judgments—to secure optimal
-            outcomes efficiently and ethically. KWCO Advocates has built a
-            reputation for blending modern legal innovation with client-centered
-            service, ensuring your financial interests are safeguarded at every
-            stage.
-          </p>
-        </div>
-      </section>
-
-      {/* Services Grid */}
-      <section className="py-20 bg-gray-50">
+      {/* Stats Section */}
+      <section className="py-16 bg-gradient-to-r from-blue-900/10 to-slate-800/10 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Our Debt Collection Services
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {successMetrics.map((metric, index) => (
+              <div
+                key={index}
+                className="text-center animate-on-scroll opacity-0 animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="w-16 h-16 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600">
+                  {metric.icon}
+                </div>
+                <div className="text-3xl font-bold text-slate-800 mb-2">
+                  {metric.number}
+                </div>
+                <div className="text-gray-600">{metric.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Recovery Process */}
-      <section className="py-20">
+      {/* Enhanced Overview Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-20 animate-on-scroll opacity-0 animate-fade-in-up">
+            <h2 className="text-5xl font-bold text-slate-800 mb-8">
+              Expert <span className="text-blue-600">Debt Collection</span>{" "}
+              Practice
+            </h2>
+            <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-8 rounded-2xl border border-blue-200 max-w-4xl mx-auto">
+              <p className="text-xl text-slate-700 leading-relaxed mb-6">
+                KWCO Advocates' Debt Collection practice delivers end-to-end
+                debt recovery solutions for businesses, financial institutions,
+                and creditors nationwide. Leveraging our deep understanding of
+                Kenya's legal and commercial landscape, we prioritize maximizing
+                recovery rates while preserving client relationships and
+                reputations.
+              </p>
+              <p className="text-lg text-slate-600 leading-relaxed">
+                Our team combines strategic legal expertise with pragmatic
+                business insight to design recovery processes that align with
+                your operational goals. Recognizing the unique complexities of
+                each case, we craft tailored, results-driven strategies—from
+                pre-litigation negotiations to enforcement of court judgments—to
+                secure optimal outcomes efficiently and ethically.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Enhanced Services Grid */}
+      <section
+        id="services"
+        className="py-24 bg-gradient-to-br from-slate-50 to-white"
+      >
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Our Recovery Process
-          </h2>
+          <div className="text-center mb-20 animate-on-scroll opacity-0 animate-fade-in-up">
+            <h2 className="text-5xl font-bold text-slate-800 mb-6">
+              Our <span className="text-blue-600">Debt Collection</span>{" "}
+              Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Comprehensive debt recovery solutions tailored to your business
+              needs
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className={`bg-gradient-to-br ${service.color} p-8 rounded-2xl shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-on-scroll opacity-0 animate-fade-in-up`}
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                <div className="w-16 h-16 bg-blue-600/20 rounded-full flex items-center justify-center mb-6">
+                  {service.icon}
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-slate-800">
+                  {service.title}
+                </h3>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  {service.description}
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-blue-600 font-semibold bg-blue-600/20 px-3 py-1 rounded-full">
+                    {service.stats}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Enhanced Recovery Process */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-20 animate-on-scroll opacity-0 animate-fade-in-up">
+            <h2 className="text-5xl font-bold text-slate-800 mb-6">
+              Our <span className="text-blue-600">Recovery Process</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              A systematic approach to maximizing debt recovery success
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {recoveryProcess.map((process, index) => (
-              <div key={index} className="relative">
-                <div className="bg-white p-6 rounded-lg shadow-lg">
-                  <div className="w-12 h-12 bg-slate-600 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">
+              <div
+                key={index}
+                className="relative animate-on-scroll opacity-0 animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-8 rounded-2xl shadow-xl border border-slate-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                  <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 shadow-lg">
                     {process.step}
                   </div>
-                  <h3 className="text-xl font-bold mb-2">{process.title}</h3>
-                  <p className="text-gray-600">{process.description}</p>
+                  <div className="w-16 h-16 bg-blue-600/20 rounded-full flex items-center justify-center mb-6">
+                    {process.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-slate-800">
+                    {process.title}
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    {process.description}
+                  </p>
                 </div>
                 {index < recoveryProcess.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 right-0 transform translate-x-full -translate-y-1/2">
-                    <ArrowRight className="w-8 h-8 text-slate-600" />
+                    <ArrowRight className="w-8 h-8 text-blue-500" />
                   </div>
                 )}
               </div>
@@ -183,127 +371,94 @@ const CreditCollection = () => {
         </div>
       </section>
 
-      {/* Industries We Serve */}
-      <section className="py-20 bg-gray-50">
+      {/* Enhanced Industries We Serve */}
+      <section className="py-24 bg-gradient-to-br from-slate-50 to-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Industries We Serve
-          </h2>
+          <div className="text-center mb-20 animate-on-scroll opacity-0 animate-fade-in-up">
+            <h2 className="text-5xl font-bold text-slate-800 mb-6">
+              Industries We <span className="text-blue-600">Serve</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Specialized debt collection services across diverse sectors
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {industries.map((industry, index) => (
               <div
                 key={index}
-                className="bg-white p-4 rounded-lg shadow text-center"
+                className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll opacity-0 animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <p className="font-semibold text-gray-700">{industry}</p>
+                <p className="font-semibold text-gray-700 text-center text-lg">
+                  {industry}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Success Metrics */}
-      <section className="py-20 bg-slate-700 text-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Our Success Metrics
-          </h2>
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-5xl font-bold mb-2">85%</div>
-              <p className="text-slate-300">Average Recovery Rate</p>
-            </div>
-            <div>
-              <div className="text-5xl font-bold mb-2">30</div>
-              <p className="text-slate-300">Days Average Resolution</p>
-            </div>
-            <div>
-              <div className="text-5xl font-bold mb-2">KES 1B+</div>
-              <p className="text-slate-300">Total Amount Recovered</p>
-            </div>
-            <div>
-              <div className="text-5xl font-bold mb-2">500+</div>
-              <p className="text-slate-300">Satisfied Clients</p>
-            </div>
+      {/* Enhanced Why Choose Us */}
+      <section className="py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-20 animate-on-scroll opacity-0 animate-fade-in-up">
+            <h2 className="text-5xl font-bold text-slate-800 mb-6">
+              Why Choose <span className="text-blue-600">KWCO Advocates</span>{" "}
+              for Debt Recovery?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Our proven track record and expertise make us the preferred choice
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {whyChooseUs.map((item, index) => (
+              <div
+                key={index}
+                className="bg-gradient-to-br from-slate-50 to-slate-100 p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 animate-on-scroll opacity-0 animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                <div className="flex items-start">
+                  <div className="w-16 h-16 bg-blue-600/20 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-slate-800">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Why Choose KWCO Advocates for Debt Recovery?
-          </h2>
-          <div className="space-y-6">
-            <div className="flex items-start">
-              <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                <Check className="w-6 h-6 text-slate-600" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">High Recovery Rates</h3>
-                <p className="text-gray-600">
-                  Consistently achieving above-average recovery rates for our
-                  clients
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start">
-              <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                <Check className="w-6 h-6 text-slate-600" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">Legal Expertise</h3>
-                <p className="text-gray-600">
-                  Deep understanding of debt collection laws and regulatory
-                  requirements
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start">
-              <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                <Check className="w-6 h-6 text-slate-600" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">
-                  Professional Approach
-                </h3>
-                <p className="text-gray-600">
-                  Maintaining professionalism while pursuing aggressive recovery
-                  strategies
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start">
-              <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                <Check className="w-6 h-6 text-slate-600" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">No Recovery, No Fee</h3>
-                <p className="text-gray-600">
-                  Flexible fee arrangements including contingency-based options
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gray-900 text-white">
+      {/* Enhanced CTA Section */}
+      <section className="py-24 bg-gradient-to-br from-blue-900 to-slate-800 text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-4xl font-bold mb-6">
-            Improve Your Cash Flow Today
-          </h2>
-          <p className="text-xl mb-8">
-            Let our expert team help you recover outstanding debts efficiently
-          </p>
-          <a
-            href="/contact"
-            className="bg-slate-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-slate-700 transition inline-block"
-          >
-            Get Started Now
-          </a>
+          <div className="animate-on-scroll opacity-0 animate-fade-in-up">
+            <h2 className="text-5xl font-bold mb-8">
+              Improve Your <span className="text-blue-300">Cash Flow</span>{" "}
+              Today
+            </h2>
+            <p className="text-xl mb-10 text-gray-200 leading-relaxed">
+              Let our expert team help you recover outstanding debts efficiently
+              and professionally. Experience the difference that our proven debt
+              collection strategies make.
+            </p>
+            <a
+              href="/contact"
+              className="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-10 py-4 rounded-lg text-xl font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-xl"
+            >
+              Get Started Now
+              <ArrowRight className="w-6 h-6 ml-3" />
+            </a>
+          </div>
         </div>
       </section>
     </div>
