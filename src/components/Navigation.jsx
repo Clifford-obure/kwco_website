@@ -292,7 +292,7 @@ const Navigation = () => {
               : "max-h-0 opacity-0 overflow-hidden"
           }`}
         >
-          <div className="bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-xl">
+          <div className="bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-xl max-h-[80vh] overflow-y-auto">
             <div className="py-4 space-y-2">
               {navItems.map((item, index) => (
                 <div key={index} className="px-4">
