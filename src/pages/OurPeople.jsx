@@ -393,9 +393,9 @@ const OurPeople = () => {
                       <p className="text-gray-600 font-medium">
                         {associate.expertise}
                       </p>
-                      <p className="text-sm text-gray-500">
+                      {/* <p className="text-sm text-gray-500">
                         {associate.experience} Experience
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 </div>
