@@ -99,6 +99,11 @@ const Navigation = () => {
       sectionId: "contact",
       isScrollable: true,
     },
+    {
+      label: "Samlex",
+      href: "https://lawfirm-saas-client.vercel.app/",
+      isExternal: true,
+    },
   ];
 
   const handleNavClick = (e, item) => {
@@ -207,24 +212,36 @@ const Navigation = () => {
                       </div>
                     )}
                   </div>
-                ) : item.isScrollable && isHomePage ? (
-                  <button
-                    onClick={(e) => handleNavClick(e, item)}
-                    className="py-2 text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group"
+                ) : item.isExternal ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="py-2 text-gray-700 hover:text-slate-800 transition-all duration-300 font-medium relative group"
                   >
                     <span className="relative">
                       {item.label}
-                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-800 transition-all duration-300 group-hover:w-full"></span>
+                    </span>
+                  </a>
+                ) : item.isScrollable && isHomePage ? (
+                  <button
+                    onClick={(e) => handleNavClick(e, item)}
+                    className="py-2 text-gray-700 hover:text-slate-800 transition-all duration-300 font-medium relative group"
+                  >
+                    <span className="relative">
+                      {item.label}
+                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-800 transition-all duration-300 group-hover:w-full"></span>
                     </span>
                   </button>
                 ) : (
                   <Link
                     to={item.href}
-                    className="py-2 text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium relative group"
+                    className="py-2 text-gray-700 hover:text-slate-800 transition-all duration-300 font-medium relative group"
                   >
                     <span className="relative">
                       {item.label}
-                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-800 transition-all duration-300 group-hover:w-full"></span>
                     </span>
                   </Link>
                 )}
@@ -279,7 +296,17 @@ const Navigation = () => {
             <div className="py-4 space-y-2">
               {navItems.map((item, index) => (
                 <div key={index} className="px-4">
-                  {item.isScrollable && isHomePage ? (
+                  {item.isExternal ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block px-4 py-4 text-gray-700 hover:bg-slate-50 hover:text-slate-800 transition-all duration-300 rounded-lg font-medium"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </a>
+                  ) : item.isScrollable && isHomePage ? (
                     <button
                       onClick={(e) => handleNavClick(e, item)}
                       className="w-full text-left px-4 py-4 text-gray-700 hover:bg-slate-50 hover:text-slate-800 transition-all duration-300 rounded-lg font-medium"
@@ -311,7 +338,7 @@ const Navigation = () => {
                           <Link
                             key={dropIndex}
                             to={dropItem.href}
-                            className="block px-4 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 rounded-lg flex items-center justify-between group text-sm"
+                            className="block px-4 py-3 text-gray-600 hover:bg-slate-50 hover:text-slate-800 transition-all duration-300 rounded-lg flex items-center justify-between group text-sm"
                             onClick={() => setIsMobileMenuOpen(false)}
                           >
                             <span>{dropItem.label}</span>
@@ -326,7 +353,7 @@ const Navigation = () => {
               <div className="px-4 pt-4">
                 <Link
                   to="/contact"
-                  className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-4 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg text-center font-semibold flex items-center justify-center group"
+                  className="block w-full bg-gradient-to-r from-slate-700 to-slate-800 text-white px-6 py-4 rounded-lg hover:from-slate-800 hover:to-slate-900 transition-all duration-300 transform hover:scale-105 shadow-lg text-center font-semibold flex items-center justify-center group"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Get Consultation
