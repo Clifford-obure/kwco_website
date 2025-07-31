@@ -1,6 +1,6 @@
 // src/pages/OurPeople.js
 import React, { useEffect } from "react";
-import teamicon from "./../assets/newImages/kwcoteam2.jpg";
+import teamicon from "./../assets/newImages/slidder3.jpg";
 import {
   Mail,
   Phone,
@@ -43,12 +43,12 @@ const OurPeople = () => {
 
   const partners = [
     {
-      name: "Kamuti Waweru",
+      name: "SK Waweru",
       position: "Managing Partner",
       image: sammy,
       expertise: ["Managing Partner", "Head of Dispute Resolution"],
       experience: "20+ years",
-      bio: "Kamuti Waweru is the founding and managing partner of KWCO Advocates and has established himself as one of Kenya's leading advocates in commercial litigation and corporate law. With over two decades of experience, he has successfully handled complex cases and built a reputation for excellence in legal practice.",
+      bio: "SK Waweru is the founding and managing partner of KWCO Advocates and has established himself as one of Kenya's leading advocates in commercial litigation and corporate law. With over two decades of experience, he has successfully handled complex cases and built a reputation for excellence in legal practice.",
       email: "skwaweru@kwco.legal",
       phone: "+254725766457",
       linkedin: "www.linkedin.com/in/sk-waweru-52895528",
@@ -149,16 +149,13 @@ const OurPeople = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       {/* Enhanced Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-fit bg-top bg-no-repeat"
-          style={{
-            backgroundImage: `url(${teamicon})`,
-            filter: "brightness(0.3) contrast(1.2)",
-          }}
-        />
-
-        {/* Enhanced Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
+        <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+          <img
+            src={teamicon}
+            alt="Our People Background"
+            className="w-full h-full object-contain object-center"
+          />
+        </div>
 
         {/* Enhanced Content */}
         <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4">
@@ -172,7 +169,7 @@ const OurPeople = () => {
               </span>
             </h1>
             <p className="text-2xl md:text-3xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              Meet the Experts Behind KWCO Advocates' Success
+              Meet the Distinguished Professionals Behind Our Excellence
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a

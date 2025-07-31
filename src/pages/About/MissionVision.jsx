@@ -12,7 +12,7 @@ import {
   TrendingUp,
   Shield,
 } from "lucide-react";
-import law from "./../../assets/newImages/kwcoteamoutside1.jpg";
+import law from "./../../assets/newImages/slidder9.jpg";
 
 const MissionVision = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -79,16 +79,13 @@ const MissionVision = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       {/* Enhanced Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url(${law})`,
-            filter: "brightness(0.3) contrast(1.2)",
-          }}
-        />
-
-        {/* Enhanced Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
+        <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+          <img
+            src={law}
+            alt="Mission Vision Background"
+            className="w-full h-full object-contain object-center"
+          />
+        </div>
 
         {/* Enhanced Content */}
         <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4">

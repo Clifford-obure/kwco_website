@@ -1,16 +1,49 @@
+/* eslint-disable no-unused-vars */
 // src/pages/PracticeAreas/PracticeAreas.js
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Scale, Briefcase, FileText, Shield, ArrowRight } from "lucide-react";
+import {
+  Scale,
+  Briefcase,
+  FileText,
+  Shield,
+  ArrowRight,
+  CheckCircle,
+  Users,
+  Award,
+  Clock,
+  Star,
+  ChevronRight,
+  Building2,
+  Target,
+  Zap,
+} from "lucide-react";
 
 const PracticeAreas = () => {
+  // Intersection Observer for animations
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          // Animation will be handled by CSS
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    const elements = document.querySelectorAll(".animate-on-scroll");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   const practiceAreas = [
     {
       id: "litigation",
-      icon: <Scale className="w-16 h-16" />,
+      icon: <Scale className="w-8 h-8 text-blue-600" />,
       title: "Litigation",
       description:
-        "Comprehensive litigation services across civil, commercial, and constitutional matters. Our experienced advocates represent clients in all levels of Kenyan courts.",
+        "Comprehensive litigation services across civil, commercial, and constitutional matters. Our experienced advocates represent clients in all levels of Kenyan courts with strategic precision and unwavering dedication.",
       services: [
         "Civil Litigation",
         "Commercial Disputes",
@@ -19,14 +52,18 @@ const PracticeAreas = () => {
         "Employment Disputes",
         "Alternative Dispute Resolution",
       ],
+      stats: "95% Success Rate",
       link: "/practice-areas/litigation",
+      color: "from-blue-500 to-blue-700",
+      bgColor: "bg-blue-50",
+      iconBg: "bg-blue-100",
     },
     {
-      id: "Debt-collection",
-      icon: <Briefcase className="w-16 h-16" />,
-      title: "Debt collection",
+      id: "debt-collection",
+      icon: <Briefcase className="w-8 h-8 text-emerald-600" />,
+      title: "Debt Collection",
       description:
-        "Strategic debt recovery solutions to help businesses and financial institutions manage their credit portfolios effectively and recover outstanding debts.",
+        "Strategic debt recovery solutions to help businesses and financial institutions manage their credit portfolios effectively and recover outstanding debts with proven methodologies.",
       services: [
         "Debt Recovery",
         "Demand Letters",
@@ -35,14 +72,18 @@ const PracticeAreas = () => {
         "Bankruptcy Proceedings",
         "Credit Portfolio Management",
       ],
+      stats: "87% Recovery Rate",
       link: "/practice-areas/credit-collection",
+      color: "from-emerald-500 to-emerald-700",
+      bgColor: "bg-emerald-50",
+      iconBg: "bg-emerald-100",
     },
     {
       id: "conveyancing",
-      icon: <FileText className="w-16 h-16" />,
+      icon: <FileText className="w-8 h-8 text-purple-600" />,
       title: "Conveyancing",
       description:
-        "Full-service conveyancing solutions for property transactions, ensuring smooth transfers and protecting our clients' interests in real estate matters.",
+        "Full-service conveyancing solutions for property transactions, ensuring smooth transfers and protecting our clients' interests in real estate matters with meticulous attention to detail.",
       services: [
         "Property Sales & Purchases",
         "Title Searches",
@@ -51,14 +92,18 @@ const PracticeAreas = () => {
         "Property Registration",
         "Land Dispute Resolution",
       ],
+      stats: "500+ Transactions",
       link: "/practice-areas/conveyancing",
+      color: "from-purple-500 to-purple-700",
+      bgColor: "bg-purple-50",
+      iconBg: "bg-purple-100",
     },
     {
       id: "dispute-resolution",
-      icon: <Shield className="w-16 h-16" />,
+      icon: <Shield className="w-8 h-8 text-orange-600" />,
       title: "Dispute Resolution",
       description:
-        "Alternative dispute resolution services including mediation and arbitration, providing efficient and cost-effective solutions to conflicts outside the courtroom.",
+        "Alternative dispute resolution services including mediation and arbitration, providing efficient and cost-effective solutions to conflicts outside the courtroom with expert facilitation.",
       services: [
         "Mediation",
         "Arbitration",
@@ -67,71 +112,176 @@ const PracticeAreas = () => {
         "Labor Disputes",
         "Family Mediation",
       ],
+      stats: "92% Settlement Rate",
       link: "/practice-areas/dispute-resolution",
+      color: "from-orange-500 to-orange-700",
+      bgColor: "bg-orange-50",
+      iconBg: "bg-orange-100",
+    },
+  ];
+
+  const stats = [
+    {
+      icon: <Users className="w-8 h-8 text-blue-600" />,
+      number: "50+",
+      label: "Years Combined Experience",
+      description: "Deep expertise in Kenyan legal system",
+    },
+    {
+      icon: <Award className="w-8 h-8 text-emerald-600" />,
+      number: "1000+",
+      label: "Successful Cases",
+      description: "Proven track record of excellence",
+    },
+    {
+      icon: <Clock className="w-8 h-8 text-purple-600" />,
+      number: "24/7",
+      label: "Client Support",
+      description: "Always available for urgent matters",
+    },
+    {
+      icon: <Star className="w-8 h-8 text-orange-600" />,
+      number: "100%",
+      label: "Client Satisfaction",
+      description: "Committed to exceeding expectations",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50">
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('src/assets/client/img3.jpg')`,
-            filter: "brightness(0.4)",
-          }}
-        />
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4">Our Practice Areas</h1>
-          <p className="text-xl">
-            Comprehensive Legal Services Tailored to Your Needs
-          </p>
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+          <img
+            src="src/assets/newImages/slidder1.jpg"
+            alt="Practice Areas Background"
+            className="w-full h-full object-contain object-center"
+          />
+        </div>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70" />
+
+        {/* Content */}
+        <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-4">
+          <div className="animate-fade-in-up">
+            <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight">
+              <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+                Our Practice Areas
+              </span>
+            </h1>
+            <p className="text-2xl md:text-3xl mb-12 text-gray-200 max-w-4xl mx-auto leading-relaxed">
+              Comprehensive Legal Services Tailored to Your Needs
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Link
+                to="/contact"
+                className="group bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold px-10 py-5 rounded-xl text-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center"
+              >
+                Get Legal Consultation
+                <ChevronRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <Link
+                to="#practice-areas"
+                className="group border-2 border-white/30 text-white px-10 py-5 rounded-xl text-xl hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm flex items-center"
+              >
+                Explore Services
+                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Introduction */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <p className="text-xl text-gray-600">
-            At KWCO, we offer specialized legal services across four core
-            practice areas. Our team of experienced lawyers brings deep
-            expertise and a proven track record in each of these fields,
-            ensuring you receive the highest quality legal representation.
-          </p>
+      {/* Introduction Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center animate-on-scroll opacity-0 animate-fade-in-up">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+              Excellence in{" "}
+              <span className="text-blue-600">Legal Practice</span>
+            </h2>
+            <p className="text-xl md:text-2xl text-gray-600 max-w-5xl mx-auto leading-relaxed">
+              At KWCO Advocates, we offer specialized legal services across four
+              core practice areas. Our team of experienced lawyers brings deep
+              expertise and a proven track record in each of these fields,
+              ensuring you receive the highest quality legal representation
+              tailored to your specific needs.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Practice Areas Grid */}
-      <section className="py-20 bg-gray-50">
+      <section
+        id="practice-areas"
+        className="py-24 bg-gradient-to-br from-slate-50 to-white"
+      >
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-8">
-            {practiceAreas.map((area) => (
+          <div className="text-center mb-20 animate-on-scroll opacity-0 animate-fade-in-up">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Our <span className="text-blue-600">Practice Areas</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Comprehensive legal solutions across all major practice areas
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            {practiceAreas.map((area, index) => (
               <div
                 key={area.id}
-                className="bg-white rounded-lg shadow-lg overflow-hidden"
+                className={`group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-on-scroll opacity-0 animate-fade-in-up ${area.bgColor}`}
+                style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="p-8">
-                  <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mb-6">
-                    {area.icon}
+                <div className="p-10">
+                  {/* Header */}
+                  <div className="flex items-start justify-between mb-8">
+                    <div
+                      className={`w-16 h-16 ${area.iconBg} rounded-2xl flex items-center justify-center mb-6`}
+                    >
+                      {area.icon}
+                    </div>
+                    <div className="text-right">
+                      <div
+                        className={`inline-block px-4 py-2 rounded-full text-sm font-semibold bg-gradient-to-r ${area.color} text-white`}
+                      >
+                        {area.stats}
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4">{area.title}</h3>
-                  <p className="text-gray-600 mb-6">{area.description}</p>
-                  <h4 className="font-semibold mb-3">Key Services:</h4>
-                  <ul className="space-y-2 mb-8">
-                    {area.services.map((service, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-slate-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span className="text-gray-600">{service}</span>
-                      </li>
-                    ))}
-                  </ul>
+
+                  {/* Title and Description */}
+                  <h3 className="text-3xl font-bold text-gray-900 mb-6">
+                    {area.title}
+                  </h3>
+                  <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                    {area.description}
+                  </p>
+
+                  {/* Services */}
+                  <div className="mb-8">
+                    <h4 className="font-semibold text-gray-900 mb-4 text-lg">
+                      Key Services:
+                    </h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                      {area.services.map((service, serviceIndex) => (
+                        <div key={serviceIndex} className="flex items-center">
+                          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                          <span className="text-gray-700">{service}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* CTA */}
                   <Link
                     to={area.link}
-                    className="inline-flex items-center text-slate-600 font-semibold hover:text-slate-700 transition"
+                    className={`inline-flex items-center text-lg font-semibold bg-gradient-to-r ${area.color} text-white px-8 py-4 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105 group`}
                   >
                     Learn More
-                    <ArrowRight className="w-4 h-4 ml-2" />
+                    <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
               </div>
@@ -140,66 +290,70 @@ const PracticeAreas = () => {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-20">
+      {/* Stats Section */}
+      <section className="py-24 bg-gradient-to-r from-blue-900 to-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Why Choose KWCO Advocates for Your Legal Needs?
-          </h2>
+          <div className="text-center mb-20 animate-on-scroll opacity-0 animate-fade-in-up">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Why Choose <span className="text-blue-400">KWCO Advocates</span>?
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Our commitment to excellence and proven track record speaks for
+              itself
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-slate-600">50+</span>
+            {stats.map((stat, index) => (
+              <div
+                key={index}
+                className="text-center animate-on-scroll opacity-0 animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-6 text-blue-400">
+                  {stat.icon}
+                </div>
+                <div className="text-4xl font-bold text-white mb-3">
+                  {stat.number}
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-blue-400">
+                  {stat.label}
+                </h3>
+                <p className="text-gray-300">{stat.description}</p>
               </div>
-              <h3 className="text-xl font-bold mb-2">Years of Experience</h3>
-              <p className="text-gray-600">
-                Cumulative experience in the Kenyan legal system
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-slate-600">1000+</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2">Successful Cases</h3>
-              <p className="text-gray-600">
-                Proven track record of winning cases
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-slate-600">24/7</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2">Client Support</h3>
-              <p className="text-gray-600">
-                Always available for urgent legal matters
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-slate-600">100%</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2">Client Satisfaction</h3>
-              <p className="text-gray-600">
-                Committed to exceeding expectations
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-slate-600 text-white">
-        <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-4xl font-bold mb-6">Need Legal Assistance?</h2>
-          <p className="text-xl mb-8">
-            Contact us today to discuss your legal needs and how we can help.
-          </p>
-          <Link
-            to="/contact"
-            className="bg-white text-slate-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block"
-          >
-            Schedule a Consultation
-          </Link>
+      <section className="py-24 bg-gradient-to-r from-slate-800 to-slate-900 text-white">
+        <div className="max-w-5xl mx-auto text-center px-4">
+          <div className="animate-on-scroll opacity-0 animate-fade-in-up">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+              Ready to Get Started?
+            </h2>
+            <p className="text-xl md:text-2xl mb-12 text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              Contact us today to discuss your legal needs and discover how our
+              expertise can provide the strategic solutions you require.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Link
+                to="/contact"
+                className="group bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold px-10 py-5 rounded-xl text-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center"
+              >
+                Schedule a Consultation
+                <ChevronRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <Link
+                to="/our-people"
+                className="group border-2 border-white/30 text-white px-10 py-5 rounded-xl text-xl hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm flex items-center"
+              >
+                Meet Our Team
+                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </div>

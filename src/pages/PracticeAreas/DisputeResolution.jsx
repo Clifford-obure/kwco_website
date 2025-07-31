@@ -21,7 +21,7 @@ import {
   Lock,
   FileText,
 } from "lucide-react";
-import dispute from "./../../assets/newImages/kwcoteaminoffice2.jpg";
+import dispute from "./../../assets/newImages/slidder3.jpg";
 
 const DisputeResolution = () => {
   // Intersection Observer for animations
@@ -209,16 +209,13 @@ const DisputeResolution = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       {/* Enhanced Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url(${dispute})`,
-            filter: "brightness(0.3) contrast(1.2)",
-          }}
-        />
-
-        {/* Enhanced Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
+        <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+          <img
+            src={dispute}
+            alt="Dispute Resolution Background"
+            className="w-full h-full object-contain object-center"
+          />
+        </div>
 
         {/* Enhanced Content */}
         <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4">
@@ -230,11 +227,11 @@ const DisputeResolution = () => {
               <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                 Dispute Resolution
               </span>{" "}
-              Services
+              Excellence
             </h1>
             <p className="text-2xl md:text-3xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              Effective Alternative Dispute Resolution • Faster Solutions •
-              Cost-Efficient Results
+              Strategic Conflict Resolution • Expert Mediation • Optimal
+              Outcomes
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a

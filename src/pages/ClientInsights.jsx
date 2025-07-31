@@ -1,7 +1,7 @@
 // src/pages/ClientInsights.js
 import React from "react";
 import { Calendar, Clock, User, ArrowRight, Tag } from "lucide-react";
-import law from "./../assets/client/img1.jpg";
+import law from "./../assets/newImages/slidder8.jpg";
 import postbank from "./../assets/client/posta.jpeg";
 import hash from "./../assets/headers/hashi.png";
 import alphajiri from "./../assets/client/alphajiri.png";
@@ -62,13 +62,13 @@ const ClientInsights = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative h-96 flex items-center w-ful">
-        <div
-          className="absolute inset-0 bg-cover bg-no-repeat bg-center w-full h-full"
-          style={{
-            backgroundImage: `url(${law})`,
-            filter: "brightness(1)",
-          }}
-        />
+        <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+          <img
+            src={law}
+            alt="Client Insights Background"
+            className="w-full h-full object-contain object-center"
+          />
+        </div>
         <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
           <h1 className="text-5xl font-bold mb-4">Our Clients</h1>
           <p className="text-xl">

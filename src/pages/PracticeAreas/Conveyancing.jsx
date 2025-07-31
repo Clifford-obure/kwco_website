@@ -19,7 +19,7 @@ import {
   Building2,
   DollarSign,
 } from "lucide-react";
-import law from "./../../assets/newImages/kwcoteaminoffice2.jpg";
+import law from "./../../assets/newImages/slidder4.jpg";
 
 const Conveyancing = () => {
   // Intersection Observer for animations
@@ -191,16 +191,13 @@ const Conveyancing = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       {/* Enhanced Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url(${law})`,
-            filter: "brightness(0.3) contrast(1.2)",
-          }}
-        />
-
-        {/* Enhanced Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
+        <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+          <img
+            src={law}
+            alt="Conveyancing Background"
+            className="w-full h-full object-contain object-center"
+          />
+        </div>
 
         {/* Enhanced Content */}
         <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4">
@@ -209,11 +206,11 @@ const Conveyancing = () => {
               <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                 Conveyancing
               </span>{" "}
-              Services
+              Excellence
             </h1>
             <p className="text-2xl md:text-3xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              Expert Property Transactions • Seamless Legal Support • Secure
-              Property Deals
+              Expert Property Transactions • Meticulous Legal Support • Secure
+              Real Estate Solutions
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
