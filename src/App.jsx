@@ -1,6 +1,11 @@
 // src/App.js
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
@@ -19,10 +24,23 @@ import OurPeople from "./pages/OurPeople";
 import ClientInsights from "./pages/ClientInsights";
 import Contact from "./pages/Contact";
 
+// ScrollToTop component to handle scrolling to top on route changes
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    // Scroll to top when pathname changes
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop />
         <Navigation />
         <main className="pt-20">
           {" "}

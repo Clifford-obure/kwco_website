@@ -29,14 +29,14 @@ import {
 } from "lucide-react";
 
 // Import banner images
-import banner1 from "./../assets/newImages/slidder1.jpg";
-import banner2 from "./../assets/newImages/slidder2.jpg";
-import banner3 from "./../assets/newImages/slidder3.jpg";
-import banner4 from "./../assets/newImages/slidder4.jpg";
+import banner1 from "./../assets/newImages/hero2.png";
+import banner2 from "./../assets/newImages/hero3.png";
+import banner3 from "./../assets/newImages/hero4.png";
+import banner4 from "./../assets/newImages/hero5.png";
 // import banner5 from "./../assets/newImages/slidder5.jpg";
-import banner6 from "./../assets/newImages/slidder6.jpg";
-import banner7 from "./../assets/newImages/slidder7.jpg";
-import banner8 from "./../assets/newImages/slidder8.jpg";
+import banner6 from "./../assets/newImages/hero6.png";
+import banner7 from "./../assets/newImages/hero7.png";
+// import banner8 from "./../assets/newImages/slidder8.jpg";
 import banner9 from "./../assets/newImages/slidder9.jpg";
 
 import bank from "./../assets/client/kingdom bank.png";
@@ -53,7 +53,7 @@ const Home = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   // Array of your banner images
-  const bannerImages = [banner1, banner4, banner6, banner9];
+  const bannerImages = [banner1, banner2, banner3, banner4, banner6, banner7];
 
   // Auto-slide functionality
   useEffect(() => {
@@ -184,13 +184,13 @@ const Home = () => {
       icon: <Clock className="w-6 h-6" />,
     },
     {
-      number: "1000+",
-      label: "Cases Won",
+      number: "Proven",
+      label: "Track Record",
       icon: <Award className="w-6 h-6" />,
     },
     {
-      number: "95%",
-      label: "Success Rate",
+      number: "Client",
+      label: "Satisfaction",
       icon: <TrendingUp className="w-6 h-6" />,
     },
     {

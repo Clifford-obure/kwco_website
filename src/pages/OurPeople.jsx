@@ -16,7 +16,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import sammy from "./../assets/newImages/sk8inoffice.jpg";
-import bonny from "./../assets/newImages/bonnynew1.jpg";
+import bonny from "./../assets/newImages/bonnyonebest.jpg";
 import seif from "./../assets/newImages/seifbest.jpg";
 // import melvin from "./../assets/newImages/Melvin.jpg";
 import alexender from "./../assets/newImages/alex.jpg";

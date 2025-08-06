@@ -16,7 +16,7 @@ import {
   Shield,
   MessageSquare,
 } from "lucide-react";
-import contactBg from "./../assets/newImages/slidder7.jpg";
+import contactBg from "./../assets/newImages/contactus.png";
 
 const Contact = () => {
   // Intersection Observer for animations
