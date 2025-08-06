@@ -78,7 +78,7 @@ const Contact = () => {
     },
     {
       title: "Office Hours",
-      description: "Mon - Fri: 8:00 AM - 5:00 PM\nSaturday: 9:00 AM - 2:00 PM",
+      description: "Mon - Fri: 8:00 AM - 5:00 PM",
       icon: <Clock className="w-8 h-8 text-blue-500" />,
       color: "from-slate-50 to-slate-100",
     },
