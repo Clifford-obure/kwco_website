@@ -69,20 +69,6 @@ const OurPeople = () => {
       experience: "8+ years",
     },
     {
-      name: "Seif Mohammed",
-      position: "Business Development Manager",
-      image: seif,
-      expertise: "Strategic Business Growth",
-      experience: "10+ years",
-    },
-    {
-      name: "Alexender Mtua",
-      position: "Pupil Advocate",
-      image: alexender,
-      expertise: "Legal Practice",
-      experience: "2+ years",
-    },
-    {
       name: "Eddie Mwiti",
       position: "Senior Associate",
       image: eddie,
@@ -90,11 +76,26 @@ const OurPeople = () => {
       experience: "12+ years",
     },
     {
+      name: "Seif Mohammed",
+      position: "Business Development Manager",
+      image: seif,
+      expertise: "Strategic Business Growth",
+      experience: "10+ years",
+    },
+
+    {
       name: "Jackline Jowi",
       position: "Debt Collection Specialist",
       image: jackline,
       expertise: "Credit Management",
       experience: "7+ years",
+    },
+    {
+      name: "Alexender Mtua",
+      position: "Pupil Advocate",
+      image: alexender,
+      expertise: "Legal Practice",
+      experience: "2+ years",
     },
   ];
 
