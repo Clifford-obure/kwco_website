@@ -248,7 +248,7 @@ const Navigation = () => {
               </div>
             ))}
             <Link
-              to="/contact"
+              to="/consultation"
               className="bg-gradient-to-r from-slate-700 to-slate-800 text-white px-8 py-3 rounded-lg hover:from-slate-800 hover:to-slate-900 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-semibold flex items-center group"
             >
               Get Consultation
@@ -352,7 +352,7 @@ const Navigation = () => {
               ))}
               <div className="px-4 pt-4">
                 <Link
-                  to="/contact"
+                  to="/consultation"
                   className="block w-full bg-gradient-to-r from-slate-700 to-slate-800 text-white px-6 py-4 rounded-lg hover:from-slate-800 hover:to-slate-900 transition-all duration-300 transform hover:scale-105 shadow-lg text-center font-semibold flex items-center justify-center group"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

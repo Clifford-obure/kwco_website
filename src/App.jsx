@@ -23,6 +23,7 @@ import DisputeResolution from "./pages/PracticeAreas/DisputeResolution";
 import OurPeople from "./pages/OurPeople";
 import ClientInsights from "./pages/ClientInsights";
 import Contact from "./pages/Contact";
+import Consultation from "./pages/Consultation";
 
 // ScrollToTop component to handle scrolling to top on route changes
 function ScrollToTop() {
@@ -68,6 +69,7 @@ function App() {
             <Route path="/our-people" element={<OurPeople />} />
             <Route path="/insights" element={<ClientInsights />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/consultation" element={<Consultation />} />
           </Routes>
         </main>
         <Footer />
