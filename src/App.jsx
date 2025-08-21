@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 // Import pages
 import Home from "./pages/Home";
@@ -24,6 +25,9 @@ import OurPeople from "./pages/OurPeople";
 import ClientInsights from "./pages/ClientInsights";
 import Contact from "./pages/Contact";
 import Consultation from "./pages/Consultation";
+import Blog from "./pages/Blog";
+import BlogDetail from "./pages/BlogDetail";
+import Admin from "./pages/Admin";
 
 // ScrollToTop component to handle scrolling to top on route changes
 function ScrollToTop() {
@@ -70,9 +74,13 @@ function App() {
             <Route path="/insights" element={<ClientInsights />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/consultation" element={<Consultation />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogDetail />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
         </main>
         <Footer />
+        <WhatsAppButton />
       </div>
     </Router>
   );

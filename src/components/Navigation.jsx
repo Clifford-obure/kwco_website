@@ -61,24 +61,8 @@ const Navigation = () => {
           sectionId: "values",
           isScrollable: true,
         },
-      ],
-    },
-    {
-      label: "Practice Areas",
-      href: "/practice-areas",
-      sectionId: "practice-areas",
-      isScrollable: true,
-      dropdown: [
-        { label: "Litigation", href: "/practice-areas/litigation" },
-        {
-          label: "Debt Collection",
-          href: "/practice-areas/credit-collection",
-        },
-        { label: "Conveyancing", href: "/practice-areas/conveyancing" },
-        {
-          label: "Dispute Resolution",
-          href: "/practice-areas/dispute-resolution",
-        },
+        { label: "Practice Areas", href: "/practice-areas" },
+        { label: "Blog", href: "/blog" },
       ],
     },
     {

@@ -265,7 +265,7 @@ const Home = () => {
       ],
     },
     {
-      name: "Jackline Waweru",
+      name: "Jackline Jowi",
       position: "Senior Partner",
       expertise: ["Litigation", "Civil Law", "Commercial Disputes"],
       experience: "12+ Years",
@@ -277,7 +277,7 @@ const Home = () => {
       ],
     },
     {
-      name: "Seif Waweru",
+      name: "Seif Mohammed",
       position: "Partner",
       expertise: ["Conveyancing", "Property Law", "Real Estate"],
       experience: "10+ Years",

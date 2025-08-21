@@ -19,7 +19,7 @@ import sammy from "./../assets/newImages/sk8inoffice.jpg";
 import bonny from "./../assets/newImages/bonnyonebest.jpg";
 import seif from "./../assets/newImages/seifbest.jpg";
 // import melvin from "./../assets/newImages/Melvin.jpg";
-import alexender from "./../assets/newImages/alex.jpg";
+// import alexender from "./../assets/newImages/alex.jpg";
 import eddie from "./../assets/newImages/eddietbest.jpg";
 import jackline from "./../assets/newImages/jackylanding.jpg";
 
@@ -90,13 +90,13 @@ const OurPeople = () => {
       expertise: "Credit Management",
       experience: "7+ years",
     },
-    {
-      name: "Alexender Mtua",
-      position: "Pupil Advocate",
-      image: alexender,
-      expertise: "Legal Practice",
-      experience: "2+ years",
-    },
+    // {
+    //   name: "Alexender Mtua",
+    //   position: "Pupil Advocate",
+    //   image: alexender,
+    //   expertise: "Legal Practice",
+    //   experience: "2+ years",
+    // },
   ];
 
   const teamStats = [
