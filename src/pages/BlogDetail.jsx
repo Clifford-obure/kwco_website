@@ -18,7 +18,7 @@ const BlogDetail = () => {
   const [loading, setLoading] = useState(true);
   const [relatedBlogs, setRelatedBlogs] = useState([]);
 
-  const API_BASE_URL = "http://localhost:5000/api";
+  const API_BASE_URL = "https://kwco-website.onrender.com/api";
 
   useEffect(() => {
     fetchBlog();
@@ -44,7 +44,7 @@ const BlogDetail = () => {
       console.log("Featured image path:", data.blog.featuredImage);
       console.log(
         "Full image URL:",
-        `http://localhost:5000${data.blog.featuredImage}`
+                          `https://kwco-website.onrender.com${data.blog.featuredImage}`
       );
       setBlog(data.blog);
 
@@ -201,7 +201,7 @@ const BlogDetail = () => {
           <div className="relative h-96 overflow-hidden bg-gray-100">
             {blog.featuredImage ? (
               <img
-                src={`http://localhost:5000${blog.featuredImage}`}
+                src={`https://kwco-website.onrender.com${blog.featuredImage}`}
                 alt={blog.title || "Blog image"}
                 className="w-full h-full object-cover"
                 style={{
@@ -212,8 +212,8 @@ const BlogDetail = () => {
                 onError={(e) => {
                   console.error("Image failed to load:", blog.featuredImage);
                   console.error(
-                    "Full URL:",
-                    `http://localhost:5000${blog.featuredImage}`
+                                      "Full URL:",
+                  `https://kwco-website.onrender.com${blog.featuredImage}`
                   );
                   if (e.target) {
                     e.target.style.display = "none";
@@ -379,7 +379,7 @@ const BlogDetail = () => {
                   <div className="relative h-48 overflow-hidden rounded-lg mb-4">
                     {relatedBlog.featuredImage ? (
                       <img
-                        src={`http://localhost:5000${relatedBlog.featuredImage}`}
+                        src={`https://kwco-website.onrender.com${relatedBlog.featuredImage}`}
                         alt={relatedBlog.title || "Related blog image"}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         onError={(e) => {

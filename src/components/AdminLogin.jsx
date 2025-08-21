@@ -10,7 +10,7 @@ const AdminLogin = ({ onLogin }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const API_BASE_URL = "http://localhost:5000/api";
+  const API_BASE_URL = "https://kwco-website.onrender.com/api";
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
